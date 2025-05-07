@@ -1,6 +1,6 @@
 import pandas as pd
 from typing import Dict, Any
-from .logger import Logger
+from ..utils.logger import Logger
 
 class SchemaValidator:
     """Validates data schemas across the pipeline."""

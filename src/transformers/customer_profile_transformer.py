@@ -2,10 +2,11 @@ import pandas as pd
 from .base_transformer import BaseTransformer
 
 class CustomerProfileTransformer(BaseTransformer):
-    """Transformer for customer profile data."""
+    """Transformer for customer profile data. Base columns: customer_id, name, gender, age, city, account_open_date, product_type, 
+customer_tier. """
     
     def __init__(self, partition_date: str, partition_hour: int):
-        pass
+        super().__init__(partition_date, partition_hour)
         
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         """
@@ -13,9 +14,15 @@ class CustomerProfileTransformer(BaseTransformer):
         - tenure: number of years since customer joined
         - customer_segment: categorization based on tenure
         """
-        pass
+        df['tenure'] = (self.partition_date - df['account_open_date']).dt.days // 365
+        df['customer_segment'] = df['tenure'].apply(self._determine_segment)
+        return df
             
     def _determine_segment(self, tenure: int) -> str:
         """Determine customer segment based on tenure."""
-        pass
-            
+        if tenure <= 1:
+            return 'New Customer'
+        elif tenure > 5:
+            return 'Loyal'
+        else:
+            return 'Normal'
