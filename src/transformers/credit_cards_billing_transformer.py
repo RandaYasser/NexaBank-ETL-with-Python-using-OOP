@@ -3,10 +3,10 @@ from datetime import datetime
 from .base_transformer import BaseTransformer
 
 class CreditCardsBillingTransformer(BaseTransformer):
-    """Transformer for credit cards billing data."""
+    """Transformer for credit cards billing data. Base columns: bill_id, customer_id, month, amount_due, amount_paid, payment_date. """
     
     def __init__(self, partition_date: str, partition_hour: int):
-        pass
+        super().__init__(partition_date, partition_hour)
         
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         """
@@ -17,4 +17,9 @@ class CreditCardsBillingTransformer(BaseTransformer):
         - fine: late_days * 5.15
         - total_amount: amount_due + fine
         """
-        pass 
+        df['fully_paid'] = df['amount_due'] >= df['amount_paid']
+        df['debt'] = df['amount_due'] - df['amount_paid']
+        df['late_days'] = (df['payment_date'] - df['due_date']).dt.days
+        df['fine'] = df['late_days'] * 5.15
+        df['total_amount'] = df['amount_due'] + df['fine']
+        return df
