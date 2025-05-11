@@ -1,0 +1,111 @@
+{
+    "customer_profiles": {
+        "properties": {
+            "customer_id": {
+                "type": "object"
+            },
+            "name": {
+                "type": "object"
+            },
+            "gender": {
+                "type": "object"
+            },
+            "age": {
+                "type": "int64"
+            },
+            "city": {
+                "type": "object"
+            },
+            "account_open_date": {
+                "type": "object"
+            },
+            "product_type": {
+                "type": "object"
+            },
+            "customer_tier": {
+                "type": "object"
+            }
+        },
+        "required": ["customer_id", "name", "gender", "age", "city", "account_open_date", "product_type", "customer_tier"]
+    },
+    "credit_cards_billing": {
+        "properties": {
+            "bill_id": {
+                "type": "object"
+            },
+            "customer_id": {
+                "type": "object"
+            },
+            "month": {
+                "type": "object"
+            },
+            "amount_due": {
+                "type": "float64"
+            },
+            "amount_paid": {
+                "type": "float64"
+            },
+            "payment_date": {
+                "type": "object"
+            }
+        },
+        "required": ["bill_id", "customer_id", "month", "amount_due", "amount_paid", "payment_date"]
+    },
+    "support_tickets": {
+        "properties": {
+            "ticket_id": {
+                "type": "object"
+            },
+            "customer_id": {
+                "type": "object"
+            },
+            "complaint_category": {
+                "type": "object"
+            },
+            "complaint_date": {
+                "type": "object"
+            },
+            "severity": {
+                "type": "int64"
+            }
+        },
+        "required": ["ticket_id", "customer_id", "complaint_category", "complaint_date", "severity"]
+    },
+    "loans": {
+        "properties": {
+            "customer_id": {
+                "type": "object"
+            },
+            "loan_type": {
+                "type": "object"
+            },
+            "amount_utilized": {
+                "type": "int64"
+            },
+            "utilization_date": {
+                "type": "object"
+            },
+            "loan_reason": {
+                "type": "object"
+            }
+        },
+        "required": ["customer_id", "loan_type", "amount_utilized", "utilization_date", "loan_reason"]
+    },
+    "transactions": {
+        "properties": {
+            "sender": {
+                "type": "object"
+            },
+            "receiver": {
+                "type": "object"
+            },
+            "transaction_amount": {
+                "type": "int64"
+            },
+            "transaction_date": {
+                "type": "object"
+            }
+        },
+        "required": ["sender", "receiver", "transaction_amount", "transaction_date"]
+    }
+} 
