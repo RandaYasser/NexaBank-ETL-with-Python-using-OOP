@@ -1,4 +1,5 @@
 import pandas as pd
+from typing import Dict, Optional, Tuple
 from .base_extractor import BaseExtractor
 from ..utils.logger import Logger
 
@@ -9,10 +10,13 @@ class CSVExtractor(BaseExtractor):
         super().__init__(file_path)
         self.logger = Logger(__name__)
         
-    def extract(self) -> pd.DataFrame:
-        """Extract data from CSV file."""
-        pass
-    
-    def get_metadata(self) -> dict[str:str]:
-        """Return partition date, partition hour to be used in transformation"""
-        pass
+    def extract(self) -> Tuple[Optional[pd.DataFrame], Dict[str, str]]:
+        """Extract data from CSV file and return DataFrame with partition info"""
+        try:
+            # Read CSV file
+            df = pd.read_csv(self.file_path)          
+            return df, self.get_metadata()
+            
+        except Exception as e:
+            self.logger.error(f"Error extracting data from {self.file_path}: {e}")
+            return None, self.get_metadata()
