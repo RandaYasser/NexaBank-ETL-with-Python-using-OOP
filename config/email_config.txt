@@ -1,0 +1,8 @@
+smtp_server = smtp.gmail.com
+smtp_port = 587
+sender_email = oren2@basketth.com
+sender_password = your-app-password
+recipient_email = randa.yasser1999@example.com
+send_on_error = true
+send_on_completion = false
+send_on_warning = true 

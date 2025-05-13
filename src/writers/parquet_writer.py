@@ -4,7 +4,9 @@ from .base_writer import BaseWriter
 
 class ParquetWriter(BaseWriter):
     """Writer for Parquet files."""
-    
+    def __init__(self, output_dir: str):
+        super().__init__(output_dir)
+
     def write(self, df: pd.DataFrame, file_name: str) -> str:
         """
         Write DataFrame to Parquet format.

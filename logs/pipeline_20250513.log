@@ -1,0 +1,12 @@
+2025-05-13 21:14:15,600 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-13 21:14:15,602 - src.utils.error_handler - ERROR - Failed to load email config: [Errno 2] No such file or directory: 'config/email_config.txt'
+2025-05-13 21:14:15,604 - src.validators.schema_validator - ERROR - Failed to load schema file: [Errno 2] No such file or directory: '..\\schema\\tables_schema.json'
+2025-05-13 21:14:15,605 - __main__ - ERROR - Pipeline failed: [Errno 2] No such file or directory: '..\\schema\\tables_schema.json'
+2025-05-13 21:43:22,628 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-13 21:43:22,629 - src.utils.error_handler - ERROR - Failed to load email config: not enough values to unpack (expected 2, got 1)
+2025-05-13 21:43:22,631 - src.validators.schema_validator - ERROR - Failed to load schema file: [Errno 2] No such file or directory: 'd:\\ITI\\Python\\Project\\schema\\tables_schema.json'
+2025-05-13 21:43:22,632 - __main__ - ERROR - Pipeline failed: [Errno 2] No such file or directory: 'd:\\ITI\\Python\\Project\\schema\\tables_schema.json'
+2025-05-13 21:44:56,447 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-13 21:44:56,448 - src.utils.error_handler - ERROR - Failed to load email config: not enough values to unpack (expected 2, got 1)
+2025-05-13 21:44:56,449 - src.validators.schema_validator - ERROR - Failed to load schema file: [Errno 2] No such file or directory: 'schema\\tables_schema.json'
+2025-05-13 21:44:56,450 - __main__ - ERROR - Pipeline failed: [Errno 2] No such file or directory: 'schema\\tables_schema.json'

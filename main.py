@@ -2,23 +2,10 @@ import os
 from src.pipeline.main_pipeline import MainPipeline
 from src.utils.logger import Logger
 
-def setup_directories():
-    """Create necessary directories if they don't exist."""
-    directories = [
-        "incoming_data",
-        "output",
-        "logs",
-        "state"
-    ]
-    for directory in directories:
-        os.makedirs(directory, exist_ok=True)
 
 def main():
     logger = Logger(__name__)
     logger.info("Starting NexaBank Data Pipeline")
-    
-    setup_directories()
-    logger.info("Created necessary directories")
     
     try:
         pipeline = MainPipeline()

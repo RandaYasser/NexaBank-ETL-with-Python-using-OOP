@@ -21,9 +21,9 @@ class SchemaValidator:
     def validate_schema(self, df: pd.DataFrame, table_name: str) -> bool:
         """ Validate if DataFrame matches the schema for the specified table."""
         try:
-            if table_name not in self.schemas:
-                self.logger.error(f"Table {table_name} not found in schema")
-                return False
+            # if table_name not in self.schemas:
+            #     self.logger.error(f"Table {table_name} not found in schema")
+            #     return False
                 
             schema = self.schemas[table_name]
             properties = schema['properties']

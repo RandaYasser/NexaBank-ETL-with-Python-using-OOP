@@ -20,7 +20,9 @@ class BaseExtractor(ABC):
         path_parts = self.file_path.split(os.sep)
         partition_date = path_parts[-3]  # 2025-04-18
         partition_hour = path_parts[-2]  # 14
-        table_name = path_parts[-1].split('.')[0]  # transactions
+        # Get table name from filename without the processing suffix
+        filename = path_parts[-1]
+        table_name = filename.split('_processing__')[0]
         return {'partition_date': partition_date, 'partition_hour': partition_hour, 'table_name': table_name}
     
     
