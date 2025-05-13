@@ -16,14 +16,18 @@ class LoansTransformer(BaseTransformer):
         - age: number of days since the transaction was completed
         - total_cost: annual cost of the loan (20% of value + $1000)
         """
-        df['age'] = (self.partition_date - df['utilization_date']).dt.days
-        df['total_cost'] = self._calculate_total_cost(df['amount_utilized'], df['utilization_date'])
-        df['loan_reason'] = Encryptor.encrypt(df['loan_reason'])
+        partition_date = pd.to_datetime(self.partition_date)
+        df['age'] = (partition_date - pd.to_datetime(df['utilization_date'])).dt.days
+        self.logger.info("Added age")
+        df['total_cost'] = self._calculate_total_cost(df['amount_utilized'], pd.to_datetime(df['utilization_date']))
+        self.logger.info("Added total cost")
+        self.logger.info("Starting encryption")
+        df['loan_reason'] = df['loan_reason'].apply(Encryptor.encrypt)
+        self.logger.info("Encrypted loan reason")
         return df
     
-    def _calculate_total_cost(self, amount_utilized: float, utilization_date: datetime) -> float:
-        """Calculate total cost of the loan across the years"""
-        years = math.ceil((self.partition_date - utilization_date).days / 365)
-        return amount_utilized * (1.2 ** years) + 1000 * ((1.2 ** years - 1) / 0.2)
+    def _calculate_total_cost(self, amounts: pd.Series, utilization_dates: pd.Series) -> pd.Series:
+        partition_date = pd.to_datetime(self.partition_date)
+        years = ((partition_date - utilization_dates).dt.days / 365).apply(math.ceil)
+        return amounts * (1.2 ** years) + 1000 * ((1.2 ** years - 1) / 0.2)
 
-    

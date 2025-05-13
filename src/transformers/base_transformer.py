@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 import pandas as pd
 from datetime import datetime
 from typing import Dict, Any
+import logging
 
 class BaseTransformer(ABC):
     """Base class for all data transformers."""
@@ -9,6 +10,7 @@ class BaseTransformer(ABC):
     def __init__(self, partition_date: str, partition_hour: int):
         self.partition_date = partition_date
         self.partition_hour = partition_hour
+        self.logger = logging.getLogger(__name__)
         
     @abstractmethod
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:

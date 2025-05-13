@@ -1,0 +1,1145 @@
+2025-05-14 00:26:30,017 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 00:26:30,019 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 00:26:30,020 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 00:26:30,020 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 00:26:30,625 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\00\credit_cards_billing.parquet
+2025-05-14 00:26:30,952 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\00\credit_cards_billing.parquet
+2025-05-14 00:26:30,952 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\00\credit_cards_billing.parquet
+2025-05-14 00:26:30,955 - src.pipeline.main_pipeline - INFO - Successfully processed credit_cards_billing.csv
+2025-05-14 00:26:30,965 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 00:26:31,424 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:26:31,424 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:26:31,424 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:26:31,688 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:26:31,688 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:26:31,688 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:26:31,688 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:26:31,691 - src.pipeline.main_pipeline - INFO - Successfully processed customer_profiles.csv
+2025-05-14 00:26:31,697 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 00:26:31,716 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\00\loans.parquet
+2025-05-14 00:26:31,716 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\00\loans.parquet
+2025-05-14 00:26:31,716 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\00\loans.parquet
+2025-05-14 00:26:31,716 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\00\loans.parquet
+2025-05-14 00:26:31,716 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\00\loans.parquet
+2025-05-14 00:26:31,729 - src.utils.error_handler - ERROR - Error in Processing file loans.txt: name 'self' is not defined
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 158, in _process_file
+    df = transformer.transform(df)
+  File "d:\ITI\Python\Project\src\transformers\loans_transformer.py", line 25, in transform
+    df['loan_reason'] = Encryptor.encrypt(df['loan_reason'])
+  File "d:\ITI\Python\Project\src\utils\encryptor.py", line 25, in encrypt
+    encrypted_text = self._caesar_cipher(text, key)
+NameError: name 'self' is not defined
+
+2025-05-14 00:26:33,404 - src.utils.error_handler - ERROR - Failed to send error notification email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3a1f57ddfbesm17771254f8f.10 - gsmtp')
+2025-05-14 00:26:33,405 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 00:26:33,466 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,466 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,466 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,466 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,466 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,466 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,507 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,507 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,507 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,507 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,507 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,507 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,507 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:26:33,511 - src.pipeline.main_pipeline - INFO - Successfully processed support_tickets.csv
+2025-05-14 00:26:33,513 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 00:26:34,013 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,013 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,013 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,013 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,013 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,013 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,013 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,013 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,129 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,129 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,129 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,129 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,129 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,129 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,129 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,129 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,129 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:26:34,134 - src.pipeline.main_pipeline - INFO - Successfully processed transactions.json
+2025-05-14 00:27:00,633 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 00:27:53,776 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 00:27:53,780 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 00:27:53,780 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 00:27:53,781 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 00:27:54,367 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\00\credit_cards_billing.parquet
+2025-05-14 00:27:54,656 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\00\credit_cards_billing.parquet
+2025-05-14 00:27:54,656 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\00\credit_cards_billing.parquet
+2025-05-14 00:27:54,658 - src.pipeline.main_pipeline - INFO - Successfully processed credit_cards_billing.csv
+2025-05-14 00:27:54,672 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 00:27:55,099 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:27:55,099 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:27:55,099 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:27:55,370 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:27:55,370 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:27:55,370 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:27:55,370 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\customer_profiles.parquet
+2025-05-14 00:27:55,374 - src.pipeline.main_pipeline - INFO - Successfully processed customer_profiles.csv
+2025-05-14 00:27:55,382 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 00:27:55,398 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,398 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,398 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,398 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,398 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,550 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,550 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,550 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,550 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,550 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,550 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\00\loans.parquet
+2025-05-14 00:27:55,554 - src.pipeline.main_pipeline - INFO - Successfully processed loans.txt
+2025-05-14 00:27:55,555 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 00:27:55,611 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,611 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,611 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,611 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,611 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,611 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,611 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,646 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,646 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,646 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,646 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,646 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,646 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,646 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,646 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\00\support_tickets.parquet
+2025-05-14 00:27:55,652 - src.pipeline.main_pipeline - INFO - Successfully processed support_tickets.csv
+2025-05-14 00:27:55,654 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 00:27:56,067 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,067 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,067 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,067 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,067 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,067 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,067 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,067 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,067 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\00\transactions.parquet
+2025-05-14 00:27:56,181 - src.pipeline.main_pipeline - INFO - Successfully processed transactions.json
+2025-05-14 00:53:54,180 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 00:56:53,897 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 00:56:53,900 - __main__ - ERROR - Pipeline failed: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-14 01:00:21,523 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:00:21,526 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 01:00:21,526 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 01:00:27,427 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 01:01:26,582 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:01:26,585 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 01:01:26,586 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 01:01:26,587 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 01:01:27,116 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:01:27,428 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:01:27,428 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:01:27,430 - src.pipeline.main_pipeline - INFO - Successfully processed credit_cards_billing.csv
+2025-05-14 01:01:27,441 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 01:01:27,825 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:01:27,825 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:01:27,825 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:01:28,105 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:01:28,105 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:01:28,105 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:01:28,105 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:01:28,108 - src.pipeline.main_pipeline - INFO - Successfully processed customer_profiles.csv
+2025-05-14 01:01:28,116 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 01:01:28,135 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,135 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,135 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,135 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,135 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,189 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,189 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,189 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,189 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,189 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,189 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:01:28,195 - src.pipeline.main_pipeline - INFO - Successfully processed loans.txt
+2025-05-14 01:01:28,197 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 01:01:28,252 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,252 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,252 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,252 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,252 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,252 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,252 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,288 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,288 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,288 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,288 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,288 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,288 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,288 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,288 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:01:28,295 - src.pipeline.main_pipeline - INFO - Successfully processed support_tickets.csv
+2025-05-14 01:01:28,298 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 01:01:28,707 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,707 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,707 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,707 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,707 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,707 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,707 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,707 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,707 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,808 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,808 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,808 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,808 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,808 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,808 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,808 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,808 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,808 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,808 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:01:28,816 - src.pipeline.main_pipeline - INFO - Successfully processed transactions.json
+2025-05-14 01:03:38,842 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,504 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,836 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:03:39,845 - src.pipeline.main_pipeline - INFO - Successfully processed credit_cards_billing.csv
+2025-05-14 01:03:39,859 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,270 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,555 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:03:40,562 - src.pipeline.main_pipeline - INFO - Successfully processed customer_profiles.csv
+2025-05-14 01:03:40,569 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,712 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:03:40,731 - src.pipeline.main_pipeline - INFO - Successfully processed loans.txt
+2025-05-14 01:03:40,733 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,877 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,965 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:03:40,994 - src.pipeline.main_pipeline - INFO - Successfully processed support_tickets.csv
+2025-05-14 01:03:40,997 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,565 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,691 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:03:41,704 - src.pipeline.main_pipeline - INFO - Successfully processed transactions.json
+2025-05-14 01:03:48,343 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 01:04:32,636 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:04:32,638 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 01:04:32,639 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 01:04:32,640 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 01:04:33,275 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:04:33,617 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:04:33,617 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:04:33,678 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:33,678 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:33,685 - src.utils.error_handler - ERROR - Error in Processing file credit_cards_billing.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:04:33,688 - src.utils.error_handler - ERROR - Failed to send error notification email: 'ErrorHandler' object has no attribute 'email_config'
+2025-05-14 01:04:33,700 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 01:04:34,119 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:04:34,119 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:04:34,119 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:04:34,477 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:04:34,477 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:04:34,477 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:04:34,477 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:04:34,537 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,537 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,537 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,537 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,542 - src.utils.error_handler - ERROR - Error in Processing file customer_profiles.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:04:34,545 - src.utils.error_handler - ERROR - Failed to send error notification email: 'ErrorHandler' object has no attribute 'email_config'
+2025-05-14 01:04:34,555 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 01:04:34,572 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,572 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,572 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,572 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,572 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,665 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,665 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,665 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,665 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,665 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,665 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:04:34,719 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,719 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,719 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,719 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,719 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,719 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,724 - src.utils.error_handler - ERROR - Error in Processing file loans.txt: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:04:34,727 - src.utils.error_handler - ERROR - Failed to send error notification email: 'ErrorHandler' object has no attribute 'email_config'
+2025-05-14 01:04:34,729 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 01:04:34,792 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,792 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,792 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,792 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,792 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,792 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,792 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,829 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,829 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,829 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,829 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,829 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,829 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,829 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,829 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:04:34,877 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,877 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,877 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,877 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,877 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,877 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,877 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,877 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:34,885 - src.utils.error_handler - ERROR - Error in Processing file support_tickets.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:04:34,888 - src.utils.error_handler - ERROR - Failed to send error notification email: 'ErrorHandler' object has no attribute 'email_config'
+2025-05-14 01:04:34,890 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 01:04:35,385 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,385 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,385 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,385 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,385 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,385 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,385 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,385 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,385 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,497 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,497 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,497 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,497 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,497 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,497 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,497 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,497 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,497 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,497 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:04:35,557 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:35,557 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:35,557 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:35,557 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:35,557 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:35,557 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:35,557 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:35,557 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:35,557 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:35,557 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:04:35,566 - src.utils.error_handler - ERROR - Error in Processing file transactions.json: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:04:35,569 - src.utils.error_handler - ERROR - Failed to send error notification email: 'ErrorHandler' object has no attribute 'email_config'
+2025-05-14 01:12:20,932 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 01:13:05,141 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:13:05,142 - src.utils.error_handler - ERROR - Failed to load email config: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2025-05-14 01:13:05,144 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 01:13:05,145 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 01:13:05,147 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 01:13:05,670 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:13:05,978 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:13:05,978 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:13:06,029 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:06,029 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:06,034 - src.utils.error_handler - ERROR - Error in Processing file credit_cards_billing.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:13:07,023 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 01:13:07,034 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 01:13:07,401 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:13:07,401 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:13:07,401 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:13:07,681 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:13:07,681 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:13:07,681 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:13:07,681 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:13:07,736 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:07,736 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:07,736 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:07,736 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:07,740 - src.utils.error_handler - ERROR - Error in Processing file customer_profiles.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:13:08,576 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 01:13:08,587 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 01:13:08,608 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,608 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,608 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,608 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,608 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,694 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,694 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,694 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,694 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,694 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,694 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:13:08,746 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:08,746 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:08,746 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:08,746 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:08,746 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:08,746 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:08,752 - src.utils.error_handler - ERROR - Error in Processing file loans.txt: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:13:09,606 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 01:13:09,608 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 01:13:09,665 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,665 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,665 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,665 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,665 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,665 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,665 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,709 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,709 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,709 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,709 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,709 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,709 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,709 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,709 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:13:09,765 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:09,765 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:09,765 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:09,765 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:09,765 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:09,765 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:09,765 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:09,765 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:09,772 - src.utils.error_handler - ERROR - Error in Processing file support_tickets.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:13:10,610 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 01:13:10,612 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 01:13:11,057 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,057 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,057 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,057 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,057 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,057 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,057 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,057 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,057 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,174 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:13:11,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:11,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:11,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:11,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:11,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:11,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:11,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:11,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:11,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:11,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:13:11,251 - src.utils.error_handler - ERROR - Error in Processing file transactions.json: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:13:12,118 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 01:13:35,293 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 01:15:18,102 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:15:18,103 - src.utils.error_handler - ERROR - Failed to load email config: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2025-05-14 01:15:18,105 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 01:15:18,105 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 01:15:18,107 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 01:15:18,778 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:15:19,094 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:15:19,094 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:15:19,142 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:19,142 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:19,146 - src.utils.error_handler - ERROR - Error in Processing file credit_cards_billing.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:15:20,017 - src.utils.error_handler - ERROR - Failed to send error notification email: 'smtp_server'
+2025-05-14 01:15:20,029 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 01:15:20,407 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:15:20,407 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:15:20,407 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:15:20,670 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:15:20,670 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:15:20,670 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:15:20,670 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:15:20,720 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:20,720 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:20,720 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:20,720 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:20,726 - src.utils.error_handler - ERROR - Error in Processing file customer_profiles.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:15:21,558 - src.utils.error_handler - ERROR - Failed to send error notification email: 'smtp_server'
+2025-05-14 01:15:21,569 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 01:15:21,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,586 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,648 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,648 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,648 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,648 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,648 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,648 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:15:21,702 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:21,702 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:21,702 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:21,702 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:21,702 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:21,702 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:21,708 - src.utils.error_handler - ERROR - Error in Processing file loans.txt: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:15:22,549 - src.utils.error_handler - ERROR - Failed to send error notification email: 'smtp_server'
+2025-05-14 01:15:22,550 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 01:15:22,604 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,604 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,604 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,604 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,604 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,604 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,604 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,649 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,649 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,649 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,649 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,649 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,649 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,649 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,649 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:15:22,714 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:22,714 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:22,714 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:22,714 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:22,714 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:22,714 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:22,714 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:22,714 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:22,721 - src.utils.error_handler - ERROR - Error in Processing file support_tickets.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:15:23,592 - src.utils.error_handler - ERROR - Failed to send error notification email: 'smtp_server'
+2025-05-14 01:15:23,594 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 01:15:24,051 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,051 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,051 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,051 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,051 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,051 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,051 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,051 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,051 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,181 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,181 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,181 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,181 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,181 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,181 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,181 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,181 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,181 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,181 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:15:24,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:24,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:24,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:24,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:24,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:24,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:24,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:24,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:24,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:24,239 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:15:24,247 - src.utils.error_handler - ERROR - Error in Processing file transactions.json: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:15:25,083 - src.utils.error_handler - ERROR - Failed to send error notification email: 'smtp_server'
+2025-05-14 01:16:05,675 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 01:23:16,638 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:23:16,640 - src.utils.error_handler - ERROR - Failed to load email config: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2025-05-14 01:23:16,642 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 01:23:16,643 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 01:23:16,644 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 01:23:17,229 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:23:17,556 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:23:17,556 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:23:17,604 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:17,604 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:17,608 - src.utils.error_handler - ERROR - Error in Processing file credit_cards_billing.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:23:18,493 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 01:23:18,506 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 01:23:18,910 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:23:18,910 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:23:18,910 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:23:19,236 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:23:19,236 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:23:19,236 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:23:19,236 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:23:19,393 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:19,393 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:19,393 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:19,393 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:19,398 - src.utils.error_handler - ERROR - Error in Processing file customer_profiles.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:23:20,262 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 01:23:20,271 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 01:23:20,293 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,293 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,293 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,293 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,293 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:23:20,422 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:20,422 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:20,422 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:20,422 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:20,422 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:20,422 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:20,430 - src.utils.error_handler - ERROR - Error in Processing file loans.txt: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:23:21,258 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 01:23:21,260 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 01:23:21,305 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,305 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,305 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,305 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,305 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,305 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,305 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,338 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,338 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,338 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,338 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,338 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,338 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,338 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,338 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:23:21,390 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:21,390 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:21,390 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:21,390 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:21,390 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:21,390 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:21,390 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:21,390 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:21,399 - src.utils.error_handler - ERROR - Error in Processing file support_tickets.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:23:22,229 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 01:23:22,231 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 01:23:22,626 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,626 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,626 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,626 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,626 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,626 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,626 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,626 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,626 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,730 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,730 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,730 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,730 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,730 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,730 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,730 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,730 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,730 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,730 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:23:22,786 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:22,786 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:22,786 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:22,786 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:22,786 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:22,786 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:22,786 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:22,786 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:22,786 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:22,786 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:23:22,799 - src.utils.error_handler - ERROR - Error in Processing file transactions.json: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:23:23,635 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 01:24:28,284 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 01:26:52,802 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:26:52,803 - src.utils.error_handler - ERROR - Failed to load email config: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2025-05-14 01:26:52,805 - __main__ - ERROR - Pipeline failed: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-14 01:28:44,075 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:28:44,077 - __main__ - ERROR - Pipeline failed: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-14 01:30:12,698 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:30:12,700 - __main__ - ERROR - Pipeline failed: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-14 01:30:40,041 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:30:40,044 - __main__ - ERROR - Pipeline failed: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-14 01:34:13,906 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 01:34:13,910 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 01:34:13,910 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 01:34:13,912 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 01:34:14,453 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:34:14,768 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:34:14,768 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\01\credit_cards_billing.parquet
+2025-05-14 01:34:14,821 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:14,821 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:14,826 - src.utils.error_handler - ERROR - Error in Processing file credit_cards_billing.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\credit_cards_billing /data/2025-05-14/01/credit_cards_billing.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:34:16,573 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 01:34:18,000 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 01:34:18,069 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 01:34:18,079 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 01:34:18,521 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:34:18,521 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:34:18,521 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:34:18,813 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:34:18,813 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:34:18,813 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:34:18,813 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\customer_profiles.parquet
+2025-05-14 01:34:18,869 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:18,869 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:18,869 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:18,869 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:18,874 - src.utils.error_handler - ERROR - Error in Processing file customer_profiles.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\customer_profiles /data/2025-05-14/01/customer_profiles.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:34:20,393 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 01:34:22,559 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 01:34:22,619 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 01:34:22,629 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 01:34:22,651 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,651 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,651 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,651 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,651 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,729 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,729 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,729 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,729 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,729 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,729 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\01\loans.parquet
+2025-05-14 01:34:22,781 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:22,781 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:22,781 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:22,781 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:22,781 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:22,781 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:22,789 - src.utils.error_handler - ERROR - Error in Processing file loans.txt: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\loans /data/2025-05-14/01/loans.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:34:24,574 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 01:34:25,698 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 01:34:25,757 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 01:34:25,758 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 01:34:25,819 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,819 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,819 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,819 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,819 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,819 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,819 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,859 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,859 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,859 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,859 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,859 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,859 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,859 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,859 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\01\support_tickets.parquet
+2025-05-14 01:34:25,922 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:25,922 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:25,922 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:25,922 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:25,922 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:25,922 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:25,922 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:25,922 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:25,930 - src.utils.error_handler - ERROR - Error in Processing file support_tickets.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\support_tickets /data/2025-05-14/01/support_tickets.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:34:27,340 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 01:34:28,521 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 01:34:28,596 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 01:34:28,597 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 01:34:29,021 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,021 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,021 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,021 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,021 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,021 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,021 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,021 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,021 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,130 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,130 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,130 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,130 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,130 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,130 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,130 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,130 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,130 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,130 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\01\transactions.parquet
+2025-05-14 01:34:29,188 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:29,188 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:29,188 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:29,188 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:29,188 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:29,188 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:29,188 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:29,188 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:29,188 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:29,188 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 01:34:29,198 - src.utils.error_handler - ERROR - Error in Processing file transactions.json: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\Python\Project\src\pipeline\main_pipeline.py", line 169, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\Python\Project\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\randa\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\01\transactions /data/2025-05-14/01/transactions.parquet' returned non-zero exit status 1.
+
+2025-05-14 01:34:30,611 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 01:34:32,671 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 01:34:32,736 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 01:35:00,594 - __main__ - INFO - Pipeline stopped by user

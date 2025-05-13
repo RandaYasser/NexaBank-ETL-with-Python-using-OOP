@@ -17,9 +17,12 @@ class CreditCardsBillingTransformer(BaseTransformer):
         - fine: late_days * 5.15
         - total_amount: amount_due + fine
         """
+        # Set due date as first day of each month
+        df["due_date"] = pd.to_datetime(df["month"] + "-01") 
+        df['payment_date'] = pd.to_datetime(df['payment_date'])
+        df['late_days'] = (df['payment_date'] - df['due_date']).dt.days
         df['fully_paid'] = df['amount_due'] >= df['amount_paid']
         df['debt'] = df['amount_due'] - df['amount_paid']
-        df['late_days'] = (df['payment_date'] - df['due_date']).dt.days
         df['fine'] = df['late_days'] * 5.15
         df['total_amount'] = df['amount_due'] + df['fine']
         return df

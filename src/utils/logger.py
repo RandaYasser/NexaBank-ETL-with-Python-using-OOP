@@ -10,10 +10,11 @@ class Logger:
         self.logger.setLevel(logging.INFO)
         
         # Create logs directory if it doesn't exist
-        os.makedirs(os.path.join("..", "logs"), exist_ok=True)
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        os.makedirs(os.path.join(BASE_DIR, "..", "..", "logs"), exist_ok=True)
         
         # File handler
-        log_file = os.path.join("..", "logs", f'pipeline_{datetime.now().strftime("%Y%m%d")}.log')
+        log_file = os.path.join(BASE_DIR, "..", "..", "logs", f'pipeline_{datetime.now().strftime("%Y%m%d")}.log')
         file_handler = logging.FileHandler(log_file)
         file_handler.setLevel(logging.INFO)
         

@@ -14,8 +14,11 @@ customer_tier. """
         - tenure: number of years since customer joined
         - customer_segment: categorization based on tenure
         """
-        df['tenure'] = (self.partition_date - df['account_open_date']).dt.days // 365
+        partition_date = pd.to_datetime(self.partition_date)
+        df['tenure'] = (partition_date -  pd.to_datetime(df['account_open_date'])).dt.days // 365
+        self.logger.info("Added tenure")
         df['customer_segment'] = df['tenure'].apply(self._determine_segment)
+        self.logger.info("Added customer segment")
         return df
             
     def _determine_segment(self, tenure: int) -> str:

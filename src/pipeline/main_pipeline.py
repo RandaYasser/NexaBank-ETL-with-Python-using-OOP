@@ -111,7 +111,7 @@ class MainPipeline:
                     self._process_file(file_path)
                     
             except Exception as e:
-                self.error_handler.handle_error(e, "Pipeline execution", self.run)
+                self.error_handler.handle_error(e, "Pipeline execution")
                 # add logic to check in checkpoint if file was processed
                 
     def _process_file(self, file_path: str):
@@ -150,8 +150,8 @@ class MainPipeline:
             extracted_dir = self._get_checkpoint_path('extracted', current_date, current_hour)
             os.makedirs(extracted_dir, exist_ok=True)
             extracted_path = os.path.join(extracted_dir, table_name)
-            writer = ParquetWriter(extracted_dir)
-            writer.write(df, extracted_path)
+            extracted_writer = ParquetWriter(extracted_dir)
+            extracted_writer.write(df, table_name)
             
             # Transform
             transformer = transformer_class(current_date, current_hour)
@@ -161,12 +161,12 @@ class MainPipeline:
             transformed_dir = self._get_checkpoint_path('transformed', current_date, current_hour)
             os.makedirs(transformed_dir, exist_ok=True)
             transformed_path = os.path.join(transformed_dir, table_name)
-            writer = ParquetWriter(transformed_dir)
-            writer.write(df, transformed_path)
+            transformed_writer = ParquetWriter(transformed_dir)
+            transformed_writer.write(df, table_name)
             
             # Load to HDFS
             hdfs_path = f"/data/{current_date}/{current_hour}/{table_name}.parquet"
-            writer.upload_to_hdfs(transformed_path, hdfs_path)
+            transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
             
             # Mark as processed
             self._mark_file_processed(processing_path)

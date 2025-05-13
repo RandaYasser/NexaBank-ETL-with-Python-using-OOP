@@ -1,27 +1,32 @@
-import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import os
 from typing import Optional
 from .logger import Logger
 import traceback
+from dotenv import load_dotenv
+from smtplib import SMTP_SSL
+
 
 class ErrorHandler:
     """Handles errors and exceptions across the application."""
     
-    def __init__(self, email_config_path: str = 'config/email_config.txt'):
+    def __init__(self):
         self.logger = Logger(__name__)
-        self.email_config = self._load_email_config(email_config_path)
+        load_dotenv()
+        self.email_config = self._load_email_config()
         
-    def _load_email_config(self, config_path: str) -> dict:
-        """Load email configuration from file."""
-        config = {}
+
+    def _load_email_config(self) -> dict:
+        """Load email configuration from environment variables."""
         try:
-            with open(config_path, 'r') as f:
-                for line in f:
-                    key, value = line.strip().split('=')
-                    config[key.strip()] = value.strip()
-            return config
+            return {
+                'smtp_server': os.getenv('SMTP_SERVER'),
+                'smtp_port': os.getenv('SMTP_PORT'),
+                'sender_email': os.getenv('SENDER_EMAIL'),
+                'sender_password': os.getenv('SENDER_PASSWORD'),
+                'recipient_email': os.getenv('RECIPIENT_EMAIL'),
+        }
         except Exception as e:
             self.logger.error(f"Failed to load email config: {str(e)}")
             return {}
@@ -51,10 +56,7 @@ class ErrorHandler:
                 
     def _send_error_notification(self, error_message: str):
         """Send email notification about the error."""
-        if not self.email_config:
-            self.logger.error("Cannot send error notification: email config not loaded")
-            return
-            
+    
         try:
             msg = MIMEMultipart()
             msg['From'] = self.email_config.get('sender_email')
@@ -64,15 +66,17 @@ class ErrorHandler:
             body = f"The following error occurred in the data pipeline:\n\n{error_message}"
             msg.attach(MIMEText(body, 'plain'))
             
-            server = smtplib.SMTP('smtp.gmail.com', 587)
-            server.starttls()
+            server = SMTP_SSL(self.email_config.get('smtp_server'), int(self.email_config.get('smtp_port')))
+            server.ehlo()
+            
             server.login(
                 self.email_config.get('sender_email'),
                 self.email_config.get('sender_password')
             )
+            self.logger.info("Connected to email server")
             server.send_message(msg)
+            self.logger.info(f"Mail sent successfully to {self.email_config.get('recipient_email')}")
             server.quit()
-            
-            self.logger.info("Error notification email sent successfully")
+            self.logger.info("Disconnected from email server")
         except Exception as e:
             self.logger.error(f"Failed to send error notification email: {str(e)}") 

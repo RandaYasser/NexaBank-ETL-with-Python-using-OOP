@@ -15,6 +15,8 @@ class TransactionsTransformer(BaseTransformer):
         - total_amount: transaction_amount + cost
         """
         df['cost'] = df['transaction_amount'] * 0.001 + 0.5
+        self.logger.info("Added cost")
         df['total_amount'] = df['transaction_amount'] + df['cost']
+        self.logger.info("Added total amount")
         return df
     

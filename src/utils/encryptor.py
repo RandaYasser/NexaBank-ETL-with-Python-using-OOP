@@ -1,31 +1,30 @@
 import random
 import string
-
+import logging
 class Encryptor:
     def __init__(self):
         """ Initialize the Encryptor."""
-        pass
 
-    def encrypt(self, text: str, file_name: str) -> tuple[str, int]:
+    @staticmethod
+    def encrypt(text: str) -> str:
         """
         Encrypt text using a random key.
         
         Args:
             text: Text to encrypt
-            file_name: Name of the file being encrypted
             
         Returns:
-            Tuple of (encrypted text, key used)
+            encrypted text
         """
         # Generate a random key between 1 and 25
         key = random.randint(1, 25)
         
         # Encrypt the text
-        encrypted_text = self._caesar_cipher(text, key)
-        
-        return encrypted_text, key
+        encrypted_text = Encryptor._caesar_cipher(text, key)
+        return encrypted_text
 
-    def _caesar_cipher(self, text: str, key: int) -> str:
+    @staticmethod
+    def _caesar_cipher(text: str, key: int) -> str:
         """
         Apply the Caesar cipher to the text.
         

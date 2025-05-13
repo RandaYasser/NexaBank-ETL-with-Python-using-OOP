@@ -13,5 +13,7 @@ class SupportTicketsTransformer(BaseTransformer):
         Transform support tickets data by adding:
         - age: number of days since the ticket was issued
         """
-        df['age'] = (self.partition_date - df['issue_date']).dt.days
+        partition_date = pd.to_datetime(self.partition_date)
+        df['age'] = (partition_date - pd.to_datetime(df['complaint_date'])).dt.days
+        self.logger.info("Added age")
         return df
