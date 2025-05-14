@@ -13,9 +13,12 @@ class CSVExtractor(BaseExtractor):
     def extract(self) -> Tuple[Optional[pd.DataFrame], Dict[str, str]]:
         """Extract data from CSV file and return DataFrame with partition info"""
         try:
+            dict_metadata = self.get_metadata()
             # Read CSV file
-            df = pd.read_csv(self.file_path)          
-            return df, self.get_metadata()
+            self.logger.info(f"Started extracting {dict_metadata['table_name']} from CSV file at {self.file_path} ")
+            df = pd.read_csv(self.file_path)   
+            self.logger.info(f"Completed extracting {dict_metadata['table_name']} Number of rows extracted = {df.shape[0]} , Extracted schema = {df.columns.tolist()} , Partition date = {dict_metadata['partition_date']} , Partition hour = {dict_metadata['partition_hour']} ")       
+            return df, dict_metadata
             
         except Exception as e:
             self.logger.error(f"Error extracting data from {self.file_path}: {e}")
