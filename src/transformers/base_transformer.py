@@ -19,8 +19,10 @@ class BaseTransformer(ABC):
         
     def add_metadata_columns(self, df: pd.DataFrame) -> pd.DataFrame:
         """Add common metadata columns to all transformed DataFrames."""
+        self.logger.info(f"Started adding metadata columns to the DataFrame")
         df['processing_time'] = datetime.now()
         df['partition_date'] = self.partition_date
         df['partition_hour'] = self.partition_hour
+        self.logger.info(f"Completed adding metadata columns to the DataFrame ,partition_date = {self.partition_date} ,partition_hour = {self.partition_hour} ,processing_time = {datetime.now()}")
         return df
         

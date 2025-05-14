@@ -14,9 +14,11 @@ class TransactionsTransformer(BaseTransformer):
         - cost: transaction fee (50 cents + 0.1% of transaction amount)
         - total_amount: transaction_amount + cost
         """
+        self.logger.info(f"Starting transactions transformation for {len(df)} records")
         df['cost'] = df['transaction_amount'] * 0.001 + 0.5
         self.logger.info("Added cost")
         df['total_amount'] = df['transaction_amount'] + df['cost']
         self.logger.info("Added total amount")
+        self.logger.info(f"Completed transactions transformation for {len(df)} records at {datetime.now()}")
         return df
     
