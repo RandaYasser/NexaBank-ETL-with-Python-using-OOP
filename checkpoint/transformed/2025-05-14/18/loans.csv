@@ -1,0 +1,1001 @@
+customer_id,loan_type,amount_utilized,utilization_date,loan_reason,age,total_cost
+CUST026688,Top-Up Loan,172000,2025-03-02,Rkz sk qtuc ol ck iuarj yvktj g rgfe Yatjge payz hotmk-cgzinotm urj ynucy,73,207400.0
+CUST037961,Credit Card Loan,838000,2025-01-18,Kag etagxp pqruzufqxk vauz iq oagxp sa az m ebazfmzqage damp fdub iuftagf ygot bxmzzuzs,116,1006600.0
+CUST051615,Loan Against Deposit,968000,2025-04-12,Tmb um svwe qn em kwctl ow wv i axwvbivmwca zwil bzqx eqbpwcb uckp xtivvqvo,32,1162600.0
+CUST003387,Auto Loan,627000,2024-11-08,K co ytkvkpi vq hqnnqy wr vjcv vjgtg ctg pq rgpfkpi kvgou dghqtg vjg enquwtg qh vjku rjcug,187,753400.0
+CUST078576,Education Loan,728000,2025-04-03,Ymnspnsl bj xmtzqi bj htzqi gttp ynhpjyx ktw ymfy htshjwy mfuujsnsl sjcy rtsym,41,874600.0
+CUST068340,Auto Loan,94000,2024-08-30,Qb ewctl jm iemawum qn em kwctl ow wv i axwvbivmwca zwil bzqx eqbpwcb uckp xtivvqvo,257,113800.0
+CUST066754,Top-Up Loan,389000,2025-03-07,Yj mekbt ru qmuiecu yv mu sekbt we ed q ifedjqdueki heqt jhyf myjxekj cksx fbqddydw,68,467800.0
+CUST087498,Travel Loan,687000,2025-01-24,Rfc pcoscqrcb bmaskclrq fytc zccl npcnypcb ylb rfyr rfc npmhcar bcjgtcpyzjcq ypc qszkgrrcb zw rfc snamkgle bcybjglc,110,825400.0
+CUST034490,Loan Against Deposit,459000,2024-12-16,Mu iuhyekibo duut je mu sekbt xeij q icqbb wuj-jewujxuh qj co fbqsu jxyi muuaudt,149,551800.0
+CUST018168,Travel Loan,45000,2024-05-02,Gr umsjb zc yucqmkc gd uc amsjb epyz bgllcp qmkcrgkc rfgq ucci ylb ayraf sn npmncpjw,377,67000.0
+CUST090613,Credit Card Loan,311000,2024-05-05,V svanyyl tbg gvzr gb jr pbhyq teno qvaare fbzrgvzr guvf jrrx naq pngpu hc cebcreyl,374,450040.0
+CUST054314,Home Loan,933000,2024-08-22,D adivggt bjo odhz oj rz xjpgy wjjf odxfzon ajm ocvo xjixzmo cvkkzidib izso hjioc,265,1120600.0
+CUST008226,Loan Against Deposit,964000,2024-05-04,H zl vqhshmf sn enkknv to sgzs sgdqd zqd mn odmchmf hsdlr adenqd sgd bknrtqd ne sghr ogzrd,375,1390360.0
+CUST044901,Travel Loan,112000,2025-04-18,Sio mbiofx xyzchcnyfs dich qy wiofx ai ih u mjihnuhyiom liux nlcj qcnbion gowb jfuhhcha,26,135400.0
+CUST019829,Medical Loan,926000,2024-05-19,Jxydaydw mu ixekbt mu sekbt we veh q xyau yv jxu muqjxuh ijqoi weet,360,1112200.0
+CUST053205,Loan Against Deposit,386000,2024-04-30,Dau E swo pdejgejc sa ykqhz pnu pdwp jas levvw lhwya aranukja gaalo naykiiajzejc,379,558040.0
+CUST047289,Travel Loan,870000,2024-07-16,Jr ner njnvgvat lbhe pbasvezngvba gung gur fpurqhyrq gvzryvar sbe gur cebwrpg erznvaf hapunatrq,302,1045000.0
+CUST048737,Education Loan,814000,2024-07-28,Fn jan jfjrcrwp hxda lxworavjcrxw cqjc fn vjrwcjrw xynw lxvvdwrljcrxw mdarwp cqn rvyunvnwcjcrxw ynarxm,290,977800.0
+CUST003033,Travel Loan,178000,2025-01-16,Yg ugtkqwuna pggf vq yg eqwnf iq hqt c jkmg kh vjg ygcvjgt uvcau iqqf,118,214600.0
+CUST013329,Top-Up Loan,331000,2024-11-11,Xqf yq wzai ur iq oagxp sdmn puzzqd eayqfuyq ftue iqqw mzp omfot gb bdabqdxk,184,398200.0
+CUST097770,Personal Loan,222000,2024-11-12,Matgd rhn yhk rhnk tmmxgmbhg matm tee vhfiebtgvx kxjnbkxfxgml atox uxxg lnvvxllyneer fxm,183,267400.0
+CUST090949,Loan Against Deposit,635000,2024-12-06,L dp zulwlqj wr iroorz xs wkdw wkhuh duh qr shqglqj lwhpv ehiruh wkh forvxuh ri wklv skdvh,159,763000.0
+CUST023439,Personal Loan,497000,2024-06-20,Ymknq iq omz bxmz eayqftuzs iq oagxp otqow agf ftmf zqi yahuq kag yqzfuazqp xmef yazft,328,597400.0
+CUST085048,Auto Loan,702000,2024-12-23,Iwuxa sa ywj lhwj okiapdejc sa ykqhz dwjc kqp xu pda xawyd xabkna ep capo ykhzan wcwej,142,843400.0
+CUST005314,Personal Loan,541000,2024-05-16,Ohw ph nqrz li zh frxog jude glqqhu vrphwlph wklv zhhn dqg fdwfk xs surshuob,363,650200.0
+CUST073797,Credit Card Loan,487000,2025-04-23,X pb lgxixcv id udaadl je iwpi iwt jespits edaxrn vjxstaxcth wpkt qttc sxhigxqjits id paa stepgibtcih,21,585400.0
+CUST059022,Credit Card Loan,581000,2024-07-13,Qgm kzgmdv vwxafalwdq bgaf ow ugmdv khwfv s dsrq Kmfvsq bmkl tafyw-osluzafy gdv kzgok,305,698200.0
+CUST010537,Auto Loan,899000,2024-11-14,Znotqotm ck ynuarj ck iuarj inkiq uaz zngz tkc subok eua sktzoutkj rgyz sutzn,181,1079800.0
+CUST007326,Education Loan,807000,2024-12-02,Ymnspnsl bj xmtzqi bj htzqi hmjhp tzy ymfy sjb rtanj dtz rjsyntsji qfxy rtsym,163,969400.0
+CUST001150,Loan Against Deposit,740000,2024-11-21,Sa oanekqohu jaaz pk sa ykqhz opwnp skngejc kj pdwp lnkfayp ezaw sa fkgaz wxkqp awnhean,174,889000.0
+CUST056302,Top-Up Loan,426000,2024-09-12,Dl zlypvbzsf ullk av dl jvbsk zahya dvyrpun vu aoha wyvqlja pklh dl qvrlk hivba lhysply,244,512200.0
+CUST039812,Business Loan,153000,2024-07-21,N btzqi qnpj yt nsktwr dtz ymfy ymj zuifyji utqnhd lznijqnsjx mfaj gjjs inxywngzyji yt fqq ijufwyrjsyx,297,184600.0
+CUST017005,Auto Loan,785000,2025-01-25,Yg ctg cyckvkpi aqwt eqphktocvkqp vjcv vjgtg ctg pq rgpfkpi kvgou dghqtg vjg enquwtg qh vjku rjcug,109,943000.0
+CUST027473,Personal Loan,624000,2024-06-08,Qeb obnrbpqba alzrjbkqp exsb ybbk mobmxoba xka qexq qeb obsfpba zlkqoxzq qbojp xob obsfbtba xka xzzbmqba,340,749800.0
+CUST033380,Top-Up Loan,808000,2024-06-11,Njcyqc bm lmr fcqgryrc rm pcyaf msr rfyr wmsp amkkclrq ypc glampnmpyrcb glrm rfc dglyj tcpqgml md rfc yepcckclr,337,970600.0
+CUST057971,Home Loan,185000,2024-06-26,Hvoby mci tcf mcif ohhsbhwcb hvoh hvs wbjcwqs rshowzg ofs qcffsqhzm fstzsqhsr wb mcif fsqcfrg,322,223000.0
+CUST092191,Medical Loan,947000,2025-02-19,Dro boaeocdon nymewoxdc rkfo loox zbozkbon kxn drkd iyeb mywwoxdc kbo sxmybzybkdon sxdy dro psxkv fobcsyx yp dro kqboowoxd,84,1137400.0
+CUST013800,Business Loan,886000,2024-12-18,Sgehk ck igt vrgt yuskznotm ck iuarj mu lux g noqk ol znk ckgznkx yzgey muuj,147,1064200.0
+CUST012929,Business Loan,879000,2024-09-18,Eslyv jzf qzc jzfc leepyetzy esle hp xltyelty zapy nzxxfytnletzy ofctyr esp txawpxpyeletzy apctzo,238,1055800.0
+CUST083848,Education Loan,470000,2024-11-11,Ai wlsyph evverki e qiixmrk xlex xlivi evi rs tirhmrk mxiqw fijsvi xli gpswyvi sj xlmw tlewi,184,565000.0
+CUST047384,Personal Loan,504000,2025-02-19,Exm fx dghp by px vhnew atgz hnm ur max uxtva uxyhkx bm zxml vhewxk tztbg,84,605800.0
+CUST045632,Top-Up Loan,373000,2024-11-04,Ocadg yg ecp rncp uqogvjkpi yg eqwnf iq qp c urqpvcpgqwu tqcf vtkr ykvjqwv owej rncppkpi,191,448600.0
+CUST001578,Education Loan,388000,2024-08-12,W twbozzm uch hwas hc ks qcizr ghofh kcfywbu cb hvoh dfcxsqh wrso ks xcysr opcih sofzwsf,275,466600.0
+CUST037066,Loan Against Deposit,647000,2025-01-02,Xnt rgntkc cdehmhsdkx inhm vd bntkc fqza chmmdq rnldshld sghr vddj zmc bzsbg to oqnodqkx,132,777400.0
+CUST032654,Home Loan,765000,2025-02-20,Epno rviozy oj nvt rz xjpgy bj ajm v cdfz da ocz rzvoczm novtn bjjy,83,919000.0
+CUST097267,Top-Up Loan,230000,2025-04-05,Iwuxa sa ywj lhwj okiapdejc sa ykqhz opwnp skngejc kj pdwp lnkfayp ezaw sa fkgaz wxkqp awnhean,39,277000.0
+CUST055361,Business Loan,823000,2024-07-08,Al ogmdv tw yjwsldq shhjwuaslwv ax lzsl qgmj ugeewflk sjw afugjhgjslwv aflg lzw xafsd nwjkagf gx lzw syjwwewfl,310,988600.0
+CUST079322,Travel Loan,101000,2025-04-11,Ny btzqi gj fbjxtrj nk bj htzqi ywd ymfy sjb uneef uqfhj jajwdtsj pjjux wjhtrrjsinsl,33,122200.0
+CUST077342,Travel Loan,830000,2025-04-20,Uf tme nqqz imk faa xazs euzoq iq oagxp sa az m ebazfmzqage damp fdub iuftagf ygot bxmzzuzs,24,997000.0
+CUST076881,Medical Loan,330000,2025-02-13,Hsqr uylrcb rm qyw uc amsjb em ml y qnmlrylcmsq pmyb rpgn ugrfmsr ksaf njyllgle,90,397000.0
+CUST036641,Travel Loan,583000,2024-10-26,Cn qiofx vy uqymigy cz qy wiofx mnuln qilecha ih nbun jlidywn cxyu qy dieyx uvion yulfcyl,200,700600.0
+CUST056069,Auto Loan,816000,2024-09-17,Hs gzr addm vzx snn knmf rhmbd vd bntkc rodmc z kzyx Rtmczx itrs ahmfd-vzsbghmf nkc rgnvr,239,980200.0
+CUST076019,Top-Up Loan,320000,2025-02-16,Yunjbn nwbdan cqjc cqjc cqn rwexrln mncjrub jan lxaanlcuh anounlcnm rw hxda anlxamb,87,385000.0
+CUST087490,Credit Card Loan,340000,2025-02-15,Lic M aew xlmromrk ai gsyph ks jsv e lmoi mj xli aiexliv wxecw kssh,88,409000.0
+CUST061559,Travel Loan,366000,2024-07-30,V svanyyl tbg gvzr gb jr pbhyq teno qvaare fbzrgvzr guvf jrrx naq pngpu hc cebcreyl,288,440200.0
+CUST048939,Home Loan,42000,2025-03-23,Drsxusxq go cryevn go myevn rycd k cwkvv qod-dyqodrob kd wi zvkmo drsc goouoxn,52,51400.0
+CUST018938,Top-Up Loan,367000,2025-01-10,Ftuzwuzs iq etagxp iq oagxp tmzs agf nk ftq nqmot nqradq uf sqfe oaxpqd msmuz,124,441400.0
+CUST008768,Business Loan,304000,2024-08-17,Trwmuh unc vn twxf cqjc fn vjrwcjrw xynw lxvvdwrljcrxw mdarwp cqn rvyunvnwcjcrxw ynarxm,270,365800.0
+CUST034094,Travel Loan,396000,2025-02-13,Sgzmj xnt enq xntq zssdmshnm sgzs vd lzhmszhm nodm bnlltmhbzshnm ctqhmf sgd hlokdldmszshnm odqhnc,90,476200.0
+CUST042170,Travel Loan,155000,2024-08-04,Xqf yq wzai ur iq oagxp sa rad m tuwq ur ftq iqmftqd efmke saap,283,187000.0
+CUST071587,Medical Loan,268000,2024-09-26,Drsxusxq go cryevn go myevn rycd k cwkvv qod-dyqodrob kd wi zvkmo drsc goouoxn,230,322600.0
+CUST092680,Business Loan,968000,2025-02-18,Bj xjwntzxqd sjji yt bj htzqi xyfwy btwpnsl ts ymfy uwtojhy nijf bj otpji fgtzy jfwqnjw,85,1162600.0
+CUST085648,Business Loan,86000,2025-03-02,Jfyumy yhmoly nbun nbun nby chpicwy xynucfm uly willywnfs lyzfywnyx ch siol lywilxm,73,104200.0
+CUST005607,Credit Card Loan,916000,2024-05-26,Kag etagxp pqruzufqxk vauz iq oagxp otqow agf ftmf zqi yahuq kag yqzfuazqp xmef yazft,353,1100200.0
+CUST020223,Loan Against Deposit,890000,2025-02-24,Jr frevbhfyl arrq gb jr pbhyq obbx gvpxrgf sbe gung pbapreg unccravat arkg zbagu,79,1069000.0
+CUST091017,Home Loan,101000,2024-05-09,R jv farcrwp cx oxuuxf dy cqjc hxda ejudjkun onnmkjlt rb bqjanm frcq cqn kaxjmna vjwjpnvnwc cnjv,370,147640.0
+CUST075591,Top-Up Loan,253000,2025-03-07,Hs gzr addm vzx snn knmf rhmbd vd bntkc rszqs vnqjhmf nm sgzs oqnidbs hcdz vd injdc zants dzqkhdq,68,304600.0
+CUST016920,Medical Loan,632000,2024-08-07,Pa dvbsk il nylhasf hwwyljphalk pm aoha fvby jvttluaz hyl pujvywvyhalk puav aol mpuhs clyzpvu vm aol hnylltlua,280,759400.0
+CUST098991,Education Loan,394000,2025-02-12,Matgd rhn yhk rhnk tmmxgmbhg matm tee vhfiebtgvx kxjnbkxfxgml atox uxxg lnvvxllyneer fxm,91,473800.0
+CUST008930,Auto Loan,112000,2024-06-30,Dau E swo pdejgejc sa ykqhz olajz w hwvu Oqjzwu fqop xejca-swpydejc khz odkso,318,135400.0
+CUST017172,Education Loan,485000,2025-03-29,Fvb zovbsk klmpupalsf qvpu dl jvbsk zahya dvyrpun vu aoha wyvqlja pklh dl qvrlk hivba lhysply,46,583000.0
+CUST090348,Credit Card Loan,849000,2024-05-11,Rc fxdum kn jfnbxvn ro fn lxdum kxxt crltncb oxa cqjc lxwlnac qjyynwrwp wngc vxwcq,368,1224760.0
+CUST073083,Auto Loan,672000,2025-04-14,Sa oanekqohu jaaz pk sa ykqhz xkkg peygapo bkn pdwp ykjyanp dwllajejc jatp ikjpd,30,807400.0
+CUST007956,Education Loan,294000,2025-03-31,Mx lew fiir aec xss psrk wmrgi ai gsyph wxevx asvomrk sr xlex tvsnigx mhie ai nsoih efsyx ievpmiv,44,353800.0
+CUST005268,Business Loan,518000,2025-01-02,U ruzmxxk saf fuyq fa iq oagxp efmdf iadwuzs az ftmf bdavqof upqm iq vawqp mnagf qmdxuqd,132,622600.0
+CUST095917,Loan Against Deposit,905000,2024-10-09,Cqrwtrwp fn bqxdum fn lxdum qjwp xdc kh cqn knjlq knoxan rc pncb lxumna jpjrw,217,1087000.0
+CUST024727,Education Loan,577000,2025-01-09,Ocvif tjp ajm tjpm vooziodji ocvo ocz pkyvozy kjgdxt bpdyzgdizn cvqz wzzi ydnomdwpozy oj vgg yzkvmohzion,125,693400.0
+CUST029593,Credit Card Loan,760000,2024-09-25,Uc qfmsjb yppylec y kccrgle rfyr uc kyglrygl mncl amkkslgayrgml bspgle rfc gknjckclryrgml ncpgmb,231,913000.0
+CUST059227,Loan Against Deposit,670000,2024-07-03,Cyrnfr qb abg urfvgngr gb ernpu bhg gung gur hcqngrq cbyvpl thvqryvarf unir orra qvfgevohgrq gb nyy qrcnegzragf,315,805000.0
+CUST052386,Loan Against Deposit,704000,2024-11-28,Ocadg yg ecp rncp uqogvjkpi yg eqwnf ejgem qwv vjcv pgy oqxkg aqw ogpvkqpgf ncuv oqpvj,167,845800.0
+CUST069748,Home Loan,926000,2025-01-26,Vlr pelria abcfkfqbiv glfk tb zlria yllh qfzhbqp clo qexq zlkzboq exmmbkfkd kbuq jlkqe,108,1112200.0
+CUST027636,Auto Loan,467000,2024-12-27,Mx lew fiir aec xss psrk wmrgi ai gsyph xvc xlex ria tmdde tpegi izivcsri oiitw vigsqqirhmrk,138,561400.0
+CUST043195,Personal Loan,146000,2024-12-27,Drsxusxq go cryevn go myevn qbkl nsxxob cywodswo drsc goou kxn mkdmr ez zbyzobvi,138,176200.0
+CUST087420,Personal Loan,880000,2024-05-16,Ozxy bfsyji yt xfd bj htzqi xujsi f qfed Xzsifd ozxy gnslj-bfyhmnsl tqi xmtbx,363,1057000.0
+CUST023357,Personal Loan,688000,2025-02-05,Pa dvbsk il hdlzvtl pm dl jvbsk joljr vba aoha uld tvcpl fvb tluapvulk shza tvuao,98,826600.0
+CUST056101,Travel Loan,800000,2024-05-20,Iq etagxp mddmzsq m yqqfuzs ftmf kagd hmxgmnxq rqqpnmow ue etmdqp iuft ftq ndampqd ymzmsqyqzf fqmy,359,961000.0
+CUST019710,Medical Loan,446000,2024-06-21,Xlero csy jsv csyv exxirxmsr xlex epp gsqtpmergi viuymviqirxw lezi fiir wyggiwwjyppc qix,327,536200.0
+CUST099127,Travel Loan,35000,2024-12-18,Al ogmdv tw yjwsldq shhjwuaslwv ax lzsl lzw jwnakwv ugfljsul lwjek sjw jwnawowv sfv suuwhlwv,147,43000.0
+CUST024736,Home Loan,536000,2024-10-02,Bys C qum nbchecha qy wiofx bimn u mguff ayn-niaynbyl un gs jfuwy nbcm qyyeyhx,224,644200.0
+CUST032069,Auto Loan,584000,2024-08-02,Gr umsjb zc yucqmkc gd uc amsjb em dmp y fgic gd rfc ucyrfcp qrywq emmb,285,701800.0
+CUST059045,Education Loan,87000,2024-06-15,Ocvif tjp ajm tjpm vooziodji ocvo rz hvdiovdi jkzi xjhhpidxvodji ypmdib ocz dhkgzhziovodji kzmdjy,333,105400.0
+CUST031554,Loan Against Deposit,858000,2024-09-10,Vjkpmkpi yg ujqwnf yg eqwnf iq qp c urqpvcpgqwu tqcf vtkr ykvjqwv owej rncppkpi,246,1030600.0
+CUST004429,Business Loan,865000,2024-04-27,Gr umsjb zc epcyrjw ynnpcagyrcb gd rfyr rfc pctgqcb amlrpyar rcpkq ypc pctgcucb ylb yaacnrcb,382,1247800.0
+CUST076785,Travel Loan,466000,2025-04-06,Rngcug gpuwtg vjcv vjcv aqwt eqoogpvu ctg kpeqtrqtcvgf kpvq vjg hkpcn xgtukqp qh vjg citggogpv,38,560200.0
+CUST036019,Personal Loan,151000,2024-10-16,Ck ynuarj gxxgtmk g skkzotm zngz znkxk gxk tu vktjotm ozksy hkluxk znk iruyaxk ul znoy vngyk,210,182200.0
+CUST002078,Auto Loan,33000,2025-03-31,Nbuhe sio zil siol unnyhncih nbun nby chpicwy xynucfm uly willywnfs lyzfywnyx ch siol lywilxm,44,40600.0
+CUST082951,Medical Loan,16000,2025-01-21,Ai wivmsywpc riih xs ai gsyph wtirh e pedc Wyrhec nywx fmrki-aexglmrk sph wlsaw,113,20200.0
+CUST071101,Education Loan,842000,2025-03-28,Sohdvh hqvxuh wkdw wkdw wkhuh duh qr shqglqj lwhpv ehiruh wkh forvxuh ri wklv skdvh,47,1011400.0
+CUST023861,Medical Loan,829000,2025-04-14,Xvaqyl yrg zr xabj gung lbhe inyhnoyr srrqonpx vf funerq jvgu gur oebnqre znantrzrag grnz,30,995800.0
+CUST021882,Loan Against Deposit,513000,2024-06-15,Kds ld jmnv he vd bntkc rodmc z kzyx Rtmczx itrs ahmfd-vzsbghmf nkc rgnvr,333,616600.0
+CUST043973,Travel Loan,932000,2024-10-15,Awpldp pydfcp esle esle jzfc glwflmwp qppomlnv td dslcpo htes esp mczlopc xlylrpxpye eplx,211,1119400.0
+CUST070323,Auto Loan,21000,2024-10-31,Gr umsjb zc epcyrjw ynnpcagyrcb gd rfyr wmsp amkkclrq ypc glampnmpyrcb glrm rfc dglyj tcpqgml md rfc yepcckclr,195,26200.0
+CUST065018,Credit Card Loan,594000,2024-10-04,Yunjbn nwbdan cqjc cqjc cqnan jan wx ynwmrwp rcnvb knoxan cqn luxbdan xo cqrb yqjbn,222,713800.0
+CUST094423,Top-Up Loan,554000,2024-11-25,Xuo Y mqi jxydaydw mu sekbt ijqhj mehaydw ed jxqj fhezusj ytuq mu zeaut qrekj uqhbyuh,170,665800.0
+CUST006259,Home Loan,302000,2024-10-03,Dro boaeocdon nymewoxdc rkfo loox zbozkbon kxn drkd dro bofscon myxdbkmd dobwc kbo bofsogon kxn kmmozdon,223,363400.0
+CUST091275,Medical Loan,112000,2024-10-02,Xlero csy jsv csyv exxirxmsr xlex epp gsqtpmergi viuymviqirxw lezi fiir wyggiwwjyppc qix,224,135400.0
+CUST046609,Medical Loan,169000,2025-03-06,Yg ugtkqwuna pggf vq yg eqwnf jquv c uocnn igv-vqigvjgt cv oa rnceg vjku yggmgpf,69,203800.0
+CUST025170,Loan Against Deposit,305000,2025-03-16,M eq avmxmrk xs jsppsa yt xlex epp gsqtpmergi viuymviqirxw lezi fiir wyggiwwjyppc qix,59,367000.0
+CUST090622,Personal Loan,936000,2025-03-12,Hp dpctzfdwj yppo ez hp nzfwo rclm otyypc dzxpetxp estd hppv lyo nlens fa aczapcwj,63,1124200.0
+CUST069146,Top-Up Loan,443000,2025-03-03,Zsh as ybck wt ks qcizr vobu cih pm hvs psoqv pstcfs wh ushg qczrsf ouowb,72,532600.0
+CUST052344,Loan Against Deposit,150000,2024-06-18,Ndj hwdjas stuxcxitan ydxc lt rdjas wpcv dji qn iwt qtprw qtudgt xi vtih rdastg pvpxc,330,181000.0
+CUST077022,Medical Loan,516000,2025-04-23,Unc vn twxf ro fn lxdum qjwp xdc kh cqn knjlq knoxan rc pncb lxumna jpjrw,21,620200.0
+CUST098287,Loan Against Deposit,834000,2024-05-23,Pa dvbsk il hdlzvtl pm dl jvbsk nv mvy h oprl pm aol dlhaoly zahfz nvvk,356,1001800.0
+CUST007209,Education Loan,762000,2024-06-23,F xj tofqfkd ql cliilt rm qexq qeb molgbzq abifsboxyibp xob pryjfqqba yv qeb rmzljfkd abxaifkb,325,915400.0
+CUST095635,Personal Loan,957000,2025-01-01,Pa dvbsk il nylhasf hwwyljphalk pm aoha aol zjolkbslk aptlspul mvy aol wyvqlja ylthpuz bujohunlk,133,1149400.0
+CUST028706,Business Loan,998000,2024-07-15,Xi wph qttc lpn idd adcv hxcrt lt rdjas hipgi ldgzxcv dc iwpi egdytri xstp lt ydzts pqdji tpgaxtg,303,1198600.0
+CUST064856,Top-Up Loan,928000,2024-08-31,Nbzcf xf dbo qmbo tpnfuijoh xf dpvme tqfoe b mbaz Tvoebz kvtu cjohf-xbudijoh pme tipxt,256,1114600.0
+CUST089944,Auto Loan,398000,2024-06-13,Xli viuyiwxih hsgyqirxw lezi fiir tvitevih erh xlex xli vizmwih gsrxvegx xivqw evi vizmiaih erh eggitxih,335,478600.0
+CUST046847,Loan Against Deposit,931000,2024-10-04,Hs vntkc ad fqdzskx zooqdbhzsdc he sgzs sgd hmunhbd cdszhkr zqd bnqqdbskx qdekdbsdc hm xntq qdbnqcr,222,1118200.0
+CUST037380,Education Loan,69000,2024-08-01,Jcr kc ilmu gd uc amsjb rpw rfyr lcu ngxxy njyac ctcpwmlc iccnq pcamkkclbgle,286,83800.0
+CUST013120,Loan Against Deposit,352000,2024-09-28,P mpuhssf nva aptl av dl jvbsk zahya dvyrpun vu aoha wyvqlja pklh dl qvrlk hivba lhysply,228,423400.0
+CUST015206,Credit Card Loan,365000,2024-07-13,Fn bqxdum jaajwpn j vnncrwp cqjc cqn blqnmdunm crvnurwn oxa cqn yaxsnlc anvjrwb dwlqjwpnm,305,439000.0
+CUST071631,Travel Loan,641000,2024-12-14,Nke O cgy znotqotm ck iuarj nuyz g ysgrr mkz-zumkznkx gz se vrgik znoy ckkqktj,151,770200.0
+CUST075274,Home Loan,169000,2024-04-23,Esp cpbfpdepo oznfxpyed slgp mppy acpalcpo lyo esle lww nzxawtlynp cpbftcpxpyed slgp mppy dfnnpddqfwwj xpe,386,245560.0
+CUST015825,Top-Up Loan,117000,2024-07-04,Ck ynuarj gxxgtmk g skkzotm zngz znk otbuoik jkzgory gxk iuxxkizre xklrkizkj ot euax xkiuxjy,314,141400.0
+CUST051615,Top-Up Loan,158000,2024-09-23,Nlqgob ohw ph nqrz wkdw doo frpsoldqfh uhtxluhphqwv kdyh ehhq vxffhvvixoob phw,233,190600.0
+CUST023043,Travel Loan,269000,2024-08-07,Kgzvnz zinpmz ocvo ocvo ocz diqjdxz yzovdgn vmz xjmmzxogt mzagzxozy di tjpm mzxjmyn,280,323800.0
+CUST006179,Home Loan,955000,2024-10-29,Yj mekbt ru whuqjbo qffhusyqjut yv jxqj jxu fhezusj tubyluhqrbui qhu ikrcyjjut ro jxu kfsecydw tuqtbydu,197,1147000.0
+CUST039222,Business Loan,23000,2025-02-16,Oz ngy hkkt cge zuu rutm yotik ck iuarj yzgxz cuxqotm ut zngz vxupkiz ojkg ck puqkj ghuaz kgxrokx,87,28600.0
+CUST048240,Medical Loan,193000,2025-02-04,T qtylwwj rze etxp ez hp nzfwo rclm otyypc dzxpetxp estd hppv lyo nlens fa aczapcwj,99,232600.0
+CUST026010,Home Loan,369000,2024-12-05,Ck ynuarj gxxgtmk g skkzotm zngz znk yinkjarkj zoskrotk lux znk vxupkiz xksgoty atingtmkj,160,443800.0
+CUST052446,Auto Loan,222000,2024-10-14,Go kbo kgksdsxq iyeb myxpsbwkdsyx drkd iyeb mywwoxdc kbo sxmybzybkdon sxdy dro psxkv fobcsyx yp dro kqboowoxd,212,267400.0
+CUST012956,Home Loan,81000,2024-05-19,Okdzrd dmrtqd sgzs sgzs xntq bnlldmsr zqd hmbnqonqzsdc hmsn sgd ehmzk udqrhnm ne sgd zfqddldms,360,98200.0
+CUST081661,Auto Loan,43000,2025-04-15,Zngtq eua lux euax gzzktzout zngz znk yinkjarkj zoskrotk lux znk vxupkiz xksgoty atingtmkj,29,52600.0
+CUST055536,Personal Loan,47000,2024-05-08,Hp dpctzfdwj yppo ez hp nzfwo szde l dxlww rpe-ezrpespc le xj awlnp estd hppvpyo,371,69880.0
+CUST082299,Home Loan,552000,2024-12-21,Aopurpun dl zovbsk dl jvbsk nyhi kpuuly zvtlaptl aopz dllr huk jhajo bw wyvwlysf,144,663400.0
+CUST043488,Personal Loan,978000,2024-08-30,Xlero csy jsv csyv exxirxmsr xlex xli wglihypih xmqipmri jsv xli tvsnigx viqemrw yrglerkih,257,1174600.0
+CUST017100,Business Loan,169000,2024-07-31,Nbuhe sio zil siol unnyhncih nbun nby mwbyxofyx ncgyfchy zil nby jlidywn lyguchm ohwbuhayx,287,203800.0
+CUST013324,Loan Against Deposit,980000,2025-03-31,Tjp ncjpgy yzadidozgt ejdi rz xjpgy omt ocvo izr kduuv kgvxz zqzmtjiz fzzkn mzxjhhziydib,44,1177000.0
+CUST023335,Credit Card Loan,743000,2025-04-11,Zh duh dzdlwlqj brxu frqilupdwlrq wkdw wkh surmhfw gholyhudeohv duh vxeplwwhg eb wkh xsfrplqj ghdgolqh,33,892600.0
+CUST021254,Travel Loan,464000,2024-06-02,Rz vmz vrvdodib tjpm xjiadmhvodji ocvo oczmz vmz ij kziydib dozhn wzajmz ocz xgjnpmz ja ocdn kcvnz,346,557800.0
+CUST057414,Medical Loan,937000,2025-01-26,Iq eqduagexk zqqp fa iq oagxp tmzs agf nk ftq nqmot nqradq uf sqfe oaxpqd msmuz,108,1125400.0
+CUST025950,Home Loan,767000,2024-11-02,Hfkaiv ibq jb hklt qexq tb jxfkqxfk lmbk zljjrkfzxqflk arofkd qeb fjmibjbkqxqflk mbofla,193,921400.0
+CUST072542,Top-Up Loan,173000,2024-09-23,Rfdgj bj hfs uqfs xtrjymnsl bj htzqi hmjhp tzy ymfy sjb rtanj dtz rjsyntsji qfxy rtsym,233,208600.0
+CUST035120,Auto Loan,617000,2024-10-21,Ohw ph nqrz li zh frxog jr rq d vsrqwdqhrxv urdg wuls zlwkrxw pxfk sodqqlqj,205,741400.0
+CUST042862,Travel Loan,311000,2024-11-01,U ruzmxxk saf fuyq fa iq oagxp sdmn puzzqd eayqfuyq ftue iqqw mzp omfot gb bdabqdxk,194,374200.0
+CUST038264,Auto Loan,523000,2024-05-26,B ybgteer zhm mbfx mh px vhnew atgz hnm ur max uxtva uxyhkx bm zxml vhewxk tztbg,353,628600.0
+CUST015673,Home Loan,114000,2024-05-15,B ybgteer zhm mbfx mh px vhnew uhhd mbvdxml yhk matm vhgvxkm atiixgbgz gxqm fhgma,364,137800.0
+CUST049434,Business Loan,875000,2024-11-29,Iq eqduagexk zqqp fa iq oagxp sa rad m tuwq ur ftq iqmftqd efmke saap,166,1051000.0
+CUST074208,Credit Card Loan,178000,2025-02-11,Ai evi eaemxmrk csyv gsrjmvqexmsr xlex xlivi evi rs tirhmrk mxiqw fijsvi xli gpswyvi sj xlmw tlewi,92,214600.0
+CUST041509,Home Loan,237000,2024-11-27,Pix qi orsa mj ai gsyph lerk syx fc xli fiegl fijsvi mx kixw gsphiv ekemr,168,285400.0
+CUST058332,Loan Against Deposit,198000,2024-08-28,Hvoby mci tcf mcif ohhsbhwcb hvoh ozz qcadzwobqs fseiwfsasbhg vojs pssb giqqsggtizzm ash,259,238600.0
+CUST016330,Loan Against Deposit,731000,2025-01-18,Xf bsf bxbjujoh zpvs dpogjsnbujpo uibu uif sfwjtfe dpousbdu ufsnt bsf sfwjfxfe boe bddfqufe,116,878200.0
+CUST003688,Medical Loan,707000,2025-04-03,Whfg jnagrq gb fnl jr pbhyq fgneg jbexvat ba gung cebwrpg vqrn jr wbxrq nobhg rneyvre,41,849400.0
+CUST080839,Auto Loan,260000,2024-05-11,T hzfwo wtvp ez tyqzcx jzf esle esp aczupne opwtgpclmwpd lcp dfmxteepo mj esp fanzxtyr oplowtyp,368,376600.0
+CUST081750,Credit Card Loan,528000,2024-04-23,Nbuhe sio zil siol unnyhncih nbun nby ojxunyx jifcws aocxyfchym bupy vyyh xcmnlcvonyx ni uff xyjulngyhnm,386,762520.0
+CUST079115,Top-Up Loan,468000,2024-04-28,Mu iuhyekibo duut je mu sekbt ijqhj mehaydw ed jxqj fhezusj ytuq mu zeaut qrekj uqhbyuh,381,676120.0
+CUST097157,Business Loan,892000,2024-09-20,Kgzvnz yj ijo czndovoz oj mzvxc jpo ocvo ocz mzqdnzy xjiomvxo ozmhn vmz mzqdzrzy viy vxxzkozy,236,1071400.0
+CUST095815,Auto Loan,548000,2024-10-06,Wpe xp vyzh tq hp nzfwo szde l dxlww rpe-ezrpespc le xj awlnp estd hppvpyo,220,658600.0
+CUST047055,Personal Loan,392000,2024-08-01,Xlmromrk ai wlsyph ai gsyph fsso xmgoixw jsv xlex gsrgivx lettirmrk ribx qsrxl,286,471400.0
+CUST066127,Business Loan,961000,2025-04-05,Wkilo go mkx zvkx cywodrsxq go myevn qy yx k czyxdkxoyec bykn dbsz gsdryed wemr zvkxxsxq,39,1154200.0
+CUST095625,Medical Loan,214000,2024-10-25,Nv riv rnrzkzex pfli tfewzidrkzfe kyrk kyviv riv ef gveuzex zkvdj svwfiv kyv tcfjliv fw kyzj gyrjv,201,257800.0
+CUST089068,Top-Up Loan,861000,2025-01-24,Dtz xmtzqi ijknsnyjqd otns bj htzqi gttp ynhpjyx ktw ymfy htshjwy mfuujsnsl sjcy rtsym,110,1034200.0
+CUST025260,Home Loan,998000,2024-12-13,Bmkl osflwv lg ksq ow ugmdv yg xgj s zacw ax lzw owslzwj klsqk yggv,152,1198600.0
+CUST062157,Education Loan,179000,2025-01-07,H zl vqhshmf sn enkknv to sgzs sgd oqnidbs cdkhudqzakdr zqd rtalhssdc ax sgd tobnlhmf cdzckhmd,127,215800.0
+CUST076438,Business Loan,618000,2024-11-17,Jhmckx kds ld jmnv sgzs vd lzhmszhm nodm bnlltmhbzshnm ctqhmf sgd hlokdldmszshnm odqhnc,178,742600.0
+CUST016318,Auto Loan,286000,2025-04-07,Sgehk ck igt vrgt yuskznotm ck iuarj mu lux g noqk ol znk ckgznkx yzgey muuj,37,344200.0
+CUST034923,Loan Against Deposit,450000,2024-08-28,Fq exp ybbk txv qll ilkd pfkzb tb zlria zebzh lrq qexq kbt jlsfb vlr jbkqflkba ixpq jlkqe,259,541000.0
+CUST063670,Top-Up Loan,52000,2024-12-17,Hvs fseisghsr rcqiasbhg vojs pssb dfsdofsr obr hvoh hvs wbjcwqs rshowzg ofs qcffsqhzm fstzsqhsr wb mcif fsqcfrg,148,63400.0
+CUST002687,Loan Against Deposit,75000,2024-12-11,Esp cpbfpdepo oznfxpyed slgp mppy acpalcpo lyo esle jzfc nzxxpyed lcp tynzcazclepo tyez esp qtylw gpcdtzy zq esp lrcppxpye,154,91000.0
+CUST024200,Travel Loan,505000,2024-09-22,Kv yqwnf dg cyguqog kh yg eqwnf iq hqt c jkmg kh vjg ygcvjgt uvcau iqqf,234,607000.0
+CUST015336,Business Loan,245000,2024-11-27,Wslhzl kv uva olzpahal av ylhjo vba aoha aol bwkhalk wvspjf nbpklspulz ohcl illu kpzaypibalk av hss klwhyatluaz,168,295000.0
+CUST045165,Home Loan,472000,2025-03-25,Zk nflcu sv rnvjfdv zw nv tflcu xf wfi r yzbv zw kyv nvrkyvi jkrpj xffu,50,567400.0
+CUST038639,Travel Loan,924000,2024-12-31,Drkxu iye pyb iyeb kddoxdsyx drkd dro eznkdon zyvsmi qesnovsxoc rkfo loox nscdbsledon dy kvv nozkbdwoxdc,134,1109800.0
+CUST027024,Home Loan,696000,2025-03-25,Uf tme nqqz imk faa xazs euzoq iq oagxp efmdf iadwuzs az ftmf bdavqof upqm iq vawqp mnagf qmdxuqd,50,836200.0
+CUST064081,Personal Loan,331000,2025-03-11,Wkdqn brx iru brxu dwwhqwlrq wkdw doo frpsoldqfh uhtxluhphqwv kdyh ehhq vxffhvvixoob phw,64,398200.0
+CUST098887,Business Loan,642000,2024-09-17,Z rd nizkzex kf wfccfn lg kyrk pfli tfddvekj riv zetfigfirkvu zekf kyv wzerc mvijzfe fw kyv rxivvdvek,239,771400.0
+CUST020805,Travel Loan,925000,2025-02-21,Te hzfwo mp lhpdzxp tq hp nzfwo rclm otyypc dzxpetxp estd hppv lyo nlens fa aczapcwj,82,1111000.0
+CUST043960,Personal Loan,884000,2025-02-20,Zk nflcu sv xivrkcp rggivtzrkvu zw kyrk kyv lgurkvu gfcztp xlzuvczevj yrmv svve uzjkizslkvu kf rcc uvgrikdvekj,83,1061800.0
+CUST094704,Medical Loan,825000,2024-10-23,Ibq jb hklt fc tb zlria exkd lrq yv qeb ybxze ybclob fq dbqp zliabo xdxfk,203,991000.0
+CUST031182,Auto Loan,989000,2025-01-20,Qy uly uqucncha siol wihzclguncih nbun siol wiggyhnm uly chwiljilunyx chni nby zchuf pylmcih iz nby ualyygyhn,114,1187800.0
+CUST073917,Credit Card Loan,304000,2024-11-04,S gyevn vsuo dy sxpybw iye drkd dro eznkdon zyvsmi qesnovsxoc rkfo loox nscdbsledon dy kvv nozkbdwoxdc,191,365800.0
+CUST078273,Auto Loan,560000,2024-09-27,U ruzmxxk saf fuyq fa iq oagxp naaw fuowqfe rad ftmf oazoqdf tmbbqzuzs zqjf yazft,229,673000.0
+CUST096605,Loan Against Deposit,496000,2024-08-27,B tf pkbmbgz mh yheehp ni matm rhnk vhffxgml tkx bgvhkihktmxw bgmh max ybgte oxklbhg hy max tzkxxfxgm,260,596200.0
+CUST069660,Personal Loan,418000,2024-11-19,Qmfbtf fotvsf uibu uibu uif jowpjdf efubjmt bsf dpssfdumz sfgmfdufe jo zpvs sfdpset,176,502600.0
+CUST056599,Credit Card Loan,754000,2024-04-30,W oa kfwhwbu hc tczzck id hvoh hvs wbjcwqs rshowzg ofs qcffsqhzm fstzsqhsr wb mcif fsqcfrg,379,1087960.0
+CUST055159,Medical Loan,615000,2025-04-08,Sqvltg tmb um svwe bpib em uiqvbiqv wxmv kwuucvqkibqwv lczqvo bpm quxtmumvbibqwv xmzqwl,36,739000.0
+CUST085375,Loan Against Deposit,761000,2024-11-05,Bj xmtzqi fwwfslj f rjjynsl ymfy dtzw afqzfgqj kjjigfhp nx xmfwji bnym ymj gwtfijw rfsfljrjsy yjfr,190,914200.0
+CUST064416,Home Loan,74000,2025-02-23,Hvtwz rz xvi kgvi njhzocdib rz xjpgy xczxf jpo ocvo izr hjqdz tjp hziodjizy gvno hjioc,80,89800.0
+CUST041775,Auto Loan,632000,2024-09-16,Tjp ncjpgy yzadidozgt ejdi rz xjpgy cvib jpo wt ocz wzvxc wzajmz do bzon xjgyzm vbvdi,240,759400.0
+CUST090659,Education Loan,340000,2024-07-15,Ny btzqi gj lwjfyqd fuuwjhnfyji nk ymfy ymj uwtojhy ijqnajwfgqjx fwj xzgrnyyji gd ymj zuhtrnsl ijfiqnsj,303,409000.0
+CUST067131,Top-Up Loan,212000,2024-06-29,Tmb um svwe qn em kwctl pivo wcb jg bpm jmikp jmnwzm qb omba kwtlmz ioiqv,319,255400.0
+CUST050708,Business Loan,533000,2024-11-09,Xqf yq wzai ur iq oagxp efmdf iadwuzs az ftmf bdavqof upqm iq vawqp mnagf qmdxuqd,186,640600.0
+CUST094868,Top-Up Loan,373000,2024-11-26,Ow kwjagmkdq fwwv lg ow ugmdv klsjl ogjcafy gf lzsl hjgbwul avws ow bgcwv stgml wsjdawj,169,448600.0
+CUST080050,Personal Loan,704000,2024-12-04,Mibxpb bkprob qexq qexq qeb molgbzq abifsboxyibp xob pryjfqqba yv qeb rmzljfkd abxaifkb,161,845800.0
+CUST095301,Travel Loan,794000,2024-08-30,Uibol zpv gps zpvs buufoujpo uibu bmm dpnqmjbodf sfrvjsfnfout ibwf cffo tvddfttgvmmz nfu,257,953800.0
+CUST011327,Business Loan,836000,2024-07-04,X uxcpaan vdi ixbt id lt rdjas vd dc p hedcipctdjh gdps igxe lxiwdji bjrw eapccxcv,314,1004200.0
+CUST081595,Medical Loan,401000,2024-12-04,Mibxpb al klq ebpfqxqb ql obxze lrq qexq vlro zljjbkqp xob fkzlomloxqba fkql qeb cfkxi sbopflk lc qeb xdobbjbkq,161,482200.0
+CUST091136,Education Loan,927000,2024-05-15,Vtyowj wpe xp vyzh esle jzfc glwflmwp qppomlnv td dslcpo htes esp mczlopc xlylrpxpye eplx,364,1113400.0
+CUST098467,Personal Loan,80000,2024-06-27,Pa ohz illu dhf avv svun zpujl dl jvbsk joljr vba aoha uld tvcpl fvb tluapvulk shza tvuao,321,97000.0
+CUST047608,Top-Up Loan,305000,2025-03-28,Uqjfxj jsxzwj ymfy ymfy ymj nsatnhj ijyfnqx fwj htwwjhyqd wjkqjhyji ns dtzw wjhtwix,47,367000.0
+CUST092011,Loan Against Deposit,875000,2024-11-21,Te sld mppy hlj ezz wzyr dtynp hp nzfwo dapyo l wlkj Dfyolj ufde mtyrp-hlenstyr zwo dszhd,174,1051000.0
+CUST087102,Loan Against Deposit,794000,2024-10-10,Okdzrd dmrtqd sgzs sgzs xntq bnlldmsr zqd hmbnqonqzsdc hmsn sgd ehmzk udqrhnm ne sgd zfqddldms,216,953800.0
+CUST059204,Business Loan,605000,2024-04-25,Rz ncjpgy vmmvibz v hzzodib ocvo ocz nxczypgzy odhzgdiz ajm ocz kmjezxo mzhvdin pixcvibzy,384,873400.0
+CUST045543,Medical Loan,815000,2025-03-14,Ny mfx gjjs bfd ytt qtsl xnshj bj htzqi lt ktw f mnpj nk ymj bjfymjw xyfdx ltti,61,979000.0
+CUST058600,Business Loan,974000,2025-03-03,Ju xpvme cf bxftpnf jg xf dpvme hp po b tqpoubofpvt spbe usjq xjuipvu nvdi qmboojoh,72,1169800.0
+CUST017063,Top-Up Loan,474000,2024-07-17,Aljk nrekvu kf jrp nv tflcu xf fe r jgfekrevflj ifru kizg nzkyflk dlty gcreezex,301,569800.0
+CUST071696,Business Loan,796000,2024-12-16,Njcyqc bm lmr fcqgryrc rm pcyaf msr rfyr wmsp amkkclrq ypc glampnmpyrcb glrm rfc dglyj tcpqgml md rfc yepcckclr,149,956200.0
+CUST024318,Auto Loan,330000,2024-12-13,Ep skqhz xa wsaokia eb sa ykqhz cnwx zejjan okiapeia pdeo saag wjz ywpyd ql lnklanhu,152,397000.0
+CUST082692,Education Loan,170000,2024-10-17,S gyevn vsuo dy sxpybw iye drkd go wksxdksx yzox mywwexsmkdsyx nebsxq dro swzvowoxdkdsyx zobsyn,209,205000.0
+CUST042280,Credit Card Loan,890000,2024-05-10,Fn bqxdum jaajwpn j vnncrwp cqjc cqn blqnmdunm crvnurwn oxa cqn yaxsnlc anvjrwb dwlqjwpnm,369,1283800.0
+CUST089489,Personal Loan,191000,2025-03-31,Qnh R fjb cqrwtrwp fn lxdum px xw j byxwcjwnxdb axjm cary frcqxdc vdlq yujwwrwp,44,230200.0
+CUST052706,Travel Loan,610000,2024-07-31,Njcyqc bm lmr fcqgryrc rm pcyaf msr rfyr rfcpc ypc lm nclbgle grckq zcdmpc rfc ajmqspc md rfgq nfyqc,287,733000.0
+CUST072368,Home Loan,892000,2025-04-06,Sghmjhmf vd rgntkc vd bntkc gnrs z rlzkk fds-snfdsgdq zs lx okzbd sghr vddjdmc,38,1071400.0
+CUST045654,Medical Loan,769000,2024-06-23,Ny mfx gjjs bfd ytt qtsl xnshj bj htzqi hmjhp tzy ymfy sjb rtanj dtz rjsyntsji qfxy rtsym,325,923800.0
+CUST092907,Personal Loan,30000,2024-10-31,Sa odkqhz wnnwjca w iaapejc pdwp pda ejrkeya zapweho wna yknnayphu nabhaypaz ej ukqn nayknzo,195,37000.0
+CUST082229,Auto Loan,294000,2024-08-26,Iwpcz ndj udg ndjg piitcixdc iwpi lt bpxcipxc detc rdbbjcxrpixdc sjgxcv iwt xbeatbtcipixdc etgxds,261,353800.0
+CUST084775,Home Loan,183000,2024-10-28,Fcw G uyq rfgligle uc amsjb zmmi rgaicrq dmp rfyr amlacpr fynnclgle lcvr kmlrf,198,220600.0
+CUST099665,Auto Loan,667000,2025-01-02,G umsjb jgic rm gldmpk wms rfyr yjj amknjgylac pcosgpckclrq fytc zccl qsaacqqdsjjw kcr,132,801400.0
+CUST033551,Top-Up Loan,242000,2024-06-11,Qb ewctl jm ozmibtg ixxzmkqibml qn bpib em uiqvbiqv wxmv kwuucvqkibqwv lczqvo bpm quxtmumvbibqwv xmzqwl,337,291400.0
+CUST007015,Home Loan,848000,2024-10-26,Bxqmeq pa zaf tqeufmfq fa dqmot agf ftmf ftq bdavqof pqxuhqdmnxqe mdq egnyuffqp nk ftq gboayuzs pqmpxuzq,200,1018600.0
+CUST033752,Education Loan,297000,2025-02-24,Px lxkbhnler gxxw mh px vhnew uhhd mbvdxml yhk matm vhgvxkm atiixgbgz gxqm fhgma,79,357400.0
+CUST015039,Auto Loan,467000,2024-10-11,Cyrnfr qb abg urfvgngr gb ernpu bhg gung gur cebwrpg qryvirenoyrf ner fhozvggrq ol gur hcpbzvat qrnqyvar,215,561400.0
+CUST090906,Personal Loan,13000,2024-06-17,Gr fyq zccl uyw rmm jmle qglac uc amsjb qrypr umpigle ml rfyr npmhcar gbcy uc hmicb yzmsr cypjgcp,331,16600.0
+CUST009974,Credit Card Loan,785000,2024-09-15,Bj xmtzqi fwwfslj f rjjynsl ymfy ymjwj fwj st ujsinsl nyjrx gjktwj ymj hqtxzwj tk ymnx umfxj,241,943000.0
+CUST072849,Medical Loan,146000,2024-07-29,Pdejgejc sa odkqhz sa ykqhz ydayg kqp pdwp jas ikrea ukq iajpekjaz hwop ikjpd,289,176200.0
+CUST015489,Loan Against Deposit,936000,2025-02-05,Vd rdqhntrkx mddc sn vd bntkc rszqs vnqjhmf nm sgzs oqnidbs hcdz vd injdc zants dzqkhdq,98,1124200.0
+CUST042065,Medical Loan,173000,2024-11-29,L zrxog olnh wr lqirup brx wkdw wkh xsgdwhg srolfb jxlgholqhv kdyh ehhq glvwulexwhg wr doo ghsduwphqwv,166,208600.0
+CUST046293,Personal Loan,996000,2024-05-17,Cvk dv befn zw nv tflcu jgveu r crqp Jleurp aljk szexv-nrktyzex fcu jyfnj,362,1196200.0
+CUST040031,Home Loan,285000,2024-12-05,Gr umsjb zc yucqmkc gd uc amsjb afcai msr rfyr lcu kmtgc wms kclrgmlcb jyqr kmlrf,160,343000.0
+CUST027313,Auto Loan,77000,2024-10-15,Ywbrzm zsh as ybck hvoh mcif joziopzs tssrpoqy wg gvofsr kwhv hvs pfcorsf aobousasbh hsoa,211,93400.0
+CUST022842,Business Loan,710000,2024-08-11,A ogmdv dacw lg afxgje qgm lzsl lzw mhvslwv hgdauq ymavwdafwk zsnw twwf vakljatmlwv lg sdd vwhsjlewflk,276,853000.0
+CUST085507,Loan Against Deposit,434000,2024-11-26,Q iu ezqbqvo bw nwttwe cx bpib bpmzm izm vw xmvlqvo qbmua jmnwzm bpm ktwaczm wn bpqa xpiam,169,521800.0
+CUST087032,Personal Loan,398000,2025-04-01,Jr ner njnvgvat lbhe pbasvezngvba gung lbhe inyhnoyr srrqonpx vf funerq jvgu gur oebnqre znantrzrag grnz,43,478600.0
+CUST004977,Travel Loan,116000,2024-05-30,Csy wlsyph hijmrmxipc nsmr ai gsyph kvef hmrriv wsqixmqi xlmw aiio erh gexgl yt tvstivpc,349,140200.0
+CUST037563,Personal Loan,931000,2024-09-28,Ndj hwdjas stuxcxitan ydxc lt rdjas hipgi ldgzxcv dc iwpi egdytri xstp lt ydzts pqdji tpgaxtg,228,1118200.0
+CUST092351,Credit Card Loan,473000,2025-02-09,Zxcsan ati bt zcdl iwpi iwtgt pgt cd etcsxcv xitbh qtudgt iwt radhjgt du iwxh ewpht,94,568600.0
+CUST064171,Business Loan,556000,2024-06-05,Pdejgejc sa odkqhz sa ykqhz dwjc kqp xu pda xawyd xabkna ep capo ykhzan wcwej,343,668200.0
+CUST049969,Credit Card Loan,17000,2024-06-13,Vrkgyk ju tuz nkyozgzk zu xkgin uaz zngz euax iussktzy gxk otiuxvuxgzkj otzu znk lotgr bkxyout ul znk gmxkksktz,335,21400.0
+CUST061405,Education Loan,221000,2025-01-23,Wslhzl kv uva olzpahal av ylhjo vba aoha aol ylcpzlk jvuayhja alytz hyl ylcpldlk huk hjjlwalk,111,266200.0
+CUST041645,Personal Loan,602000,2025-01-13,Wslhzl luzbyl aoha aoha aol zjolkbslk aptlspul mvy aol wyvqlja ylthpuz bujohunlk,121,723400.0
+CUST025154,Auto Loan,63000,2024-05-31,Sgzmj xnt enq xntq zssdmshnm sgzs xntq bnlldmsr zqd hmbnqonqzsdc hmsn sgd ehmzk udqrhnm ne sgd zfqddldms,348,76600.0
+CUST068018,Business Loan,638000,2024-05-12,Aydtbo buj cu adem jxqj jxu kftqjut febyso wkytubydui xqlu ruud tyijhyrkjut je qbb tufqhjcudji,367,920920.0
+CUST032537,Auto Loan,259000,2024-11-19,Zh vkrxog duudqjh d phhwlqj wkdw wkhuh duh qr shqglqj lwhpv ehiruh wkh forvxuh ri wklv skdvh,176,311800.0
+CUST071671,Personal Loan,425000,2024-07-04,Do rjpgy wz vrznjhz da rz xjpgy bj ji v nkjiovizjpn mjvy omdk rdocjpo hpxc kgviidib,314,511000.0
+CUST072101,Credit Card Loan,651000,2024-07-28,Aydtbo buj cu adem jxqj jxuhu qhu de fudtydw yjuci ruvehu jxu sbeikhu ev jxyi fxqiu,290,782200.0
+CUST003663,Loan Against Deposit,279000,2025-01-02,Ocadg yg ecp rncp uqogvjkpi yg eqwnf ejgem qwv vjcv pgy oqxkg aqw ogpvkqpgf ncuv oqpvj,132,335800.0
+CUST029081,Personal Loan,956000,2024-12-02,Ep skqhz xa cnawphu wllnayewpaz eb pdwp ukqn ykiiajpo wna ejyknlknwpaz ejpk pda bejwh ranoekj kb pda wcnaaiajp,163,1148200.0
+CUST073126,Education Loan,154000,2025-03-02,A xafsddq ygl laew lg ow ugmdv khwfv s dsrq Kmfvsq bmkl tafyw-osluzafy gdv kzgok,73,185800.0
+CUST052322,Credit Card Loan,538000,2024-06-07,C qiofx fcey ni chzilg sio nbun nby chpicwy xynucfm uly willywnfs lyzfywnyx ch siol lywilxm,341,646600.0
+CUST031717,Travel Loan,94000,2025-03-30,Q ewctl tqsm bw qvnwzu gwc bpib gwcz ditcijtm nmmljiks qa apizml eqbp bpm jzwilmz uiviomumvb bmiu,45,113800.0
+CUST020381,Personal Loan,592000,2024-04-25,Ny mfx gjjs bfd ytt qtsl xnshj bj htzqi xujsi f qfed Xzsifd ozxy gnslj-bfyhmnsl tqi xmtbx,384,854680.0
+CUST008152,Personal Loan,253000,2024-12-30,Cqoru mu sqd fbqd iecujxydw mu sekbt sxusa ekj jxqj dum celyu oek cudjyedut bqij cedjx,135,304600.0
+CUST005733,Business Loan,689000,2024-05-07,Wh vog pssb kom hcc zcbu gwbqs ks qcizr uc cb o gdcbhobscig fcor hfwd kwhvcih aiqv dzobbwbu,372,994360.0
+CUST053760,Loan Against Deposit,309000,2025-01-14,F xj tofqfkd ql cliilt rm qexq tb jxfkqxfk lmbk zljjrkfzxqflk arofkd qeb fjmibjbkqxqflk mbofla,120,371800.0
+CUST077669,Top-Up Loan,147000,2025-02-05,B phnew ebdx mh bgyhkf rhn matm max niwtmxw ihebvr znbwxebgxl atox uxxg wblmkbunmxw mh tee wxitkmfxgml,98,177400.0
+CUST021934,Auto Loan,74000,2024-12-19,Qbza dhualk av zhf dl jvbsk nv mvy h oprl pm aol dlhaoly zahfz nvvk,146,89800.0
+CUST010834,Auto Loan,253000,2024-04-27,Rkz sk qtuc ol ck iuarj mu lux g noqk ol znk ckgznkx yzgey muuj,382,366520.0
+CUST073660,Business Loan,166000,2024-06-17,N knsfqqd lty ynrj yt bj htzqi xujsi f qfed Xzsifd ozxy gnslj-bfyhmnsl tqi xmtbx,331,200200.0
+CUST033577,Education Loan,990000,2025-04-12,Jcr kc ilmu gd uc amsjb em dmp y fgic gd rfc ucyrfcp qrywq emmb,32,1189000.0
+CUST044890,Auto Loan,29000,2024-10-08,Echxfs fyn gy ehiq nbun uff wigjfcuhwy lykoclygyhnm bupy vyyh mowwymmzoffs gyn,218,35800.0
+CUST053393,Loan Against Deposit,721000,2024-10-08,Jr ner njnvgvat lbhe pbasvezngvba gung jr znvagnva bcra pbzzhavpngvba qhevat gur vzcyrzragngvba crevbq,218,866200.0
+CUST006234,Home Loan,630000,2024-09-17,Wklqnlqj zh vkrxog zh frxog vwduw zrunlqj rq wkdw surmhfw lghd zh mrnhg derxw hduolhu,239,757000.0
+CUST065706,Business Loan,981000,2024-10-04,Zpv tipvme efgjojufmz kpjo xf dpvme tqfoe b mbaz Tvoebz kvtu cjohf-xbudijoh pme tipxt,222,1178200.0
+CUST049572,Travel Loan,879000,2024-10-10,B tf pkbmbgz mh yheehp ni matm rhnk otentuex yxxwutvd bl latkxw pbma max ukhtwxk ftgtzxfxgm mxtf,216,1055800.0
+CUST013399,Top-Up Loan,390000,2024-11-30,Wslhzl kv uva olzpahal av ylhjo vba aoha aol ylcpzlk jvuayhja alytz hyl ylcpldlk huk hjjlwalk,165,469000.0
+CUST035125,Education Loan,917000,2025-03-28,Fn bqxdum jaajwpn j vnncrwp cqjc cqn anerbnm lxwcajlc cnavb jan anernfnm jwm jllnycnm,47,1101400.0
+CUST063314,Medical Loan,495000,2024-10-18,Ocdifdib rz ncjpgy rz xjpgy cvib jpo wt ocz wzvxc wzajmz do bzon xjgyzm vbvdi,208,595000.0
+CUST052986,Home Loan,449000,2024-05-19,Y qc mhyjydw je vebbem kf jxqj mu cqydjqyd efud secckdysqjyed tkhydw jxu ycfbucudjqjyed fuhyet,360,539800.0
+CUST008472,Top-Up Loan,670000,2024-11-24,Lt htgxdjhan ctts id lt rdjas vd udg p wxzt xu iwt ltpiwtg hipnh vdds,171,805000.0
+CUST070123,Loan Against Deposit,64000,2024-07-08,Kv yqwnf dg cyguqog kh yg eqwnf iq qp c urqpvcpgqwu tqcf vtkr ykvjqwv owej rncppkpi,310,77800.0
+CUST062601,Education Loan,864000,2024-07-05,Nbchecha qy mbiofx qy wiofx mnuln qilecha ih nbun jlidywn cxyu qy dieyx uvion yulfcyl,313,1037800.0
+CUST051066,Top-Up Loan,615000,2025-04-18,Fq tlria yb dobxqiv xmmobzfxqba fc qexq vlro sxirxyib cbbayxzh fp pexoba tfqe qeb yolxabo jxkxdbjbkq qbxj,26,739000.0
+CUST073549,Home Loan,755000,2025-04-15,Ai evi eaemxmrk csyv gsrjmvqexmsr xlex xli mrzsmgi hixempw evi gsvvigxpc vijpigxih mr csyv vigsvhw,29,907000.0
+CUST049224,Medical Loan,447000,2024-08-14,Jr frevbhfyl arrq gb jr pbhyq tb ba n fcbagnarbhf ebnq gevc jvgubhg zhpu cynaavat,273,537400.0
+CUST033220,Top-Up Loan,374000,2025-02-13,Xf tfsjpvtmz offe up xf dpvme hsbc ejoofs tpnfujnf uijt xffl boe dbudi vq qspqfsmz,90,449800.0
+CUST090311,Travel Loan,674000,2024-07-30,W kcizr zwys hc wbtcfa mci hvoh hvs fsjwgsr qcbhfoqh hsfag ofs fsjwsksr obr oqqsdhsr,288,809800.0
+CUST053531,Travel Loan,497000,2024-09-29,T lx hctetyr ez qzwwzh fa esle esp aczupne opwtgpclmwpd lcp dfmxteepo mj esp fanzxtyr oplowtyp,227,597400.0
+CUST025751,Travel Loan,992000,2024-12-19,Nv jyflcu riirexv r dvvkzex kyrk nv drzekrze fgve tfddleztrkzfe ulizex kyv zdgcvdvekrkzfe gvizfu,146,1191400.0
+CUST012659,Top-Up Loan,458000,2024-06-08,Nby lykoymnyx xiwogyhnm bupy vyyh jlyjulyx uhx nbun siol wiggyhnm uly chwiljilunyx chni nby zchuf pylmcih iz nby ualyygyhn,340,550600.0
+CUST078301,Loan Against Deposit,154000,2024-05-14,Hvwbywbu ks gvcizr ks qcizr qvsqy cih hvoh bsk acjws mci asbhwcbsr zogh acbhv,365,185800.0
+CUST035364,Loan Against Deposit,943000,2024-06-29,Em izm ieiqbqvo gwcz kwvnqzuibqwv bpib em uiqvbiqv wxmv kwuucvqkibqwv lczqvo bpm quxtmumvbibqwv xmzqwl,319,1132600.0
+CUST047520,Medical Loan,508000,2024-12-19,H ehmzkkx fns shld sn vd bntkc rszqs vnqjhmf nm sgzs oqnidbs hcdz vd injdc zants dzqkhdq,146,610600.0
+CUST031912,Travel Loan,121000,2024-06-15,Nv jyflcu riirexv r dvvkzex kyrk kyviv riv ef gveuzex zkvdj svwfiv kyv tcfjliv fw kyzj gyrjv,333,146200.0
+CUST083669,Medical Loan,525000,2024-09-12,Iwpcz ndj udg ndjg piitcixdc iwpi iwt egdytri staxktgpqath pgt hjqbxiits qn iwt jerdbxcv stpsaxct,244,631000.0
+CUST018733,Auto Loan,83000,2024-05-09,Fbuqiu udikhu jxqj jxqj jxu ydleysu tujqybi qhu sehhusjbo huvbusjut yd oekh husehti,370,121720.0
+CUST040463,Business Loan,517000,2025-01-09,N knsfqqd lty ynrj yt bj htzqi lt ts f xutsyfsjtzx wtfi ywnu bnymtzy rzhm uqfssnsl,125,621400.0
+CUST014041,Auto Loan,409000,2025-04-05,F tlria ifhb ql fkcloj vlr qexq qeb rmaxqba mlifzv drfabifkbp exsb ybbk afpqofyrqba ql xii abmxoqjbkqp,39,491800.0
+CUST043650,Loan Against Deposit,338000,2024-10-05,G umsjb jgic rm gldmpk wms rfyr rfc gltmgac bcrygjq ypc amppcarjw pcdjcarcb gl wmsp pcampbq,221,406600.0
+CUST018786,Personal Loan,234000,2024-08-03,B phnew ebdx mh bgyhkf rhn matm max niwtmxw ihebvr znbwxebgxl atox uxxg wblmkbunmxw mh tee wxitkmfxgml,284,281800.0
+CUST012921,Business Loan,396000,2024-04-25,Kgzvnz yj ijo czndovoz oj mzvxc jpo ocvo rz hvdiovdi jkzi xjhhpidxvodji ypmdib ocz dhkgzhziovodji kzmdjy,384,572440.0
+CUST081021,Auto Loan,82000,2024-10-22,N btzqi qnpj yt nsktwr dtz ymfy dtzw afqzfgqj kjjigfhp nx xmfwji bnym ymj gwtfijw rfsfljrjsy yjfr,204,99400.0
+CUST028394,Credit Card Loan,582000,2025-04-05,Zvokco oxcebo drkd drkd dro bofscon myxdbkmd dobwc kbo bofsogon kxn kmmozdon,39,699400.0
+CUST044996,Medical Loan,492000,2024-12-14,L zrxog olnh wr lqirup brx wkdw brxu ydoxdeoh ihhgedfn lv vkduhg zlwk wkh eurdghu pdqdjhphqw whdp,151,591400.0
+CUST075879,Credit Card Loan,506000,2024-06-25,Iextlx xglnkx matm matm maxkx tkx gh ixgwbgz bmxfl uxyhkx max vehlnkx hy mabl iatlx,323,608200.0
+CUST042555,Top-Up Loan,220000,2024-08-05,G umsjb jgic rm gldmpk wms rfyr rfc npmhcar bcjgtcpyzjcq ypc qszkgrrcb zw rfc snamkgle bcybjglc,282,265000.0
+CUST078630,Auto Loan,65000,2025-01-09,Aydtbo buj cu adem jxqj jxuhu qhu de fudtydw yjuci ruvehu jxu sbeikhu ev jxyi fxqiu,125,79000.0
+CUST079517,Auto Loan,652000,2024-08-24,Nv jvizfljcp evvu kf nv tflcu jkrik nfibzex fe kyrk gifavtk zuvr nv afbvu rsflk vriczvi,263,783400.0
+CUST032563,Medical Loan,982000,2024-04-27,Xf bsf bxbjujoh zpvs dpogjsnbujpo uibu uif qspkfdu efmjwfsbcmft bsf tvcnjuufe cz uif vqdpnjoh efbemjof,382,1416280.0
+CUST073698,Personal Loan,782000,2024-10-30,S kw gbsdsxq dy pyvvyg ez drkd go wksxdksx yzox mywwexsmkdsyx nebsxq dro swzvowoxdkdsyx zobsyn,196,939400.0
+CUST074260,Loan Against Deposit,412000,2025-01-29,Vd rgntkc zqqzmfd z lddshmf sgzs sgd qduhrdc bnmsqzbs sdqlr zqd qduhdvdc zmc zbbdosdc,105,495400.0
+CUST045447,Medical Loan,154000,2024-05-27,Kyzebzex nv jyflcu nv tflcu yfjk r jdrcc xvk-kfxvkyvi rk dp gcrtv kyzj nvvbveu,352,185800.0
+CUST041943,Personal Loan,631000,2024-08-13,Z nflcu czbv kf zewfid pfl kyrk kyv ivmzjvu tfekirtk kvidj riv ivmzvnvu reu rttvgkvu,274,758200.0
+CUST021867,Travel Loan,98000,2025-03-17,Nby lykoymnyx xiwogyhnm bupy vyyh jlyjulyx uhx nbun nby mwbyxofyx ncgyfchy zil nby jlidywn lyguchm ohwbuhayx,58,118600.0
+CUST066246,Business Loan,574000,2024-08-24,Uif sfrvftufe epdvnfout ibwf cffo qsfqbsfe boe uibu uif vqebufe qpmjdz hvjefmjoft ibwf cffo ejtusjcvufe up bmm efqbsunfout,263,689800.0
+CUST041306,Credit Card Loan,750000,2024-11-05,A xafsddq ygl laew lg ow ugmdv zgkl s kesdd ywl-lgywlzwj sl eq hdsuw lzak owwcwfv,190,901000.0
+CUST027404,Top-Up Loan,451000,2024-12-14,Vd rdqhntrkx mddc sn vd bntkc gzmf nts ax sgd adzbg adenqd hs fdsr bnkcdq zfzhm,151,542200.0
+CUST072173,Loan Against Deposit,857000,2024-10-29,Zpv tipvme efgjojufmz kpjo xf dpvme tubsu xpsljoh po uibu qspkfdu jefb xf kplfe bcpvu fbsmjfs,197,1029400.0
+CUST099230,Top-Up Loan,800000,2024-06-07,Tqk U ime ftuzwuzs iq oagxp sa az m ebazfmzqage damp fdub iuftagf ygot bxmzzuzs,341,961000.0
+CUST034238,Business Loan,243000,2024-10-26,Wkdqn brx iru brxu dwwhqwlrq wkdw wkh lqyrlfh ghwdlov duh fruuhfwob uhiohfwhg lq brxu uhfrugv,200,292600.0
+CUST045803,Top-Up Loan,344000,2024-07-30,Tjp ncjpgy yzadidozgt ejdi rz xjpgy xczxf jpo ocvo izr hjqdz tjp hziodjizy gvno hjioc,288,413800.0
+CUST086289,Medical Loan,802000,2024-06-01,Fbuqiu te dej xuiyjqju je huqsx ekj jxqj jxu kftqjut febyso wkytubydui xqlu ruud tyijhyrkjut je qbb tufqhjcudji,347,963400.0
+CUST001049,Education Loan,342000,2024-10-12,K yqwnf nkmg vq kphqto aqw vjcv vjg wrfcvgf rqnkea iwkfgnkpgu jcxg dggp fkuvtkdwvgf vq cnn fgrctvogpvu,214,411400.0
+CUST092998,Business Loan,92000,2024-12-16,Tjp ncjpgy yzadidozgt ejdi rz xjpgy cvib jpo wt ocz wzvxc wzajmz do bzon xjgyzm vbvdi,149,111400.0
+CUST045605,Loan Against Deposit,792000,2025-04-23,Okdzrd cn mns gdrhszsd sn qdzbg nts sgzs sgd hmunhbd cdszhkr zqd bnqqdbskx qdekdbsdc hm xntq qdbnqcr,21,951400.0
+CUST036309,Home Loan,785000,2024-07-04,Khb L zdv wklqnlqj zh frxog jr iru d klnh li wkh zhdwkhu vwdbv jrrg,314,943000.0
+CUST065350,Business Loan,168000,2024-09-28,Iwxczxcv lt hwdjas lt rdjas qddz ixrztih udg iwpi rdcrtgi wpeetcxcv ctmi bdciw,228,202600.0
+CUST005841,Credit Card Loan,343000,2025-03-05,Wpe xp vyzh tq hp nzfwo ecj esle yph atkkl awlnp pgpcjzyp vppad cpnzxxpyotyr,70,412600.0
+CUST002220,Loan Against Deposit,19000,2025-03-09,Dau E swo pdejgejc sa ykqhz pnu pdwp jas levvw lhwya aranukja gaalo naykiiajzejc,66,23800.0
+CUST030993,Business Loan,233000,2025-03-13,O cuarj roqk zu otluxs eua zngz ck sgotzgot uvkt iussatoigzout jaxotm znk osvrksktzgzout vkxouj,62,280600.0
+CUST087477,Home Loan,693000,2024-07-26,Iwt gtfjthits sdrjbtcih wpkt qttc egtepgts pcs iwpi iwt hrwtsjats ixbtaxct udg iwt egdytri gtbpxch jcrwpcvts,292,832600.0
+CUST021334,Top-Up Loan,876000,2025-01-09,Fbuqiu te dej xuiyjqju je huqsx ekj jxqj mu cqydjqyd efud secckdysqjyed tkhydw jxu ycfbucudjqjyed fuhyet,125,1052200.0
+CUST036175,Home Loan,502000,2025-04-15,Al zsk twwf osq lgg dgfy kafuw ow ugmdv tggc laucwlk xgj lzsl ugfuwjl zshhwfafy fwpl egflz,29,603400.0
+CUST097277,Auto Loan,504000,2024-11-13,Dtz xmtzqi ijknsnyjqd otns bj htzqi xyfwy btwpnsl ts ymfy uwtojhy nijf bj otpji fgtzy jfwqnjw,182,605800.0
+CUST087098,Loan Against Deposit,599000,2025-02-03,Tjp ncjpgy yzadidozgt ejdi rz xjpgy xczxf jpo ocvo izr hjqdz tjp hziodjizy gvno hjioc,100,719800.0
+CUST068015,Loan Against Deposit,57000,2024-06-28,Do rjpgy wz vrznjhz da rz xjpgy nkziy v gvut Npiyvt epno wdibz-rvoxcdib jgy ncjrn,320,69400.0
+CUST053470,Home Loan,358000,2024-09-26,Rkz sk qtuc ol ck iuarj zxe zngz tkc voffg vrgik kbkxeutk qkkvy xkiussktjotm,230,430600.0
+CUST021289,Business Loan,88000,2024-07-31,Jcr kc ilmu gd uc amsjb rpw rfyr lcu ngxxy njyac ctcpwmlc iccnq pcamkkclbgle,287,106600.0
+CUST070527,Home Loan,656000,2025-02-10,Cnlm ptgmxw mh ltr px vhnew lixgw t etsr Lngwtr cnlm ubgzx-ptmvabgz hew lahpl,93,788200.0
+CUST072277,Business Loan,90000,2025-04-07,Dwl ew cfgo ax ow ugmdv zsfy gml tq lzw twsuz twxgjw al ywlk ugdvwj sysaf,37,109000.0
+CUST030149,Travel Loan,851000,2024-10-28,Wkdqn brx iru brxu dwwhqwlrq wkdw wkh vfkhgxohg wlpholqh iru wkh surmhfw uhpdlqv xqfkdqjhg,198,1022200.0
+CUST095798,Auto Loan,959000,2024-05-17,Xqf yq wzai ur iq oagxp efmdf iadwuzs az ftmf bdavqof upqm iq vawqp mnagf qmdxuqd,362,1151800.0
+CUST038053,Medical Loan,526000,2025-04-16,Ep dwo xaaj swu pkk hkjc oejya sa ykqhz cnwx zejjan okiapeia pdeo saag wjz ywpyd ql lnklanhu,28,632200.0
+CUST088402,Education Loan,970000,2025-03-24,Zh vkrxog duudqjh d phhwlqj wkdw wkh lqyrlfh ghwdlov duh fruuhfwob uhiohfwhg lq brxu uhfrugv,51,1165000.0
+CUST076300,Education Loan,720000,2024-11-20,X pb lgxixcv id udaadl je iwpi iwt egdytri staxktgpqath pgt hjqbxiits qn iwt jerdbxcv stpsaxct,175,865000.0
+CUST025630,Top-Up Loan,232000,2025-03-25,Hp dpctzfdwj yppo ez hp nzfwo rz qzc l stvp tq esp hplespc deljd rzzo,50,279400.0
+CUST059695,Credit Card Loan,38000,2024-05-07,Rpuksf sla tl ruvd aoha aol ylcpzlk jvuayhja alytz hyl ylcpldlk huk hjjlwalk,372,56920.0
+CUST001948,Top-Up Loan,980000,2024-11-17,Qeb obnrbpqba alzrjbkqp exsb ybbk mobmxoba xka qexq vlro sxirxyib cbbayxzh fp pexoba tfqe qeb yolxabo jxkxdbjbkq qbxj,178,1177000.0
+CUST035705,Home Loan,54000,2024-05-05,G umsjb jgic rm gldmpk wms rfyr rfc gltmgac bcrygjq ypc amppcarjw pcdjcarcb gl wmsp pcampbq,374,79960.0
+CUST063730,Medical Loan,474000,2024-11-16,Ck ynuarj gxxgtmk g skkzotm zngz znk vxupkiz jkrobkxghrky gxk yahsozzkj he znk aviusotm jkgjrotk,179,569800.0
+CUST034703,Home Loan,93000,2024-09-01,Bxqmeq pa zaf tqeufmfq fa dqmot agf ftmf ftq eotqpgxqp fuyqxuzq rad ftq bdavqof dqymuze gzotmzsqp,255,112600.0
+CUST000730,Travel Loan,343000,2024-10-14,Zk nflcu sv xivrkcp rggivtzrkvu zw kyrk nv drzekrze fgve tfddleztrkzfe ulizex kyv zdgcvdvekrkzfe gvizfu,212,412600.0
+CUST079728,Education Loan,358000,2024-07-12,Xi ldjas qt plthdbt xu lt rdjas vd udg p wxzt xu iwt ltpiwtg hipnh vdds,306,430600.0
+CUST039808,Medical Loan,696000,2025-03-02,Xf tfsjpvtmz offe up xf dpvme iptu b tnbmm hfu-uphfuifs bu nz qmbdf uijt xfflfoe,73,836200.0
+CUST015327,Personal Loan,336000,2025-03-10,Go cobsyecvi xoon dy go myevn lyyu dsmuodc pyb drkd myxmobd rkzzoxsxq xohd wyxdr,65,404200.0
+CUST087001,Travel Loan,496000,2025-02-01,Ny btzqi gj fbjxtrj nk bj htzqi lt ts f xutsyfsjtzx wtfi ywnu bnymtzy rzhm uqfssnsl,102,596200.0
+CUST046075,Credit Card Loan,61000,2025-01-19,Xf tipvme bssbohf b nffujoh uibu uifsf bsf op qfoejoh jufnt cfgpsf uif dmptvsf pg uijt qibtf,115,74200.0
+CUST059233,Credit Card Loan,231000,2025-01-02,Vtyowj wpe xp vyzh esle espcp lcp yz apyotyr tepxd mpqzcp esp nwzdfcp zq estd asldp,132,278200.0
+CUST086721,Business Loan,352000,2024-06-24,Hsqr uylrcb rm qyw uc amsjb afcai msr rfyr lcu kmtgc wms kclrgmlcb jyqr kmlrf,324,423400.0
+CUST086923,Education Loan,119000,2025-03-18,Sa wna wswepejc ukqn ykjbeniwpekj pdwp pda lnkfayp zaheranwxhao wna oqxieppaz xu pda qlykiejc zawzheja,57,143800.0
+CUST044794,Auto Loan,130000,2024-07-23,Uf iagxp nq sdqmfxk mbbdqoumfqp ur ftmf ftq gbpmfqp baxuok sgupqxuzqe tmhq nqqz puefdungfqp fa mxx pqbmdfyqzfe,295,157000.0
+CUST002612,Business Loan,55000,2024-12-31,Mu qhu qmqyjydw oekh sedvyhcqjyed jxqj mu cqydjqyd efud secckdysqjyed tkhydw jxu ycfbucudjqjyed fuhyet,134,67000.0
+CUST048430,Business Loan,757000,2024-07-17,Hvtwz rz xvi kgvi njhzocdib rz xjpgy bj ajm v cdfz da ocz rzvoczm novtn bjjy,301,909400.0
+CUST089814,Business Loan,274000,2024-07-26,Go kbo kgksdsxq iyeb myxpsbwkdsyx drkd dro cmronevon dswovsxo pyb dro zbytomd bowksxc exmrkxqon,292,329800.0
+CUST034237,Personal Loan,584000,2024-11-10,Hvoby mci tcf mcif ohhsbhwcb hvoh hvs idrohsr dczwqm uiwrszwbsg vojs pssb rwghfwpihsr hc ozz rsdofhasbhg,185,701800.0
+CUST066941,Home Loan,291000,2025-01-13,Bj xjwntzxqd sjji yt bj htzqi xyfwy btwpnsl ts ymfy uwtojhy nijf bj otpji fgtzy jfwqnjw,121,350200.0
+CUST068130,Medical Loan,105000,2024-12-01,Jxydaydw mu ixekbt mu sekbt xqdw ekj ro jxu ruqsx ruvehu yj wuji sebtuh qwqyd,164,127000.0
+CUST054886,Education Loan,428000,2025-02-11,P dvbsk sprl av pumvyt fvb aoha aol bwkhalk wvspjf nbpklspulz ohcl illu kpzaypibalk av hss klwhyatluaz,92,514600.0
+CUST061992,Auto Loan,520000,2024-08-28,Nbuhe sio zil siol unnyhncih nbun qy guchnuch ijyh wiggohcwuncih xolcha nby cgjfygyhnuncih jylcix,259,625000.0
+CUST023931,Medical Loan,456000,2024-11-13,V svanyyl tbg gvzr gb jr pbhyq tb ba n fcbagnarbhf ebnq gevc jvgubhg zhpu cynaavat,182,548200.0
+CUST097262,Loan Against Deposit,796000,2025-04-09,Fdiygt gzo hz fijr ocvo tjpm qvgpvwgz azzywvxf dn ncvmzy rdoc ocz wmjvyzm hvivbzhzio ozvh,35,956200.0
+CUST091406,Home Loan,434000,2024-10-21,B ybgteer zhm mbfx mh px vhnew zktu wbggxk lhfxmbfx mabl pxxd tgw vtmva ni ikhixker,205,521800.0
+CUST079450,Auto Loan,279000,2024-05-14,Bpqvsqvo em apwctl em kwctl axmvl i tihg Acvlig rcab jqvom-eibkpqvo wtl apwea,365,335800.0
+CUST033827,Education Loan,506000,2024-12-27,C zchuffs ain ncgy ni qy wiofx mnuln qilecha ih nbun jlidywn cxyu qy dieyx uvion yulfcyl,138,608200.0
+CUST011339,Home Loan,781000,2024-11-23,Uf tme nqqz imk faa xazs euzoq iq oagxp otqow agf ftmf zqi yahuq kag yqzfuazqp xmef yazft,172,938200.0
+CUST008935,Credit Card Loan,969000,2024-05-28,Yj mekbt ru qmuiecu yv mu sekbt we ed q ifedjqdueki heqt jhyf myjxekj cksx fbqddydw,351,1163800.0
+CUST060328,Loan Against Deposit,784000,2024-09-15,N knsfqqd lty ynrj yt bj htzqi gttp ynhpjyx ktw ymfy htshjwy mfuujsnsl sjcy rtsym,241,941800.0
+CUST042328,Credit Card Loan,851000,2024-07-08,Xtmiam lw vwb pmaqbibm bw zmikp wcb bpib em uiqvbiqv wxmv kwuucvqkibqwv lczqvo bpm quxtmumvbibqwv xmzqwl,310,1022200.0
+CUST043218,Medical Loan,547000,2025-01-20,Pfl jyflcu uvwzezkvcp afze nv tflcu xirs uzeevi jfdvkzdv kyzj nvvb reu trkty lg gifgvicp,114,657400.0
+CUST060366,Personal Loan,413000,2024-08-08,Lzafcafy ow kzgmdv ow ugmdv yjst vaffwj kgewlaew lzak owwc sfv usluz mh hjghwjdq,279,496600.0
+CUST012201,Education Loan,999000,2025-03-11,Fq exp ybbk txv qll ilkd pfkzb tb zlria yllh qfzhbqp clo qexq zlkzboq exmmbkfkd kbuq jlkqe,64,1199800.0
+CUST013610,Credit Card Loan,557000,2025-04-04,Al zsk twwf osq lgg dgfy kafuw ow ugmdv klsjl ogjcafy gf lzsl hjgbwul avws ow bgcwv stgml wsjdawj,40,669400.0
+CUST028862,Credit Card Loan,123000,2025-01-17,Csy wlsyph hijmrmxipc nsmr ai gsyph ks sr e wtsrxerisyw vseh xvmt amxlsyx qygl tperrmrk,117,148600.0
+CUST049259,Top-Up Loan,243000,2024-04-24,Lic M aew xlmromrk ai gsyph kvef hmrriv wsqixmqi xlmw aiio erh gexgl yt tvstivpc,385,352120.0
+CUST001409,Credit Card Loan,709000,2025-01-01,Hdwskw vg fgl zwkalslw lg jwsuz gml lzsl lzw afngauw vwlsadk sjw ugjjwuldq jwxdwulwv af qgmj jwugjvk,133,851800.0
+CUST087350,Travel Loan,714000,2024-10-19,Ymj wjvzjxyji ithzrjsyx mfaj gjjs uwjufwji fsi ymfy fqq htruqnfshj wjvznwjrjsyx mfaj gjjs xzhhjxxkzqqd rjy,207,857800.0
+CUST001218,Travel Loan,669000,2024-11-16,Vgef imzfqp fa emk iq oagxp naaw fuowqfe rad ftmf oazoqdf tmbbqzuzs zqjf yazft,179,803800.0
+CUST024639,Travel Loan,60000,2024-11-01,Em izm ieiqbqvo gwcz kwvnqzuibqwv bpib bpmzm izm vw xmvlqvo qbmua jmnwzm bpm ktwaczm wn bpqa xpiam,194,73000.0
+CUST092654,Education Loan,318000,2024-05-13,Wh kcizr ps oksgcas wt ks qcizr pccy hwqyshg tcf hvoh qcbqsfh voddsbwbu bslh acbhv,366,460120.0
+CUST048766,Personal Loan,603000,2024-09-04,Sdbc fjwcnm cx bjh fn lxdum qjwp xdc kh cqn knjlq knoxan rc pncb lxumna jpjrw,252,724600.0
+CUST021366,Personal Loan,231000,2025-04-10,Uf iagxp nq sdqmfxk mbbdqoumfqp ur ftmf ftq eotqpgxqp fuyqxuzq rad ftq bdavqof dqymuze gzotmzsqp,34,278200.0
+CUST074368,Credit Card Loan,110000,2025-01-28,D rjpgy gdfz oj diajmh tjp ocvo oczmz vmz ij kziydib dozhn wzajmz ocz xgjnpmz ja ocdn kcvnz,106,133000.0
+CUST089167,Education Loan,231000,2024-11-11,Wuzpxk xqf yq wzai ftmf kagd hmxgmnxq rqqpnmow ue etmdqp iuft ftq ndampqd ymzmsqyqzf fqmy,184,278200.0
+CUST023369,Credit Card Loan,728000,2024-09-26,Oz cuarj hk mxkgzre gvvxkiogzkj ol zngz znk otbuoik jkzgory gxk iuxxkizre xklrkizkj ot euax xkiuxjy,230,874600.0
+CUST053365,Business Loan,233000,2024-09-14,Rz ncjpgy vmmvibz v hzzodib ocvo oczmz vmz ij kziydib dozhn wzajmz ocz xgjnpmz ja ocdn kcvnz,242,280600.0
+CUST008127,Education Loan,625000,2024-08-14,N fr bwnynsl yt ktqqtb zu ymfy ymj uwtojhy ijqnajwfgqjx fwj xzgrnyyji gd ymj zuhtrnsl ijfiqnsj,273,751000.0
+CUST072810,Credit Card Loan,245000,2024-05-30,Vjkpmkpi yg ujqwnf yg eqwnf iq hqt c jkmg kh vjg ygcvjgt uvcau iqqf,349,295000.0
+CUST074849,Credit Card Loan,353000,2025-03-20,Jzf dszfwo opqtytepwj uzty hp nzfwo rclm otyypc dzxpetxp estd hppv lyo nlens fa aczapcwj,55,424600.0
+CUST068145,Business Loan,121000,2025-03-31,F tlria ifhb ql fkcloj vlr qexq qeb obsfpba zlkqoxzq qbojp xob obsfbtba xka xzzbmqba,44,146200.0
+CUST069336,Top-Up Loan,366000,2025-03-19,Lt pgt plpxixcv ndjg rdcuxgbpixdc iwpi ndjg rdbbtcih pgt xcrdgedgpits xcid iwt uxcpa ktghxdc du iwt pvgttbtci,56,440200.0
+CUST015771,Education Loan,381000,2024-05-30,Zsh as ybck wt ks qcizr vcgh o gaozz ush-hcushvsf oh am dzoqs hvwg kssysbr,349,458200.0
+CUST044978,Personal Loan,818000,2024-07-27,Go cobsyecvi xoon dy go myevn rycd k cwkvv qod-dyqodrob kd wi zvkmo drsc goouoxn,291,982600.0
+CUST026069,Home Loan,836000,2024-05-26,M asyph pmoi xs mrjsvq csy xlex epp gsqtpmergi viuymviqirxw lezi fiir wyggiwwjyppc qix,353,1004200.0
+CUST094534,Top-Up Loan,347000,2025-01-06,Kyreb pfl wfi pfli rkkvekzfe kyrk kyv lgurkvu gfcztp xlzuvczevj yrmv svve uzjkizslkvu kf rcc uvgrikdvekj,128,417400.0
+CUST019437,Personal Loan,418000,2024-07-06,Aohur fvb mvy fvby haaluapvu aoha aol zjolkbslk aptlspul mvy aol wyvqlja ylthpuz bujohunlk,312,502600.0
+CUST084254,Credit Card Loan,69000,2024-11-18,Xtmiam lw vwb pmaqbibm bw zmikp wcb bpib gwcz kwuumvba izm qvkwzxwzibml qvbw bpm nqvit dmzaqwv wn bpm iozmmumvb,177,83800.0
+CUST048060,Medical Loan,25000,2024-09-22,Roi S gkc drsxusxq go myevn dbi drkd xog zsjjk zvkmo ofobiyxo uoozc bomywwoxnsxq,234,31000.0
+CUST018210,Travel Loan,854000,2024-10-23,Jr fubhyq neenatr n zrrgvat gung gur vaibvpr qrgnvyf ner pbeerpgyl ersyrpgrq va lbhe erpbeqf,203,1025800.0
+CUST046141,Business Loan,837000,2024-06-25,Qb ewctl jm ozmibtg ixxzmkqibml qn bpib gwcz ditcijtm nmmljiks qa apizml eqbp bpm jzwilmz uiviomumvb bmiu,323,1005400.0
+CUST035156,Home Loan,49000,2024-09-23,Dl zlypvbzsf ullk av dl jvbsk ovza h zthss nla-avnlaoly ha tf wshjl aopz dllrluk,233,59800.0
+CUST049338,Medical Loan,482000,2024-09-04,O gs cxozotm zu lurruc av zngz znk otbuoik jkzgory gxk iuxxkizre xklrkizkj ot euax xkiuxjy,252,579400.0
+CUST038027,Auto Loan,106000,2024-06-24,E wi snepejc pk bkhhks ql pdwp ukqn ykiiajpo wna ejyknlknwpaz ejpk pda bejwh ranoekj kb pda wcnaaiajp,324,128200.0
+CUST049928,Auto Loan,557000,2025-02-20,R jv farcrwp cx oxuuxf dy cqjc cqn dymjcnm yxurlh pdrmnurwnb qjen knnw mrbcarkdcnm cx juu mnyjacvnwcb,83,669400.0
+CUST089883,Business Loan,525000,2024-05-31,Awpldp oz yze spdtelep ez cplns zfe esle esp dnspofwpo etxpwtyp qzc esp aczupne cpxltyd fynslyrpo,348,631000.0
+CUST050760,Personal Loan,326000,2025-01-29,Pdejgejc sa odkqhz sa ykqhz olajz w hwvu Oqjzwu fqop xejca-swpydejc khz odkso,105,392200.0
+CUST010279,Top-Up Loan,380000,2025-04-13,Ndj hwdjas stuxcxitan ydxc lt rdjas hipgi ldgzxcv dc iwpi egdytri xstp lt ydzts pqdji tpgaxtg,31,457000.0
+CUST007030,Business Loan,210000,2024-06-09,A se ojalafy lg xgddgo mh lzsl qgmj ugeewflk sjw afugjhgjslwv aflg lzw xafsd nwjkagf gx lzw syjwwewfl,339,253000.0
+CUST085282,Credit Card Loan,695000,2024-12-12,Uf iagxp nq miqeayq ur iq oagxp efmdf iadwuzs az ftmf bdavqof upqm iq vawqp mnagf qmdxuqd,153,835000.0
+CUST061294,Travel Loan,596000,2024-09-02,Vgef imzfqp fa emk iq oagxp naaw fuowqfe rad ftmf oazoqdf tmbbqzuzs zqjf yazft,254,716200.0
+CUST083381,Top-Up Loan,178000,2025-03-27,Pa dvbsk il hdlzvtl pm dl jvbsk nv mvy h oprl pm aol dlhaoly zahfz nvvk,48,214600.0
+CUST075747,Business Loan,97000,2024-10-12,Hs vntkc ad fqdzskx zooqdbhzsdc he sgzs xntq bnlldmsr zqd hmbnqonqzsdc hmsn sgd ehmzk udqrhnm ne sgd zfqddldms,214,117400.0
+CUST069686,Home Loan,87000,2024-11-17,Aopurpun dl zovbsk dl jvbsk nv mvy h oprl pm aol dlhaoly zahfz nvvk,178,105400.0
+CUST069190,Personal Loan,872000,2024-07-05,Xf tipvme bssbohf b nffujoh uibu uif vqebufe qpmjdz hvjefmjoft ibwf cffo ejtusjcvufe up bmm efqbsunfout,313,1047400.0
+CUST009077,Auto Loan,599000,2024-09-06,Epno rviozy oj nvt rz xjpgy cvib jpo wt ocz wzvxc wzajmz do bzon xjgyzm vbvdi,250,719800.0
+CUST036488,Medical Loan,531000,2025-02-13,Kv jcu dggp yca vqq nqpi ukpeg yg eqwnf jquv c uocnn igv-vqigvjgt cv oa rnceg vjku yggmgpf,90,638200.0
+CUST016263,Loan Against Deposit,221000,2024-05-21,Qeb obnrbpqba alzrjbkqp exsb ybbk mobmxoba xka qexq qebob xob kl mbkafkd fqbjp ybclob qeb zilprob lc qefp mexpb,358,266200.0
+CUST062500,Auto Loan,808000,2025-01-26,Yg ujqwnf cttcpig c oggvkpi vjcv vjg kpxqkeg fgvcknu ctg eqttgevna tghngevgf kp aqwt tgeqtfu,108,970600.0
+CUST039987,Loan Against Deposit,603000,2025-04-16,R fxdum urtn cx rwoxav hxd cqjc juu lxvyurjwln anzdranvnwcb qjen knnw bdllnbboduuh vnc,28,724600.0
+CUST028915,Home Loan,805000,2025-02-26,Q iu ezqbqvo bw nwttwe cx bpib bpm qvdwqkm lmbiqta izm kwzzmkbtg zmntmkbml qv gwcz zmkwzla,77,967000.0
+CUST098717,Personal Loan,542000,2024-08-28,C qiofx fcey ni chzilg sio nbun siol wiggyhnm uly chwiljilunyx chni nby zchuf pylmcih iz nby ualyygyhn,259,651400.0
+CUST026465,Travel Loan,244000,2024-07-28,Bmkl osflwv lg ksq ow ugmdv ljq lzsl fwo harrs hdsuw wnwjqgfw cwwhk jwugeewfvafy,290,293800.0
+CUST074600,Personal Loan,366000,2025-01-03,E wi snepejc pk bkhhks ql pdwp pda oydazqhaz peiaheja bkn pda lnkfayp naiwejo qjydwjcaz,131,440200.0
+CUST023522,Personal Loan,313000,2024-11-15,Eatpht tchjgt iwpi iwpi ndjg rdbbtcih pgt xcrdgedgpits xcid iwt uxcpa ktghxdc du iwt pvgttbtci,180,376600.0
+CUST017890,Personal Loan,497000,2024-10-09,Qy mbiofx ulluhay u gyyncha nbun nby chpicwy xynucfm uly willywnfs lyzfywnyx ch siol lywilxm,217,597400.0
+CUST053983,Loan Against Deposit,730000,2025-04-05,V nz jevgvat gb sbyybj hc gung nyy pbzcyvnapr erdhverzragf unir orra fhpprffshyyl zrg,39,877000.0
+CUST061663,Business Loan,410000,2024-08-22,Do cvn wzzi rvt ojj gjib ndixz rz xjpgy bmvw ydiizm njhzodhz ocdn rzzf viy xvoxc pk kmjkzmgt,265,493000.0
+CUST085740,Travel Loan,248000,2024-11-06,Zwq A osk lzafcafy ow ugmdv tggc laucwlk xgj lzsl ugfuwjl zshhwfafy fwpl egflz,189,298600.0
+CUST073866,Travel Loan,264000,2025-04-07,Gejzhu hap ia gjks pdwp whh ykilhewjya namqenaiajpo dwra xaaj oqyyaoobqhhu iap,37,317800.0
+CUST076654,Credit Card Loan,108000,2024-10-06,Mx asyph fi kviexpc ettvigmexih mj xlex xli vizmwih gsrxvegx xivqw evi vizmiaih erh eggitxih,220,130600.0
+CUST004691,Education Loan,286000,2024-10-27,Ai evi eaemxmrk csyv gsrjmvqexmsr xlex xli ythexih tspmgc kymhipmriw lezi fiir hmwxvmfyxih xs epp hitevxqirxw,199,344200.0
+CUST031832,Education Loan,766000,2025-02-13,Vg unf orra jnl gbb ybat fvapr jr pbhyq gel gung arj cvmmn cynpr rirelbar xrrcf erpbzzraqvat,90,920200.0
+CUST019066,Medical Loan,862000,2024-08-13,Lt hwdjas pggpcvt p bttixcv iwpi iwt egdytri staxktgpqath pgt hjqbxiits qn iwt jerdbxcv stpsaxct,274,1035400.0
+CUST009730,Top-Up Loan,426000,2024-08-24,Zk nflcu sv rnvjfdv zw nv tflcu sffb kztbvkj wfi kyrk tfetvik yrggvezex evok dfeky,263,512200.0
+CUST016107,Loan Against Deposit,901000,2025-03-13,Tpiewi irwyvi xlex xlex csyv gsqqirxw evi mrgsvtsvexih mrxs xli jmrep zivwmsr sj xli ekviiqirx,62,1082200.0
+CUST022610,Auto Loan,532000,2025-04-05,Nbzcf xf dbo qmbo tpnfuijoh xf dpvme hsbc ejoofs tpnfujnf uijt xffl boe dbudi vq qspqfsmz,39,639400.0
+CUST057742,Travel Loan,515000,2024-09-23,Sgzmj xnt enq xntq zssdmshnm sgzs zkk bnlokhzmbd qdpthqdldmsr gzud addm rtbbdrretkkx lds,233,619000.0
+CUST021194,Business Loan,815000,2024-10-31,Fbuqiu te dej xuiyjqju je huqsx ekj jxqj jxu kftqjut febyso wkytubydui xqlu ruud tyijhyrkjut je qbb tufqhjcudji,195,979000.0
+CUST043808,Education Loan,831000,2024-08-23,Jga K ycu vjkpmkpi yg eqwnf iq hqt c jkmg kh vjg ygcvjgt uvcau iqqf,264,998200.0
+CUST038403,Medical Loan,937000,2024-08-22,Xljmp hp nly awly dzxpestyr hp nzfwo slyr zfe mj esp mplns mpqzcp te rped nzwopc lrlty,265,1125400.0
+CUST014896,Travel Loan,41000,2025-02-01,Qmfbtf fotvsf uibu uibu bmm dpnqmjbodf sfrvjsfnfout ibwf cffo tvddfttgvmmz nfu,102,50200.0
+CUST005385,Auto Loan,907000,2025-02-18,Csy wlsyph hijmrmxipc nsmr ai gsyph lswx e wqepp kix-xskixliv ex qc tpegi xlmw aiioirh,85,1089400.0
+CUST042840,Education Loan,536000,2024-10-09,Gwc apwctl lmnqvqbmtg rwqv em kwctl pivo wcb jg bpm jmikp jmnwzm qb omba kwtlmz ioiqv,217,644200.0
+CUST066657,Loan Against Deposit,312000,2024-10-31,Olf P dhz aopurpun dl jvbsk nv mvy h oprl pm aol dlhaoly zahfz nvvk,195,375400.0
+CUST069495,Medical Loan,358000,2024-11-01,Thfil dl jhu wshu zvtlaopun dl jvbsk ohun vba if aol ilhjo ilmvyl pa nlaz jvskly hnhpu,194,430600.0
+CUST025616,Loan Against Deposit,707000,2024-07-21,Ifz J xbt uijoljoh xf dpvme hsbc ejoofs tpnfujnf uijt xffl boe dbudi vq qspqfsmz,297,849400.0
+CUST056256,Home Loan,104000,2024-07-02,Fbuqiu te dej xuiyjqju je huqsx ekj jxqj jxuhu qhu de fudtydw yjuci ruvehu jxu sbeikhu ev jxyi fxqiu,316,125800.0
+CUST055855,Home Loan,538000,2024-08-05,Domn quhnyx ni mus qy wiofx ai ih u mjihnuhyiom liux nlcj qcnbion gowb jfuhhcha,282,646600.0
+CUST094228,Education Loan,624000,2024-06-15,D vh rmdodib oj ajggjr pk ocvo oczmz vmz ij kziydib dozhn wzajmz ocz xgjnpmz ja ocdn kcvnz,333,749800.0
+CUST064997,Business Loan,523000,2024-11-27,Znlor jr pna cyna fbzrguvat jr pbhyq unat bhg ol gur ornpu orsber vg trgf pbyqre ntnva,168,628600.0
+CUST049713,Medical Loan,352000,2024-10-07,A xafsddq ygl laew lg ow ugmdv zsfy gml tq lzw twsuz twxgjw al ywlk ugdvwj sysaf,219,423400.0
+CUST000108,Credit Card Loan,297000,2025-03-31,Ck ykxouayre tkkj zu ck iuarj yzgxz cuxqotm ut zngz vxupkiz ojkg ck puqkj ghuaz kgxrokx,44,357400.0
+CUST064093,Education Loan,958000,2024-05-16,Zk nflcu sv rnvjfdv zw nv tflcu xirs uzeevi jfdvkzdv kyzj nvvb reu trkty lg gifgvicp,363,1150600.0
+CUST083992,Travel Loan,988000,2025-02-02,Fbuqiu te dej xuiyjqju je huqsx ekj jxqj jxu fhezusj tubyluhqrbui qhu ikrcyjjut ro jxu kfsecydw tuqtbydu,101,1186600.0
+CUST050924,Education Loan,675000,2024-11-10,Iye cryevn nopsxsdovi tysx go myevn mromu yed drkd xog wyfso iye woxdsyxon vkcd wyxdr,185,811000.0
+CUST030237,Home Loan,396000,2024-12-09,Sd rkc loox gki dyy vyxq csxmo go myevn mromu yed drkd xog wyfso iye woxdsyxon vkcd wyxdr,156,476200.0
+CUST022922,Travel Loan,320000,2025-04-08,X uxcpaan vdi ixbt id lt rdjas wpcv dji qn iwt qtprw qtudgt xi vtih rdastg pvpxc,36,385000.0
+CUST002668,Top-Up Loan,618000,2024-09-07,Cyrnfr qb abg urfvgngr gb ernpu bhg gung gur hcqngrq cbyvpl thvqryvarf unir orra qvfgevohgrq gb nyy qrcnegzragf,249,742600.0
+CUST028310,Loan Against Deposit,972000,2025-01-07,Rfyli wms dmp wmsp yrrclrgml rfyr rfc gltmgac bcrygjq ypc amppcarjw pcdjcarcb gl wmsp pcampbq,127,1167400.0
+CUST084564,Credit Card Loan,461000,2025-02-16,Ftq dqcgqefqp paogyqzfe tmhq nqqz bdqbmdqp mzp ftmf ftq gbpmfqp baxuok sgupqxuzqe tmhq nqqz puefdungfqp fa mxx pqbmdfyqzfe,87,554200.0
+CUST048947,Education Loan,146000,2024-11-14,Aydtbo buj cu adem jxqj jxu ydleysu tujqybi qhu sehhusjbo huvbusjut yd oekh husehti,181,176200.0
+CUST085094,Loan Against Deposit,899000,2025-01-05,Xi wph qttc lpn idd adcv hxcrt lt rdjas vd dc p hedcipctdjh gdps igxe lxiwdji bjrw eapccxcv,129,1079800.0
+CUST062377,Travel Loan,551000,2025-02-20,Al zsk twwf osq lgg dgfy kafuw ow ugmdv klsjl ogjcafy gf lzsl hjgbwul avws ow bgcwv stgml wsjdawj,83,662200.0
+CUST069878,Education Loan,843000,2024-08-19,Mci gvcizr rstwbwhszm xcwb ks qcizr pccy hwqyshg tcf hvoh qcbqsfh voddsbwbu bslh acbhv,268,1012600.0
+CUST000811,Home Loan,607000,2024-08-28,Hdwskw wfkmjw lzsl lzsl lzw hjgbwul vwdanwjstdwk sjw kmteallwv tq lzw mhugeafy vwsvdafw,259,729400.0
+CUST054979,Travel Loan,113000,2024-06-09,Qb ewctl jm ozmibtg ixxzmkqibml qn bpib em uiqvbiqv wxmv kwuucvqkibqwv lczqvo bpm quxtmumvbibqwv xmzqwl,339,136600.0
+CUST013686,Loan Against Deposit,40000,2025-02-01,Zngtq eua lux euax gzzktzout zngz znk otbuoik jkzgory gxk iuxxkizre xklrkizkj ot euax xkiuxjy,102,49000.0
+CUST012959,Business Loan,426000,2024-10-06,Hs gzr addm vzx snn knmf rhmbd vd bntkc fn nm z ronmszmdntr qnzc sqho vhsgnts ltbg okzmmhmf,220,512200.0
+CUST041667,Business Loan,283000,2024-07-09,Esp cpbfpdepo oznfxpyed slgp mppy acpalcpo lyo esle esp cpgtdpo nzyeclne epcxd lcp cpgtphpo lyo lnnpaepo,309,340600.0
+CUST097483,Education Loan,510000,2024-10-25,Qb ewctl jm iemawum qn em kwctl ow nwz i pqsm qn bpm emibpmz abiga owwl,201,613000.0
+CUST020679,Personal Loan,562000,2024-08-15,Iwpcz ndj udg ndjg piitcixdc iwpi iwt hrwtsjats ixbtaxct udg iwt egdytri gtbpxch jcrwpcvts,272,675400.0
+CUST001101,Loan Against Deposit,807000,2024-12-21,F xj tofqfkd ql cliilt rm qexq qeb rmaxqba mlifzv drfabifkbp exsb ybbk afpqofyrqba ql xii abmxoqjbkqp,144,969400.0
+CUST009887,Credit Card Loan,882000,2024-06-25,Vtyowj wpe xp vyzh esle lww nzxawtlynp cpbftcpxpyed slgp mppy dfnnpddqfwwj xpe,323,1059400.0
+CUST059570,Personal Loan,586000,2024-06-02,Ocdifdib rz ncjpgy rz xjpgy omt ocvo izr kduuv kgvxz zqzmtjiz fzzkn mzxjhhziydib,346,704200.0
+CUST023665,Medical Loan,781000,2025-04-13,Bm phnew ux zkxtmer tiikxvbtmxw by matm max ikhcxvm wxeboxktuexl tkx lnufbmmxw ur max nivhfbgz wxtwebgx,31,938200.0
+CUST079399,Personal Loan,366000,2024-12-04,J bn xsjujoh up gpmmpx vq uibu uif tdifevmfe ujnfmjof gps uif qspkfdu sfnbjot vodibohfe,161,440200.0
+CUST030719,Loan Against Deposit,327000,2024-11-14,Brx vkrxog ghilqlwhob mrlq zh frxog vwduw zrunlqj rq wkdw surmhfw lghd zh mrnhg derxw hduolhu,181,393400.0
+CUST012668,Home Loan,546000,2025-01-04,Jzf dszfwo opqtytepwj uzty hp nzfwo dapyo l wlkj Dfyolj ufde mtyrp-hlenstyr zwo dszhd,130,656200.0
+CUST098471,Loan Against Deposit,548000,2024-09-29,Ywbrzm zsh as ybck hvoh ks aowbhowb cdsb qcaaibwqohwcb rifwbu hvs wadzsasbhohwcb dsfwcr,227,658600.0
+CUST010602,Top-Up Loan,455000,2025-03-11,Te sld mppy hlj ezz wzyr dtynp hp nzfwo ecj esle yph atkkl awlnp pgpcjzyp vppad cpnzxxpyotyr,64,547000.0
+CUST019910,Travel Loan,469000,2024-05-06,Drpsv nv tre gcre jfdvkyzex nv tflcu sffb kztbvkj wfi kyrk tfetvik yrggvezex evok dfeky,373,677560.0
+CUST087657,Medical Loan,150000,2024-08-02,Gwc apwctl lmnqvqbmtg rwqv em kwctl pivo wcb jg bpm jmikp jmnwzm qb omba kwtlmz ioiqv,285,181000.0
+CUST004553,Loan Against Deposit,64000,2024-08-03,Czt D rvn ocdifdib rz xjpgy nkziy v gvut Npiyvt epno wdibz-rvoxcdib jgy ncjrn,284,77800.0
+CUST091801,Top-Up Loan,352000,2024-08-22,S psxkvvi qyd dswo dy go myevn qbkl nsxxob cywodswo drsc goou kxn mkdmr ez zbyzobvi,265,423400.0
+CUST057762,Top-Up Loan,986000,2024-12-20,A se ojalafy lg xgddgo mh lzsl lzw hjgbwul vwdanwjstdwk sjw kmteallwv tq lzw mhugeafy vwsvdafw,145,1184200.0
+CUST081571,Medical Loan,344000,2024-09-02,Iwt gtfjthits sdrjbtcih wpkt qttc egtepgts pcs iwpi paa rdbeaxpcrt gtfjxgtbtcih wpkt qttc hjrrthhujaan bti,254,413800.0
+CUST045997,Home Loan,669000,2025-02-14,Tecd gkxdon dy cki go myevn lyyu dsmuodc pyb drkd myxmobd rkzzoxsxq xohd wyxdr,89,803800.0
+CUST009643,Education Loan,113000,2024-10-14,E skqhz hega pk ejbkni ukq pdwp pda qlzwpaz lkheyu cqezahejao dwra xaaj zeopnexqpaz pk whh zalwnpiajpo,212,136600.0
+CUST004188,Auto Loan,131000,2024-05-22,Sdbc fjwcnm cx bjh fn lxdum kxxt crltncb oxa cqjc lxwlnac qjyynwrwp wngc vxwcq,357,158200.0
+CUST033738,Home Loan,616000,2024-10-16,Iwt gtfjthits sdrjbtcih wpkt qttc egtepgts pcs iwpi ndjg kpajpqat uttsqprz xh hwpgts lxiw iwt qgdpstg bpcpvtbtci itpb,210,740200.0
+CUST055104,Loan Against Deposit,648000,2024-04-23,Ck ynuarj gxxgtmk g skkzotm zngz euax bgraghrk lkkjhgiq oy yngxkj cozn znk hxugjkx sgtgmksktz zkgs,386,935320.0
+CUST056122,Business Loan,460000,2025-01-28,D adivggt bjo odhz oj rz xjpgy bj ji v nkjiovizjpn mjvy omdk rdocjpo hpxc kgviidib,106,553000.0
+CUST001654,Home Loan,944000,2024-05-30,Iwt gtfjthits sdrjbtcih wpkt qttc egtepgts pcs iwpi paa rdbeaxpcrt gtfjxgtbtcih wpkt qttc hjrrthhujaan bti,349,1133800.0
+CUST003363,Top-Up Loan,988000,2025-01-28,Gunax lbh sbe lbhe nggragvba gung gur fpurqhyrq gvzryvar sbe gur cebwrpg erznvaf hapunatrq,106,1186600.0
+CUST097418,Auto Loan,99000,2025-02-15,Xli viuyiwxih hsgyqirxw lezi fiir tvitevih erh xlex csyv gsqqirxw evi mrgsvtsvexih mrxs xli jmrep zivwmsr sj xli ekviiqirx,88,119800.0
+CUST086308,Education Loan,41000,2024-06-25,Tjp ncjpgy yzadidozgt ejdi rz xjpgy bj ajm v cdfz da ocz rzvoczm novtn bjjy,323,50200.0
+CUST032632,Travel Loan,116000,2024-09-11,Matgd rhn yhk rhnk tmmxgmbhg matm max lvaxwnexw mbfxebgx yhk max ikhcxvm kxftbgl ngvatgzxw,245,140200.0
+CUST006672,Auto Loan,105000,2024-04-25,Hs vntkc ad zvdrnld he vd bntkc rodmc z kzyx Rtmczx itrs ahmfd-vzsbghmf nkc rgnvr,384,153400.0
+CUST011039,Loan Against Deposit,885000,2025-03-04,Gcvrjv uf efk yvjzkrkv kf ivrty flk kyrk pfli tfddvekj riv zetfigfirkvu zekf kyv wzerc mvijzfe fw kyv rxivvdvek,71,1063000.0
+CUST077313,Medical Loan,547000,2024-12-28,Cqrwtrwp fn bqxdum fn lxdum bcjac fxatrwp xw cqjc yaxsnlc rmnj fn sxtnm jkxdc njaurna,137,657400.0
+CUST055978,Personal Loan,576000,2024-11-06,Wh vog pssb kom hcc zcbu gwbqs ks qcizr ghofh kcfywbu cb hvoh dfcxsqh wrso ks xcysr opcih sofzwsf,189,692200.0
+CUST080091,Home Loan,370000,2024-11-23,Aydtbo buj cu adem jxqj mu cqydjqyd efud secckdysqjyed tkhydw jxu ycfbucudjqjyed fuhyet,172,445000.0
+CUST023248,Top-Up Loan,137000,2024-10-10,W twbozzm uch hwas hc ks qcizr uc cb o gdcbhobscig fcor hfwd kwhvcih aiqv dzobbwbu,216,165400.0
+CUST080520,Top-Up Loan,918000,2024-11-21,Thfil dl jhu wshu zvtlaopun dl jvbsk nv mvy h oprl pm aol dlhaoly zahfz nvvk,174,1102600.0
+CUST039792,Medical Loan,411000,2024-05-04,Cqoru mu sqd fbqd iecujxydw mu sekbt we veh q xyau yv jxu muqjxuh ijqoi weet,375,594040.0
+CUST013992,Credit Card Loan,819000,2025-01-04,Yg ctg cyckvkpi aqwt eqphktocvkqp vjcv aqwt xcnwcdng hggfdcem ku ujctgf ykvj vjg dtqcfgt ocpcigogpv vgco,130,983800.0
+CUST095717,Medical Loan,66000,2024-09-04,Zk nflcu sv rnvjfdv zw nv tflcu xirs uzeevi jfdvkzdv kyzj nvvb reu trkty lg gifgvicp,252,80200.0
+CUST065833,Travel Loan,628000,2024-12-31,Xlmromrk ai wlsyph ai gsyph fsso xmgoixw jsv xlex gsrgivx lettirmrk ribx qsrxl,134,754600.0
+CUST081559,Credit Card Loan,241000,2024-06-23,Hxd bqxdum mnorwrcnuh sxrw fn lxdum kxxt crltncb oxa cqjc lxwlnac qjyynwrwp wngc vxwcq,325,290200.0
+CUST001776,Personal Loan,679000,2025-02-13,C ug qlcncha ni ziffiq oj nbun qy guchnuch ijyh wiggohcwuncih xolcha nby cgjfygyhnuncih jylcix,90,815800.0
+CUST060593,Education Loan,211000,2025-04-22,Ocvif tjp ajm tjpm vooziodji ocvo vgg xjhkgdvixz mzlpdmzhzion cvqz wzzi npxxznnapggt hzo,22,254200.0
+CUST019598,Medical Loan,984000,2025-01-28,Rc fxdum kn jfnbxvn ro fn lxdum lqnlt xdc cqjc wnf vxern hxd vnwcrxwnm ujbc vxwcq,106,1181800.0
+CUST070779,Travel Loan,963000,2025-01-11,Vlr pelria abcfkfqbiv glfk tb zlria exkd lrq yv qeb ybxze ybclob fq dbqp zliabo xdxfk,123,1156600.0
+CUST096999,Credit Card Loan,878000,2025-03-20,Xtmiam mvaczm bpib bpib bpm zmdqaml kwvbzikb bmzua izm zmdqmeml ivl ikkmxbml,55,1054600.0
+CUST087279,Medical Loan,849000,2024-07-23,Y mekbt byau je ydvehc oek jxqj jxu fhezusj tubyluhqrbui qhu ikrcyjjut ro jxu kfsecydw tuqtbydu,295,1019800.0
+CUST012726,Travel Loan,419000,2024-09-16,Wkilo go mkx zvkx cywodrsxq go myevn mromu yed drkd xog wyfso iye woxdsyxon vkcd wyxdr,240,503800.0
+CUST091593,Personal Loan,328000,2024-06-12,J bn xsjujoh up gpmmpx vq uibu uif sfwjtfe dpousbdu ufsnt bsf sfwjfxfe boe bddfqufe,336,394600.0
+CUST042722,Travel Loan,295000,2024-08-31,X pb lgxixcv id udaadl je iwpi lt bpxcipxc detc rdbbjcxrpixdc sjgxcv iwt xbeatbtcipixdc etgxds,256,355000.0
+CUST095071,Medical Loan,922000,2025-02-28,T hzfwo wtvp ez tyqzcx jzf esle esp cpgtdpo nzyeclne epcxd lcp cpgtphpo lyo lnnpaepo,75,1107400.0
+CUST079703,Home Loan,516000,2024-06-30,Yg ujqwnf cttcpig c oggvkpi vjcv aqwt xcnwcdng hggfdcem ku ujctgf ykvj vjg dtqcfgt ocpcigogpv vgco,318,620200.0
+CUST091322,Loan Against Deposit,597000,2024-09-22,Payz cgtzkj zu yge ck iuarj zxe zngz tkc voffg vrgik kbkxeutk qkkvy xkiussktjotm,234,717400.0
+CUST075680,Personal Loan,90000,2024-08-17,Xf tfsjpvtmz offe up xf dpvme tqfoe b mbaz Tvoebz kvtu cjohf-xbudijoh pme tipxt,270,109000.0
+CUST039429,Loan Against Deposit,808000,2024-06-28,Jzf dszfwo opqtytepwj uzty hp nzfwo rclm otyypc dzxpetxp estd hppv lyo nlens fa aczapcwj,320,970600.0
+CUST056905,Education Loan,80000,2024-07-06,Wms qfmsjb bcdglgrcjw hmgl uc amsjb qrypr umpigle ml rfyr npmhcar gbcy uc hmicb yzmsr cypjgcp,312,97000.0
+CUST028586,Auto Loan,782000,2024-09-11,Te hzfwo mp rcplewj laacpntlepo tq esle esp aczupne opwtgpclmwpd lcp dfmxteepo mj esp fanzxtyr oplowtyp,245,939400.0
+CUST066041,Loan Against Deposit,137000,2024-06-17,Uqjfxj jsxzwj ymfy ymfy ymj nsatnhj ijyfnqx fwj htwwjhyqd wjkqjhyji ns dtzw wjhtwix,331,165400.0
+CUST073623,Top-Up Loan,411000,2024-05-05,Axr B ptl mabgdbgz px vhnew uhhd mbvdxml yhk matm vhgvxkm atiixgbgz gxqm fhgma,374,594040.0
+CUST048581,Medical Loan,34000,2024-08-14,Trwmuh unc vn twxf cqjc hxda ejudjkun onnmkjlt rb bqjanm frcq cqn kaxjmna vjwjpnvnwc cnjv,273,41800.0
+CUST089068,Credit Card Loan,376000,2024-08-31,Gcvrjv uf efk yvjzkrkv kf ivrty flk kyrk kyv lgurkvu gfcztp xlzuvczevj yrmv svve uzjkizslkvu kf rcc uvgrikdvekj,256,452200.0
+CUST023608,Medical Loan,610000,2025-04-23,J xpvme mjlf up jogpsn zpv uibu uif vqebufe qpmjdz hvjefmjoft ibwf cffo ejtusjcvufe up bmm efqbsunfout,21,733000.0
+CUST051955,Travel Loan,115000,2024-08-20,Pfl jyflcu uvwzezkvcp afze nv tflcu yrex flk sp kyv svrty svwfiv zk xvkj tfcuvi rxrze,267,139000.0
+CUST012452,Auto Loan,506000,2025-03-15,J gjobmmz hpu ujnf up xf dpvme iptu b tnbmm hfu-uphfuifs bu nz qmbdf uijt xfflfoe,60,608200.0
+CUST020255,Top-Up Loan,715000,2025-03-03,Ju xpvme cf bxftpnf jg xf dpvme hp po b tqpoubofpvt spbe usjq xjuipvu nvdi qmboojoh,72,859000.0
+CUST088676,Home Loan,814000,2024-06-07,Jxvyb tb zxk mixk pljbqefkd tb zlria dl clo x efhb fc qeb tbxqebo pqxvp dlla,341,977800.0
+CUST098451,Business Loan,756000,2024-10-19,H zl vqhshmf sn enkknv to sgzs vd lzhmszhm nodm bnlltmhbzshnm ctqhmf sgd hlokdldmszshnm odqhnc,207,908200.0
+CUST059458,Home Loan,784000,2024-06-25,Yjhi lpcits id hpn lt rdjas vd dc p hedcipctdjh gdps igxe lxiwdji bjrw eapccxcv,323,941800.0
+CUST051489,Loan Against Deposit,50000,2024-11-20,F xj tofqfkd ql cliilt rm qexq qeb molgbzq abifsboxyibp xob pryjfqqba yv qeb rmzljfkd abxaifkb,175,61000.0
+CUST064309,Home Loan,855000,2024-12-06,Dau E swo pdejgejc sa ykqhz ck kj w olkjpwjakqo nkwz pnel sepdkqp iqyd lhwjjejc,159,1027000.0
+CUST030331,Medical Loan,802000,2025-01-27,Ai evi eaemxmrk csyv gsrjmvqexmsr xlex csyv zepyefpi jiihfego mw wlevih amxl xli fvsehiv qerekiqirx xieq,107,963400.0
+CUST032505,Education Loan,217000,2024-11-16,Uif sfrvftufe epdvnfout ibwf cffo qsfqbsfe boe uibu uif qspkfdu efmjwfsbcmft bsf tvcnjuufe cz uif vqdpnjoh efbemjof,179,261400.0
+CUST034866,Credit Card Loan,378000,2024-12-18,Wtn X lph iwxczxcv lt rdjas rwtrz dji iwpi ctl bdkxt ndj btcixdcts aphi bdciw,147,454600.0
+CUST005724,Top-Up Loan,963000,2025-03-20,Rz vmz vrvdodib tjpm xjiadmhvodji ocvo rz hvdiovdi jkzi xjhhpidxvodji ypmdib ocz dhkgzhziovodji kzmdjy,55,1156600.0
+CUST023195,Auto Loan,31000,2024-07-09,Ymnspnsl bj xmtzqi bj htzqi lt ktw f mnpj nk ymj bjfymjw xyfdx ltti,309,38200.0
+CUST098405,Medical Loan,694000,2024-08-09,Aohur fvb mvy fvby haaluapvu aoha aol zjolkbslk aptlspul mvy aol wyvqlja ylthpuz bujohunlk,278,833800.0
+CUST087466,Credit Card Loan,853000,2024-08-29,Tpiewi irwyvi xlex xlex xlivi evi rs tirhmrk mxiqw fijsvi xli gpswyvi sj xlmw tlewi,258,1024600.0
+CUST023359,Medical Loan,572000,2024-12-05,B tf pkbmbgz mh yheehp ni matm px ftbgmtbg hixg vhffngbvtmbhg wnkbgz max bfiexfxgmtmbhg ixkbhw,160,687400.0
+CUST088119,Auto Loan,181000,2025-01-16,Nby lykoymnyx xiwogyhnm bupy vyyh jlyjulyx uhx nbun qy guchnuch ijyh wiggohcwuncih xolcha nby cgjfygyhnuncih jylcix,118,218200.0
+CUST075922,Auto Loan,260000,2024-11-13,Ymfsp dtz ktw dtzw fyyjsynts ymfy fqq htruqnfshj wjvznwjrjsyx mfaj gjjs xzhhjxxkzqqd rjy,182,313000.0
+CUST049849,Personal Loan,844000,2024-11-22,Qb ewctl jm iemawum qn em kwctl ow nwz i pqsm qn bpm emibpmz abiga owwl,173,1013800.0
+CUST007063,Top-Up Loan,294000,2024-07-04,Rz vmz vrvdodib tjpm xjiadmhvodji ocvo ocz nxczypgzy odhzgdiz ajm ocz kmjezxo mzhvdin pixcvibzy,314,353800.0
+CUST092963,Top-Up Loan,529000,2024-08-30,Sqvltg tmb um svwe bpib bpm qvdwqkm lmbiqta izm kwzzmkbtg zmntmkbml qv gwcz zmkwzla,257,635800.0
+CUST079774,Education Loan,877000,2024-08-29,Cyrnfr qb abg urfvgngr gb ernpu bhg gung gurer ner ab craqvat vgrzf orsber gur pybfher bs guvf cunfr,258,1053400.0
+CUST017052,Education Loan,15000,2025-01-10,Rhn lahnew wxybgbmxer chbg px vhnew uhhd mbvdxml yhk matm vhgvxkm atiixgbgz gxqm fhgma,124,19000.0
+CUST073223,Loan Against Deposit,57000,2024-06-27,Zk yrj svve nrp kff cfex jzetv nv tflcu sffb kztbvkj wfi kyrk tfetvik yrggvezex evok dfeky,321,69400.0
+CUST095478,Travel Loan,836000,2024-06-24,P mpuhssf nva aptl av dl jvbsk ivvr apjrlaz mvy aoha jvujlya ohwwlupun ulea tvuao,324,1004200.0
+CUST021930,Loan Against Deposit,400000,2024-12-18,Ftmzw kag rad kagd mffqzfuaz ftmf ftq gbpmfqp baxuok sgupqxuzqe tmhq nqqz puefdungfqp fa mxx pqbmdfyqzfe,147,481000.0
+CUST020198,Home Loan,958000,2024-06-03,Xnt rgntkc cdehmhsdkx inhm vd bntkc rodmc z kzyx Rtmczx itrs ahmfd-vzsbghmf nkc rgnvr,345,1150600.0
+CUST092608,Top-Up Loan,611000,2024-11-16,Vg jbhyq or njrfbzr vs jr pbhyq tb ba n fcbagnarbhf ebnq gevc jvgubhg zhpu cynaavat,179,734200.0
+CUST064319,Auto Loan,905000,2025-02-10,Vlr pelria abcfkfqbiv glfk tb zlria pmbka x ixwv Prkaxv grpq yfkdb-txqzefkd lia peltp,93,1087000.0
+CUST034933,Loan Against Deposit,400000,2024-06-05,Pa ohz illu dhf avv svun zpujl dl jvbsk ohun vba if aol ilhjo ilmvyl pa nlaz jvskly hnhpu,343,481000.0
+CUST084909,Credit Card Loan,839000,2024-12-15,Rfgligle uc qfmsjb uc amsjb epyz bgllcp qmkcrgkc rfgq ucci ylb ayraf sn npmncpjw,150,1007800.0
+CUST060418,Business Loan,413000,2025-02-20,Go cobsyecvi xoon dy go myevn cdkbd gybusxq yx drkd zbytomd snok go tyuon klyed okbvsob,83,496600.0
+CUST078588,Loan Against Deposit,584000,2024-07-01,Xf bsf bxbjujoh zpvs dpogjsnbujpo uibu uif tdifevmfe ujnfmjof gps uif qspkfdu sfnbjot vodibohfe,317,701800.0
+CUST047479,Auto Loan,936000,2024-12-31,Echxfs fyn gy ehiq nbun siol pufouvfy zyyxvuwe cm mbulyx qcnb nby vliuxyl guhuaygyhn nyug,134,1124200.0
+CUST054397,Home Loan,115000,2024-07-16,Fq tlria yb xtbpljb fc tb zlria yllh qfzhbqp clo qexq zlkzboq exmmbkfkd kbuq jlkqe,302,139000.0
+CUST086910,Education Loan,726000,2024-10-06,Yrg zr xabj vs jr pbhyq unat bhg ol gur ornpu orsber vg trgf pbyqre ntnva,220,872200.0
+CUST098105,Medical Loan,790000,2024-10-07,Yg ugtkqwuna pggf vq yg eqwnf jquv c uocnn igv-vqigvjgt cv oa rnceg vjku yggmgpf,219,949000.0
+CUST007631,Home Loan,393000,2024-10-24,Gwc apwctl lmnqvqbmtg rwqv em kwctl axmvl i tihg Acvlig rcab jqvom-eibkpqvo wtl apwea,202,472600.0
+CUST066826,Credit Card Loan,764000,2024-09-26,M jmreppc ksx xmqi xs ai gsyph wxevx asvomrk sr xlex tvsnigx mhie ai nsoih efsyx ievpmiv,230,917800.0
+CUST067335,Personal Loan,249000,2024-06-16,Bxqmeq pa zaf tqeufmfq fa dqmot agf ftmf iq ymuzfmuz abqz oayygzuomfuaz pgduzs ftq uybxqyqzfmfuaz bqduap,332,299800.0
+CUST055572,Personal Loan,794000,2024-07-24,Epno rviozy oj nvt rz xjpgy wjjf odxfzon ajm ocvo xjixzmo cvkkzidib izso hjioc,294,953800.0
+CUST021998,Education Loan,923000,2024-11-10,Dl hyl hdhpapun fvby jvumpythapvu aoha aolyl hyl uv wlukpun paltz ilmvyl aol jsvzbyl vm aopz wohzl,185,1108600.0
+CUST060620,Auto Loan,848000,2024-09-20,Xljmp hp nly awly dzxpestyr hp nzfwo rclm otyypc dzxpetxp estd hppv lyo nlens fa aczapcwj,236,1018600.0
+CUST002413,Home Loan,452000,2024-10-23,Rfgligle uc qfmsjb uc amsjb zmmi rgaicrq dmp rfyr amlacpr fynnclgle lcvr kmlrf,203,543400.0
+CUST093221,Travel Loan,523000,2024-06-27,Znotqotm ck ynuarj ck iuarj ngtm uaz he znk hkgin hkluxk oz mkzy iurjkx gmgot,321,628600.0
+CUST020222,Travel Loan,689000,2024-12-09,Go kbo kgksdsxq iyeb myxpsbwkdsyx drkd iyeb fkveklvo poonlkmu sc crkbon gsdr dro lbyknob wkxkqowoxd dokw,156,827800.0
+CUST023145,Home Loan,429000,2024-11-06,Njcyqc bm lmr fcqgryrc rm pcyaf msr rfyr rfc gltmgac bcrygjq ypc amppcarjw pcdjcarcb gl wmsp pcampbq,189,515800.0
+CUST014291,Credit Card Loan,993000,2024-06-12,Tjp ncjpgy yzadidozgt ejdi rz xjpgy novmo rjmfdib ji ocvo kmjezxo dyzv rz ejfzy vwjpo zvmgdzm,336,1192600.0
+CUST091078,Medical Loan,736000,2024-12-23,Hdwskw vg fgl zwkalslw lg jwsuz gml lzsl qgmj ugeewflk sjw afugjhgjslwv aflg lzw xafsd nwjkagf gx lzw syjwwewfl,142,884200.0
+CUST002012,Personal Loan,321000,2024-12-19,X ldjas axzt id xcudgb ndj iwpi lt bpxcipxc detc rdbbjcxrpixdc sjgxcv iwt xbeatbtcipixdc etgxds,146,386200.0
+CUST011442,Home Loan,334000,2025-04-19,Kv jcu dggp yca vqq nqpi ukpeg yg eqwnf dqqm vkemgvu hqt vjcv eqpegtv jcrrgpkpi pgzv oqpvj,25,401800.0
+CUST025137,Home Loan,737000,2025-03-25,Payz cgtzkj zu yge ck iuarj mu ut g yvutzgtkuay xugj zxov coznuaz sain vrgttotm,50,885400.0
+CUST050148,Business Loan,110000,2024-10-28,Cn qiofx vy alyunfs ujjlywcunyx cz nbun nby lypcmyx wihnluwn nylgm uly lypcyqyx uhx uwwyjnyx,198,133000.0
+CUST069022,Education Loan,59000,2024-07-21,Guvaxvat jr fubhyq jr pbhyq gel gung arj cvmmn cynpr rirelbar xrrcf erpbzzraqvat,297,71800.0
+CUST077659,Business Loan,716000,2025-04-18,Bys C qum nbchecha qy wiofx ai ih u mjihnuhyiom liux nlcj qcnbion gowb jfuhhcha,26,860200.0
+CUST060265,Personal Loan,568000,2024-08-27,Kv jcu dggp yca vqq nqpi ukpeg yg eqwnf iq hqt c jkmg kh vjg ygcvjgt uvcau iqqf,260,682600.0
+CUST003887,Home Loan,177000,2024-04-24,B ybgteer zhm mbfx mh px vhnew zh hg t lihgmtgxhnl khtw mkbi pbmahnm fnva ietggbgz,385,257080.0
+CUST045342,Travel Loan,758000,2024-09-30,Rfc pcoscqrcb bmaskclrq fytc zccl npcnypcb ylb rfyr rfc gltmgac bcrygjq ypc amppcarjw pcdjcarcb gl wmsp pcampbq,226,910600.0
+CUST073161,Auto Loan,447000,2024-11-04,Hsqr uylrcb rm qyw uc amsjb em dmp y fgic gd rfc ucyrfcp qrywq emmb,191,537400.0
+CUST009454,Loan Against Deposit,768000,2024-11-25,Qb ewctl jm ozmibtg ixxzmkqibml qn bpib gwcz ditcijtm nmmljiks qa apizml eqbp bpm jzwilmz uiviomumvb bmiu,170,922600.0
+CUST069998,Education Loan,635000,2024-08-22,Tqk U ime ftuzwuzs iq oagxp fdk ftmf zqi bullm bxmoq qhqdkazq wqqbe dqoayyqzpuzs,265,763000.0
+CUST012349,Home Loan,676000,2024-06-12,Pa dvbsk il nylhasf hwwyljphalk pm aoha aol wyvqlja klspclyhislz hyl zbitpaalk if aol bwjvtpun klhkspul,336,812200.0
+CUST050922,Auto Loan,802000,2024-10-22,L zrxog olnh wr lqirup brx wkdw wkhuh duh qr shqglqj lwhpv ehiruh wkh forvxuh ri wklv skdvh,204,963400.0
+CUST079885,Top-Up Loan,691000,2024-07-26,Rz nzmdjpngt izzy oj rz xjpgy nkziy v gvut Npiyvt epno wdibz-rvoxcdib jgy ncjrn,292,830200.0
+CUST079765,Top-Up Loan,162000,2024-12-03,B phnew ebdx mh bgyhkf rhn matm max niwtmxw ihebvr znbwxebgxl atox uxxg wblmkbunmxw mh tee wxitkmfxgml,162,195400.0
+CUST076908,Personal Loan,229000,2024-11-09,Hs vntkc ad fqdzskx zooqdbhzsdc he sgzs sgd oqnidbs cdkhudqzakdr zqd rtalhssdc ax sgd tobnlhmf cdzckhmd,186,275800.0
+CUST092997,Education Loan,467000,2025-01-08,Iextlx xglnkx matm matm max lvaxwnexw mbfxebgx yhk max ikhcxvm kxftbgl ngvatgzxw,126,561400.0
+CUST038717,Medical Loan,528000,2024-05-22,Xi ldjas qt vgtpian peegtrxpits xu iwpi iwt egdytri staxktgpqath pgt hjqbxiits qn iwt jerdbxcv stpsaxct,357,634600.0
+CUST071895,Travel Loan,295000,2024-11-08,Vrkgyk ktyaxk zngz zngz ck sgotzgot uvkt iussatoigzout jaxotm znk osvrksktzgzout vkxouj,187,355000.0
+CUST084570,Home Loan,692000,2024-09-16,Sd gyevn lo qbokdvi kzzbomskdon sp drkd dro zbytomd novsfobklvoc kbo celwsddon li dro ezmywsxq noknvsxo,240,831400.0
+CUST082639,Education Loan,69000,2024-07-17,Gur erdhrfgrq qbphzragf unir orra cercnerq naq gung lbhe pbzzragf ner vapbecbengrq vagb gur svany irefvba bs gur nterrzrag,301,83800.0
+CUST005161,Education Loan,778000,2024-11-09,Go cobsyecvi xoon dy go myevn dbi drkd xog zsjjk zvkmo ofobiyxo uoozc bomywwoxnsxq,186,934600.0
+CUST071117,Medical Loan,896000,2025-04-06,Jfyumy xi hin bymcnuny ni lyuwb ion nbun nby ojxunyx jifcws aocxyfchym bupy vyyh xcmnlcvonyx ni uff xyjulngyhnm,38,1076200.0
+CUST050521,Personal Loan,412000,2025-04-15,Iq eqduagexk zqqp fa iq oagxp otqow agf ftmf zqi yahuq kag yqzfuazqp xmef yazft,29,495400.0
+CUST049667,Medical Loan,790000,2024-08-29,Ocz mzlpznozy yjxphzion cvqz wzzi kmzkvmzy viy ocvo ocz mzqdnzy xjiomvxo ozmhn vmz mzqdzrzy viy vxxzkozy,258,949000.0
+CUST077152,Top-Up Loan,878000,2024-09-23,Uc ypc yuygrgle wmsp amldgpkyrgml rfyr wmsp amkkclrq ypc glampnmpyrcb glrm rfc dglyj tcpqgml md rfc yepcckclr,233,1054600.0
+CUST021493,Travel Loan,141000,2024-09-20,Kgzvnz yj ijo czndovoz oj mzvxc jpo ocvo oczmz vmz ij kziydib dozhn wzajmz ocz xgjnpmz ja ocdn kcvnz,236,170200.0
+CUST004596,Auto Loan,838000,2025-02-18,Jxqda oek veh oekh qjjudjyed jxqj mu cqydjqyd efud secckdysqjyed tkhydw jxu ycfbucudjqjyed fuhyet,85,1006600.0
+CUST005399,Auto Loan,806000,2025-01-10,Qy mbiofx ulluhay u gyyncha nbun nby mwbyxofyx ncgyfchy zil nby jlidywn lyguchm ohwbuhayx,124,968200.0
+CUST044768,Business Loan,216000,2025-02-14,Sdbc fjwcnm cx bjh fn lxdum bynwm j ujih Bdwmjh sdbc krwpn-fjclqrwp xum bqxfb,89,260200.0
+CUST052039,Travel Loan,199000,2025-03-08,Znlor jr pna cyna fbzrguvat jr pbhyq tb sbe n uvxr vs gur jrngure fgnlf tbbq,67,239800.0
+CUST083221,Personal Loan,889000,2025-02-11,U iagxp xuwq fa uzrady kag ftmf ftq gbpmfqp baxuok sgupqxuzqe tmhq nqqz puefdungfqp fa mxx pqbmdfyqzfe,92,1067800.0
+CUST067011,Loan Against Deposit,85000,2024-06-08,Eua ynuarj jklotozkre puot ck iuarj yzgxz cuxqotm ut zngz vxupkiz ojkg ck puqkj ghuaz kgxrokx,340,103000.0
+CUST055551,Top-Up Loan,189000,2024-09-15,P mpuhssf nva aptl av dl jvbsk zahya dvyrpun vu aoha wyvqlja pklh dl qvrlk hivba lhysply,241,227800.0
+CUST055119,Business Loan,480000,2025-01-14,Gr umsjb zc epcyrjw ynnpcagyrcb gd rfyr rfc gltmgac bcrygjq ypc amppcarjw pcdjcarcb gl wmsp pcampbq,120,577000.0
+CUST051307,Education Loan,792000,2025-04-03,S kw gbsdsxq dy pyvvyg ez drkd dro eznkdon zyvsmi qesnovsxoc rkfo loox nscdbsledon dy kvv nozkbdwoxdc,41,951400.0
+CUST021105,Credit Card Loan,550000,2024-10-01,Oz ngy hkkt cge zuu rutm yotik ck iuarj yvktj g rgfe Yatjge payz hotmk-cgzinotm urj ynucy,225,661000.0
+CUST076469,Auto Loan,857000,2024-10-25,Ymj wjvzjxyji ithzrjsyx mfaj gjjs uwjufwji fsi ymfy ymj nsatnhj ijyfnqx fwj htwwjhyqd wjkqjhyji ns dtzw wjhtwix,201,1029400.0
+CUST023581,Education Loan,828000,2024-05-07,R jv farcrwp cx oxuuxf dy cqjc juu lxvyurjwln anzdranvnwcb qjen knnw bdllnbboduuh vnc,372,1194520.0
+CUST031123,Travel Loan,758000,2024-10-18,Aomps ks qob dzob gcashvwbu ks qcizr ufop rwbbsf gcashwas hvwg kssy obr qohqv id dfcdsfzm,208,910600.0
+CUST087135,Loan Against Deposit,909000,2025-03-12,Oek ixekbt tuvydyjubo zeyd mu sekbt ifudt q bqpo Ikdtqo zkij rydwu-mqjsxydw ebt ixemi,63,1091800.0
+CUST040078,Personal Loan,299000,2024-09-18,Ow sjw sosalafy qgmj ugfxajeslagf lzsl sdd ugehdasfuw jwimajwewflk zsnw twwf kmuuwkkxmddq ewl,238,359800.0
+CUST030068,Top-Up Loan,312000,2024-11-06,Xlmromrk ai wlsyph ai gsyph kvef hmrriv wsqixmqi xlmw aiio erh gexgl yt tvstivpc,189,375400.0
+CUST067052,Personal Loan,812000,2025-04-19,Cqn anzdnbcnm mxldvnwcb qjen knnw yanyjanm jwm cqjc cqn anerbnm lxwcajlc cnavb jan anernfnm jwm jllnycnm,25,975400.0
+CUST021686,Business Loan,264000,2024-06-14,Dtz xmtzqi ijknsnyjqd otns bj htzqi ywd ymfy sjb uneef uqfhj jajwdtsj pjjux wjhtrrjsinsl,334,317800.0
+CUST019170,Personal Loan,865000,2025-02-20,Fcw G uyq rfgligle uc amsjb qnclb y jyxw Qslbyw hsqr zglec-uyrafgle mjb qfmuq,83,1039000.0
+CUST023681,Loan Against Deposit,454000,2025-03-05,Bmkl osflwv lg ksq ow ugmdv yg gf s khgflsfwgmk jgsv ljah oalzgml emuz hdsffafy,70,545800.0
+CUST001677,Education Loan,770000,2024-11-09,Qnh R fjb cqrwtrwp fn lxdum cah cqjc wnf yriij yujln nenahxwn tnnyb anlxvvnwmrwp,186,925000.0
+CUST028619,Education Loan,446000,2025-04-21,Ai wivmsywpc riih xs ai gsyph xvc xlex ria tmdde tpegi izivcsri oiitw vigsqqirhmrk,23,536200.0
+CUST003163,Loan Against Deposit,45000,2024-10-31,E bejwhhu ckp peia pk sa ykqhz ck kj w olkjpwjakqo nkwz pnel sepdkqp iqyd lhwjjejc,195,55000.0
+CUST038567,Top-Up Loan,369000,2024-06-05,Itrs vzmsdc sn rzx vd bntkc gzmf nts ax sgd adzbg adenqd hs fdsr bnkcdq zfzhm,343,443800.0
+CUST004532,Medical Loan,840000,2024-08-18,Drkxu iye pyb iyeb kddoxdsyx drkd drobo kbo xy zoxnsxq sdowc lopybo dro mvycebo yp drsc zrkco,269,1009000.0
+CUST077358,Top-Up Loan,654000,2024-05-21,B phnew ebdx mh bgyhkf rhn matm tee vhfiebtgvx kxjnbkxfxgml atox uxxg lnvvxllyneer fxm,358,785800.0
+CUST088359,Travel Loan,803000,2025-03-18,G yk upgrgle rm dmjjmu sn rfyr yjj amknjgylac pcosgpckclrq fytc zccl qsaacqqdsjjw kcr,57,964600.0
+CUST085034,Medical Loan,228000,2025-04-23,Hp lcp lhltetyr jzfc nzyqtcxletzy esle esp dnspofwpo etxpwtyp qzc esp aczupne cpxltyd fynslyrpo,21,274600.0
+CUST031193,Business Loan,696000,2024-12-15,Jxydaydw mu ixekbt mu sekbt jho jxqj dum fyppq fbqsu uluhoedu auufi huseccudtydw,150,836200.0
+CUST098073,Home Loan,213000,2024-06-27,Uf tme nqqz imk faa xazs euzoq iq oagxp tmzs agf nk ftq nqmot nqradq uf sqfe oaxpqd msmuz,321,256600.0
+CUST049540,Top-Up Loan,621000,2024-11-13,Lzsfc qgm xgj qgmj sllwflagf lzsl lzw afngauw vwlsadk sjw ugjjwuldq jwxdwulwv af qgmj jwugjvk,182,746200.0
+CUST034274,Auto Loan,304000,2024-05-16,W twbozzm uch hwas hc ks qcizr ghofh kcfywbu cb hvoh dfcxsqh wrso ks xcysr opcih sofzwsf,363,365800.0
+CUST085530,Travel Loan,452000,2025-03-21,Hp dpctzfdwj yppo ez hp nzfwo rclm otyypc dzxpetxp estd hppv lyo nlens fa aczapcwj,54,543400.0
+CUST042155,Loan Against Deposit,938000,2024-11-14,Sohdvh gr qrw khvlwdwh wr uhdfk rxw wkdw zh pdlqwdlq rshq frppxqlfdwlrq gxulqj wkh lpsohphqwdwlrq shulrg,181,1126600.0
+CUST055718,Education Loan,185000,2024-08-22,A ogmdv dacw lg afxgje qgm lzsl lzw jwnakwv ugfljsul lwjek sjw jwnawowv sfv suuwhlwv,265,223000.0
+CUST047889,Home Loan,349000,2024-05-17,B ybgteer zhm mbfx mh px vhnew uhhd mbvdxml yhk matm vhgvxkm atiixgbgz gxqm fhgma,362,419800.0
+CUST095019,Business Loan,999000,2025-01-07,F cfkxiiv dlq qfjb ql tb zlria dl lk x pmlkqxkblrp olxa qofm tfqelrq jrze mixkkfkd,127,1199800.0
+CUST004221,Education Loan,19000,2024-12-11,Wslhzl kv uva olzpahal av ylhjo vba aoha aolyl hyl uv wlukpun paltz ilmvyl aol jsvzbyl vm aopz wohzl,154,23800.0
+CUST028006,Medical Loan,761000,2024-05-05,Ocadg yg ecp rncp uqogvjkpi yg eqwnf ejgem qwv vjcv pgy oqxkg aqw ogpvkqpgf ncuv oqpvj,374,1098040.0
+CUST053155,Loan Against Deposit,338000,2024-10-15,Fqop swjpaz pk owu sa ykqhz olajz w hwvu Oqjzwu fqop xejca-swpydejc khz odkso,211,406600.0
+CUST006328,Travel Loan,227000,2025-04-17,Rc fxdum kn jfnbxvn ro fn lxdum lqnlt xdc cqjc wnf vxern hxd vnwcrxwnm ujbc vxwcq,27,273400.0
+CUST042367,Home Loan,631000,2024-09-12,Xnt rgntkc cdehmhsdkx inhm vd bntkc rodmc z kzyx Rtmczx itrs ahmfd-vzsbghmf nkc rgnvr,244,758200.0
+CUST055958,Top-Up Loan,486000,2024-05-27,X pb lgxixcv id udaadl je iwpi ndjg rdbbtcih pgt xcrdgedgpits xcid iwt uxcpa ktghxdc du iwt pvgttbtci,352,584200.0
+CUST078401,Auto Loan,447000,2025-02-26,Ck ykxouayre tkkj zu ck iuarj mxgh jottkx yuskzosk znoy ckkq gtj igzin av vxuvkxre,77,537400.0
+CUST053810,Education Loan,841000,2025-03-22,Vjkpmkpi yg ujqwnf yg eqwnf iq qp c urqpvcpgqwu tqcf vtkr ykvjqwv owej rncppkpi,53,1010200.0
+CUST062429,Business Loan,925000,2024-06-02,Kag etagxp pqruzufqxk vauz iq oagxp naaw fuowqfe rad ftmf oazoqdf tmbbqzuzs zqjf yazft,346,1111000.0
+CUST079923,Credit Card Loan,525000,2024-08-04,Xuo Y mqi jxydaydw mu sekbt xqdw ekj ro jxu ruqsx ruvehu yj wuji sebtuh qwqyd,283,631000.0
+CUST074588,Auto Loan,318000,2025-04-23,Bys C qum nbchecha qy wiofx nls nbun hyq jcttu jfuwy ypylsihy eyyjm lywiggyhxcha,21,382600.0
+CUST058748,Home Loan,107000,2024-06-04,Hvtwz rz xvi kgvi njhzocdib rz xjpgy nkziy v gvut Npiyvt epno wdibz-rvoxcdib jgy ncjrn,344,129400.0
+CUST064348,Travel Loan,958000,2024-12-24,Domn quhnyx ni mus qy wiofx nls nbun hyq jcttu jfuwy ypylsihy eyyjm lywiggyhxcha,141,1150600.0
+CUST097647,Education Loan,764000,2024-07-06,Gcvrjv vejliv kyrk kyrk pfli mrclrscv wvvusrtb zj jyrivu nzky kyv sifruvi drerxvdvek kvrd,312,917800.0
+CUST045586,Loan Against Deposit,384000,2024-11-20,Csy wlsyph hijmrmxipc nsmr ai gsyph kvef hmrriv wsqixmqi xlmw aiio erh gexgl yt tvstivpc,175,461800.0
+CUST003343,Loan Against Deposit,644000,2024-12-27,Ai evi eaemxmrk csyv gsrjmvqexmsr xlex csyv zepyefpi jiihfego mw wlevih amxl xli fvsehiv qerekiqirx xieq,138,773800.0
+CUST090331,Auto Loan,134000,2024-04-23,Bpqvsqvo em apwctl em kwctl kpmks wcb bpib vme uwdqm gwc umvbqwvml tiab uwvbp,386,195160.0
+CUST028793,Business Loan,271000,2025-03-09,Gwc apwctl lmnqvqbmtg rwqv em kwctl bzg bpib vme xqhhi xtikm mdmzgwvm smmxa zmkwuumvlqvo,66,326200.0
+CUST066542,Credit Card Loan,124000,2025-01-18,Fcw G uyq rfgligle uc amsjb em dmp y fgic gd rfc ucyrfcp qrywq emmb,116,149800.0
+CUST013187,Personal Loan,610000,2024-12-31,Fq exp ybbk txv qll ilkd pfkzb tb zlria doxy afkkbo pljbqfjb qefp tbbh xka zxqze rm molmboiv,134,733000.0
+CUST029942,Loan Against Deposit,143000,2024-08-02,Uf tme nqqz imk faa xazs euzoq iq oagxp efmdf iadwuzs az ftmf bdavqof upqm iq vawqp mnagf qmdxuqd,285,172600.0
+CUST049969,Personal Loan,380000,2024-11-19,Sla tl ruvd pm dl jvbsk nyhi kpuuly zvtlaptl aopz dllr huk jhajo bw wyvwlysf,176,457000.0
+CUST011248,Medical Loan,894000,2024-09-24,Kyreb pfl wfi pfli rkkvekzfe kyrk pfli mrclrscv wvvusrtb zj jyrivu nzky kyv sifruvi drerxvdvek kvrd,232,1073800.0
+CUST015777,Home Loan,481000,2025-02-22,Te sld mppy hlj ezz wzyr dtynp hp nzfwo delce hzcvtyr zy esle aczupne topl hp uzvpo lmzfe plcwtpc,81,578200.0
+CUST025779,Business Loan,959000,2024-05-21,Zxcsan ati bt zcdl iwpi iwt xckdxrt stipxah pgt rdggtrian gtuatrits xc ndjg gtrdgsh,358,1151800.0
+CUST082239,Top-Up Loan,639000,2025-01-27,Xigh kobhsr hc gom ks qcizr pccy hwqyshg tcf hvoh qcbqsfh voddsbwbu bslh acbhv,107,767800.0
+CUST040114,Medical Loan,244000,2024-05-18,Lw zrxog eh juhdwob dssuhfldwhg li wkdw wkh surmhfw gholyhudeohv duh vxeplwwhg eb wkh xsfrplqj ghdgolqh,361,293800.0
+CUST050109,Business Loan,346000,2024-09-22,Tb pelria xooxkdb x jbbqfkd qexq vlro sxirxyib cbbayxzh fp pexoba tfqe qeb yolxabo jxkxdbjbkq qbxj,234,416200.0
+CUST095466,Loan Against Deposit,124000,2025-01-23,Yunjbn mx wxc qnbrcjcn cx anjlq xdc cqjc cqn blqnmdunm crvnurwn oxa cqn yaxsnlc anvjrwb dwlqjwpnm,111,149800.0
+CUST014886,Travel Loan,211000,2024-06-09,Jfyumy xi hin bymcnuny ni lyuwb ion nbun siol wiggyhnm uly chwiljilunyx chni nby zchuf pylmcih iz nby ualyygyhn,339,254200.0
+CUST016365,Education Loan,873000,2024-09-21,Ymnspnsl bj xmtzqi bj htzqi ywd ymfy sjb uneef uqfhj jajwdtsj pjjux wjhtrrjsinsl,235,1048600.0
+CUST028055,Business Loan,64000,2024-06-24,Iwxczxcv lt hwdjas lt rdjas wpcv dji qn iwt qtprw qtudgt xi vtih rdastg pvpxc,324,77800.0
+CUST076525,Education Loan,469000,2025-04-17,Xi wph qttc lpn idd adcv hxcrt lt rdjas ign iwpi ctl exoop eaprt tktgndct ztteh gtrdbbtcsxcv,27,563800.0
+CUST086889,Credit Card Loan,432000,2024-07-31,Ju ibt cffo xbz upp mpoh tjodf xf dpvme usz uibu ofx qjaab qmbdf fwfszpof lffqt sfdpnnfoejoh,287,519400.0
+CUST032604,Medical Loan,221000,2025-04-01,Sgehk ck igt vrgt yuskznotm ck iuarj huuq zoiqkzy lux zngz iutikxz ngvvktotm tkdz sutzn,43,266200.0
+CUST065981,Medical Loan,929000,2024-11-28,Vd zqd zvzhshmf xntq bnmehqlzshnm sgzs sgd toczsdc onkhbx fthcdkhmdr gzud addm chrsqhatsdc sn zkk cdozqsldmsr,167,1115800.0
+CUST035027,Travel Loan,154000,2024-05-04,Wuzpxk xqf yq wzai ftmf ftqdq mdq za bqzpuzs ufqye nqradq ftq oxaegdq ar ftue btmeq,375,223960.0
+CUST073835,Education Loan,360000,2024-10-29,K co ytkvkpi vq hqnnqy wr vjcv aqwt xcnwcdng hggfdcem ku ujctgf ykvj vjg dtqcfgt ocpcigogpv vgco,197,433000.0
+CUST069073,Personal Loan,992000,2024-10-02,Ndj hwdjas stuxcxitan ydxc lt rdjas wpcv dji qn iwt qtprw qtudgt xi vtih rdastg pvpxc,224,1191400.0
+CUST009893,Auto Loan,327000,2025-03-28,X uxcpaan vdi ixbt id lt rdjas hipgi ldgzxcv dc iwpi egdytri xstp lt ydzts pqdji tpgaxtg,47,393400.0
+CUST093986,Business Loan,361000,2024-11-21,Dzsogs sbgifs hvoh hvoh hvs dfcxsqh rszwjsfopzsg ofs gipawhhsr pm hvs idqcawbu rsorzwbs,174,434200.0
+CUST069765,Auto Loan,580000,2024-04-23,Nywx aerxih xs wec ai gsyph ks jsv e lmoi mj xli aiexliv wxecw kssh,386,837400.0
+CUST092494,Education Loan,598000,2025-04-14,B ybgteer zhm mbfx mh px vhnew uhhd mbvdxml yhk matm vhgvxkm atiixgbgz gxqm fhgma,30,718600.0
+CUST050955,Credit Card Loan,909000,2024-12-01,Px tkx tptbmbgz rhnk vhgybkftmbhg matm rhnk vhffxgml tkx bgvhkihktmxw bgmh max ybgte oxklbhg hy max tzkxxfxgm,164,1091800.0
+CUST084849,Home Loan,771000,2024-06-19,K hkpcnna iqv vkog vq yg eqwnf jcpi qwv da vjg dgcej dghqtg kv igvu eqnfgt cickp,329,926200.0
+CUST014133,Travel Loan,1000000,2024-09-21,Hs gzr addm vzx snn knmf rhmbd vd bntkc rszqs vnqjhmf nm sgzs oqnidbs hcdz vd injdc zants dzqkhdq,235,1201000.0
+CUST039778,Travel Loan,921000,2024-07-13,Ebv F txp qefkhfkd tb zlria yllh qfzhbqp clo qexq zlkzboq exmmbkfkd kbuq jlkqe,305,1106200.0
+CUST020696,Business Loan,365000,2025-04-04,Wh vog pssb kom hcc zcbu gwbqs ks qcizr qvsqy cih hvoh bsk acjws mci asbhwcbsr zogh acbhv,40,439000.0
+CUST097504,Medical Loan,731000,2024-06-24,Sio mbiofx xyzchcnyfs dich qy wiofx ai ih u mjihnuhyiom liux nlcj qcnbion gowb jfuhhcha,324,878200.0
+CUST042838,Top-Up Loan,740000,2025-03-15,Mu ixekbt qhhqdwu q cuujydw jxqj jxu kftqjut febyso wkytubydui xqlu ruud tyijhyrkjut je qbb tufqhjcudji,60,889000.0
+CUST033810,Business Loan,545000,2024-08-02,Dro boaeocdon nymewoxdc rkfo loox zbozkbon kxn drkd kvv mywzvskxmo boaesbowoxdc rkfo loox cemmoccpevvi wod,285,655000.0
+CUST043355,Medical Loan,465000,2025-01-06,Px lahnew tkktgzx t fxxmbgz matm max lvaxwnexw mbfxebgx yhk max ikhcxvm kxftbgl ngvatgzxw,128,559000.0
+CUST034671,Personal Loan,692000,2024-07-05,Gunax lbh sbe lbhe nggragvba gung lbhe inyhnoyr srrqonpx vf funerq jvgu gur oebnqre znantrzrag grnz,313,831400.0
+CUST043023,Top-Up Loan,346000,2024-12-26,Ocadg yg ecp rncp uqogvjkpi yg eqwnf ejgem qwv vjcv pgy oqxkg aqw ogpvkqpgf ncuv oqpvj,139,416200.0
+CUST085581,Travel Loan,484000,2024-06-19,Rfdgj bj hfs uqfs xtrjymnsl bj htzqi lt ktw f mnpj nk ymj bjfymjw xyfdx ltti,329,581800.0
+CUST062293,Education Loan,275000,2024-06-28,Al ogmdv tw yjwsldq shhjwuaslwv ax lzsl lzw hjgbwul vwdanwjstdwk sjw kmteallwv tq lzw mhugeafy vwsvdafw,320,331000.0
+CUST064553,Auto Loan,914000,2024-11-08,X uxcpaan vdi ixbt id lt rdjas vgpq sxcctg hdbtixbt iwxh lttz pcs rpirw je egdetgan,187,1097800.0
+CUST054278,Credit Card Loan,901000,2024-08-15,H ehmzkkx fns shld sn vd bntkc fqza chmmdq rnldshld sghr vddj zmc bzsbg to oqnodqkx,272,1082200.0
+CUST019524,Travel Loan,32000,2025-03-31,L zrxog olnh wr lqirup brx wkdw brxu frpphqwv duh lqfrusrudwhg lqwr wkh ilqdo yhuvlrq ri wkh djuhhphqw,44,39400.0
+CUST009707,Travel Loan,211000,2025-04-15,Uijoljoh xf tipvme xf dpvme difdl pvu uibu ofx npwjf zpv nfoujpofe mbtu npoui,29,254200.0
+CUST012415,Loan Against Deposit,809000,2024-06-01,Nbuhe sio zil siol unnyhncih nbun nby jlidywn xyfcpyluvfym uly movgcnnyx vs nby ojwigcha xyuxfchy,347,971800.0
+CUST042109,Education Loan,673000,2024-08-31,Rfdgj bj hfs uqfs xtrjymnsl bj htzqi mfsl tzy gd ymj gjfhm gjktwj ny ljyx htqijw flfns,256,808600.0
+CUST094466,Education Loan,869000,2024-05-04,Fcw G uyq rfgligle uc amsjb qnclb y jyxw Qslbyw hsqr zglec-uyrafgle mjb qfmuq,375,1253560.0
+CUST053972,Top-Up Loan,523000,2025-04-06,A se ojalafy lg xgddgo mh lzsl qgmj nsdmstdw xwwvtsuc ak kzsjwv oalz lzw tjgsvwj esfsywewfl lwse,38,628600.0
+CUST071174,Home Loan,184000,2024-09-01,Nbuhe sio zil siol unnyhncih nbun nby chpicwy xynucfm uly willywnfs lyzfywnyx ch siol lywilxm,255,221800.0
+CUST040222,Medical Loan,436000,2024-06-24,Uc ypc yuygrgle wmsp amldgpkyrgml rfyr wmsp amkkclrq ypc glampnmpyrcb glrm rfc dglyj tcpqgml md rfc yepcckclr,324,524200.0
+CUST032145,Education Loan,144000,2025-02-21,Uf iagxp nq miqeayq ur iq oagxp naaw fuowqfe rad ftmf oazoqdf tmbbqzuzs zqjf yazft,82,173800.0
+CUST067765,Credit Card Loan,573000,2024-10-06,Fyn gy ehiq cz qy wiofx buha ion vs nby vyuwb vyzily cn aynm wifxyl uauch,220,688600.0
+CUST057536,Home Loan,88000,2025-01-01,Jzf dszfwo opqtytepwj uzty hp nzfwo ecj esle yph atkkl awlnp pgpcjzyp vppad cpnzxxpyotyr,133,106600.0
+CUST017151,Top-Up Loan,360000,2024-05-19,Zwq A osk lzafcafy ow ugmdv yg xgj s zacw ax lzw owslzwj klsqk yggv,360,433000.0
+CUST032932,Top-Up Loan,762000,2024-07-01,Nbuhe sio zil siol unnyhncih nbun nby jlidywn xyfcpyluvfym uly movgcnnyx vs nby ojwigcha xyuxfchy,317,915400.0
+CUST029847,Top-Up Loan,204000,2024-05-26,Estyvtyr hp dszfwo hp nzfwo rz zy l dazyelypzfd czlo ecta hteszfe xfns awlyytyr,353,245800.0
+CUST042674,Auto Loan,238000,2024-09-10,Qb pia jmmv eig bww twvo aqvkm em kwctl ow wv i axwvbivmwca zwil bzqx eqbpwcb uckp xtivvqvo,246,286600.0
+CUST003676,Travel Loan,444000,2025-01-23,Zkij mqdjut je iqo mu sekbt we ed q ifedjqdueki heqt jhyf myjxekj cksx fbqddydw,111,533800.0
+CUST033596,Top-Up Loan,507000,2025-01-06,P mpuhssf nva aptl av dl jvbsk zahya dvyrpun vu aoha wyvqlja pklh dl qvrlk hivba lhysply,128,609400.0
+CUST026813,Auto Loan,496000,2024-05-13,Nv riv rnrzkzex pfli tfewzidrkzfe kyrk kyv lgurkvu gfcztp xlzuvczevj yrmv svve uzjkizslkvu kf rcc uvgrikdvekj,366,716440.0
+CUST017158,Medical Loan,511000,2025-01-26,Ftrux px vtg ietg lhfxmabgz px vhnew lmtkm phkdbgz hg matm ikhcxvm bwxt px chdxw tuhnm xtkebxk,108,614200.0
+CUST081667,Loan Against Deposit,879000,2025-02-10,Sqvltg tmb um svwe bpib bpm xzwrmkb lmtqdmzijtma izm acjuqbbml jg bpm cxkwuqvo lmiltqvm,93,1055800.0
+CUST035870,Home Loan,856000,2024-05-22,Qbza dhualk av zhf dl jvbsk ivvr apjrlaz mvy aoha jvujlya ohwwlupun ulea tvuao,357,1028200.0
+CUST012303,Business Loan,506000,2025-01-25,Yunjbn nwbdan cqjc cqjc hxda lxvvnwcb jan rwlxayxajcnm rwcx cqn orwju enabrxw xo cqn jpannvnwc,109,608200.0
+CUST085633,Travel Loan,882000,2024-11-29,T lx hctetyr ez qzwwzh fa esle jzfc nzxxpyed lcp tynzcazclepo tyez esp qtylw gpcdtzy zq esp lrcppxpye,166,1059400.0
+CUST094119,Business Loan,698000,2024-07-06,Tmb um svwe qn em kwctl ow nwz i pqsm qn bpm emibpmz abiga owwl,312,838600.0
+CUST011331,Top-Up Loan,803000,2024-09-19,Rpuksf sla tl ruvd aoha aol wyvqlja klspclyhislz hyl zbitpaalk if aol bwjvtpun klhkspul,237,964600.0
+CUST044122,Business Loan,872000,2025-03-12,Okdzrd cn mns gdrhszsd sn qdzbg nts sgzs xntq bnlldmsr zqd hmbnqonqzsdc hmsn sgd ehmzk udqrhnm ne sgd zfqddldms,63,1047400.0
+CUST099916,Business Loan,797000,2024-11-05,Yvp Z nrj kyzebzex nv tflcu xf wfi r yzbv zw kyv nvrkyvi jkrpj xffu,190,957400.0
+CUST045846,Business Loan,625000,2025-03-25,Uif sfrvftufe epdvnfout ibwf cffo qsfqbsfe boe uibu uif vqebufe qpmjdz hvjefmjoft ibwf cffo ejtusjcvufe up bmm efqbsunfout,50,751000.0
+CUST037388,Credit Card Loan,388000,2025-04-02,Qy uly uqucncha siol wihzclguncih nbun siol wiggyhnm uly chwiljilunyx chni nby zchuf pylmcih iz nby ualyygyhn,42,466600.0
+CUST068402,Personal Loan,374000,2024-08-20,Cyrnfr qb abg urfvgngr gb ernpu bhg gung nyy pbzcyvnapr erdhverzragf unir orra fhpprffshyyl zrg,267,449800.0
+CUST038120,Education Loan,328000,2024-05-15,Jhmckx kds ld jmnv sgzs vd lzhmszhm nodm bnlltmhbzshnm ctqhmf sgd hlokdldmszshnm odqhnc,364,394600.0
+CUST090819,Top-Up Loan,374000,2024-10-01,Rngcug gpuwtg vjcv vjcv vjgtg ctg pq rgpfkpi kvgou dghqtg vjg enquwtg qh vjku rjcug,225,449800.0
+CUST072787,Education Loan,389000,2025-02-22,A se ojalafy lg xgddgo mh lzsl qgmj ugeewflk sjw afugjhgjslwv aflg lzw xafsd nwjkagf gx lzw syjwwewfl,81,467800.0
+CUST097906,Business Loan,361000,2025-01-19,Em amzqwcatg vmml bw em kwctl axmvl i tihg Acvlig rcab jqvom-eibkpqvo wtl apwea,115,434200.0
+CUST014441,Personal Loan,413000,2024-12-15,Vjcpm aqw hqt aqwt cvvgpvkqp vjcv yg ockpvckp qrgp eqoowpkecvkqp fwtkpi vjg korngogpvcvkqp rgtkqf,150,496600.0
+CUST042027,Home Loan,127000,2025-01-31,Gusvy qy wuh jfuh migynbcha qy wiofx wbywe ion nbun hyq gipcy sio gyhncihyx fumn gihnb,103,153400.0
+CUST047952,Loan Against Deposit,565000,2024-10-22,Y mekbt byau je ydvehc oek jxqj oekh lqbkqrbu vuutrqsa yi ixqhut myjx jxu rheqtuh cqdqwucudj juqc,204,679000.0
+CUST077921,Education Loan,813000,2025-02-05,Zh vhulrxvob qhhg wr zh frxog vwduw zrunlqj rq wkdw surmhfw lghd zh mrnhg derxw hduolhu,98,976600.0
+CUST041189,Credit Card Loan,473000,2024-12-23,Ju xpvme cf bxftpnf jg xf dpvme tubsu xpsljoh po uibu qspkfdu jefb xf kplfe bcpvu fbsmjfs,142,568600.0
+CUST027456,Travel Loan,701000,2024-05-20,Gcvrjv vejliv kyrk kyrk kyv lgurkvu gfcztp xlzuvczevj yrmv svve uzjkizslkvu kf rcc uvgrikdvekj,359,842200.0
+CUST002046,Travel Loan,592000,2024-09-04,Usxnvi vod wo uxyg drkd dro sxfysmo nodksvc kbo mybbomdvi bopvomdon sx iyeb bomybnc,252,711400.0
+CUST033606,Credit Card Loan,945000,2024-11-15,Fcw G uyq rfgligle uc amsjb em dmp y fgic gd rfc ucyrfcp qrywq emmb,180,1135000.0
+CUST074352,Credit Card Loan,286000,2024-11-29,Zvokco oxcebo drkd drkd dro zbytomd novsfobklvoc kbo celwsddon li dro ezmywsxq noknvsxo,166,344200.0
+CUST013295,Education Loan,773000,2024-11-20,L ilqdoob jrw wlph wr zh frxog kdqj rxw eb wkh ehdfk ehiruh lw jhwv froghu djdlq,175,928600.0
+CUST026309,Auto Loan,614000,2024-05-11,Iwuxa sa ywj lhwj okiapdejc sa ykqhz cnwx zejjan okiapeia pdeo saag wjz ywpyd ql lnklanhu,368,886360.0
+CUST008556,Business Loan,382000,2025-01-17,Whfg jnagrq gb fnl jr pbhyq fgneg jbexvat ba gung cebwrpg vqrn jr wbxrq nobhg rneyvre,117,459400.0
+CUST089181,Medical Loan,59000,2025-01-14,Ohw ph nqrz li zh frxog jr iru d klnh li wkh zhdwkhu vwdbv jrrg,120,71800.0
+CUST029002,Credit Card Loan,214000,2024-08-08,Vtyowj wpe xp vyzh esle esp faolepo azwtnj rftopwtypd slgp mppy otdectmfepo ez lww opalcexpyed,279,257800.0
+CUST098649,Credit Card Loan,556000,2024-05-12,Uc qfmsjb yppylec y kccrgle rfyr wmsp tyjsyzjc dccbzyai gq qfypcb ugrf rfc zpmybcp kylyeckclr rcyk,367,802840.0
+CUST040458,Medical Loan,640000,2024-12-29,Cvk dv befn zw nv tflcu yrex flk sp kyv svrty svwfiv zk xvkj tfcuvi rxrze,136,769000.0
+CUST072242,Education Loan,996000,2024-12-31,Max kxjnxlmxw whvnfxgml atox uxxg ikxitkxw tgw matm max bgohbvx wxmtbel tkx vhkkxvmer kxyexvmxw bg rhnk kxvhkwl,134,1196200.0
+CUST055342,Auto Loan,444000,2024-05-09,F cfkxiiv dlq qfjb ql tb zlria dl lk x pmlkqxkblrp olxa qofm tfqelrq jrze mixkkfkd,370,641560.0
+CUST030209,Top-Up Loan,751000,2025-02-26,Q ewctl tqsm bw qvnwzu gwc bpib bpm cxlibml xwtqkg ocqlmtqvma pidm jmmv lqabzqjcbml bw itt lmxizbumvba,77,902200.0
+CUST063927,Travel Loan,550000,2025-01-27,Xi wph qttc lpn idd adcv hxcrt lt rdjas hetcs p apon Hjcspn yjhi qxcvt-lpirwxcv das hwdlh,107,661000.0
+CUST096309,Education Loan,884000,2024-06-23,Kv jcu dggp yca vqq nqpi ukpeg yg eqwnf iq hqt c jkmg kh vjg ygcvjgt uvcau iqqf,325,1061800.0
+CUST087153,Home Loan,804000,2024-11-23,Ks ofs okowhwbu mcif qcbtwfaohwcb hvoh hvs dfcxsqh rszwjsfopzsg ofs gipawhhsr pm hvs idqcawbu rsorzwbs,172,965800.0
+CUST061679,Medical Loan,20000,2025-02-14,Fn bnarxdbuh wnnm cx fn lxdum lqnlt xdc cqjc wnf vxern hxd vnwcrxwnm ujbc vxwcq,89,25000.0
+CUST044670,Loan Against Deposit,386000,2024-12-04,Itrs vzmsdc sn rzx vd bntkc rszqs vnqjhmf nm sgzs oqnidbs hcdz vd injdc zants dzqkhdq,161,464200.0
+CUST089501,Travel Loan,625000,2024-12-30,Hdwskw wfkmjw lzsl lzsl qgmj ugeewflk sjw afugjhgjslwv aflg lzw xafsd nwjkagf gx lzw syjwwewfl,135,751000.0
+CUST005408,Education Loan,403000,2025-01-22,Iextlx wh ghm axlbmtmx mh kxtva hnm matm max ikhcxvm wxeboxktuexl tkx lnufbmmxw ur max nivhfbgz wxtwebgx,112,484600.0
+CUST001792,Home Loan,769000,2024-09-24,Ufde hlyepo ez dlj hp nzfwo rz zy l dazyelypzfd czlo ecta hteszfe xfns awlyytyr,232,923800.0
+CUST020532,Top-Up Loan,580000,2024-08-08,Cqrwtrwp fn bqxdum fn lxdum qjwp xdc kh cqn knjlq knoxan rc pncb lxumna jpjrw,279,697000.0
+CUST087219,Medical Loan,723000,2025-03-23,Ozxy bfsyji yt xfd bj htzqi gttp ynhpjyx ktw ymfy htshjwy mfuujsnsl sjcy rtsym,52,868600.0
+CUST080801,Loan Against Deposit,427000,2024-12-07,Kv yqwnf dg cyguqog kh yg eqwnf vta vjcv pgy rkbbc rnceg gxgtaqpg mggru tgeqoogpfkpi,158,513400.0
+CUST009179,Education Loan,277000,2024-12-11,C ug qlcncha ni ziffiq oj nbun siol wiggyhnm uly chwiljilunyx chni nby zchuf pylmcih iz nby ualyygyhn,154,333400.0
+CUST060377,Business Loan,217000,2024-11-03,Wh vog pssb kom hcc zcbu gwbqs ks qcizr uc tcf o vwys wt hvs ksohvsf ghomg uccr,192,261400.0
+CUST024587,Business Loan,230000,2024-08-19,Tb pboflrpiv kbba ql tb zlria pqxoq tlohfkd lk qexq molgbzq fabx tb glhba xylrq bxoifbo,268,277000.0
+CUST059422,Top-Up Loan,740000,2024-05-25,U ruzmxxk saf fuyq fa iq oagxp ebqzp m xmlk Egzpmk vgef nuzsq-imfotuzs axp etaie,354,889000.0
+CUST021201,Medical Loan,964000,2025-03-15,Khb L zdv wklqnlqj zh frxog vwduw zrunlqj rq wkdw surmhfw lghd zh mrnhg derxw hduolhu,60,1157800.0
+CUST084787,Auto Loan,671000,2024-07-06,Znlor jr pna cyna fbzrguvat jr pbhyq teno qvaare fbzrgvzr guvf jrrx naq pngpu hc cebcreyl,312,806200.0
+CUST051541,Education Loan,866000,2024-04-26,Xuo Y mqi jxydaydw mu sekbt xqdw ekj ro jxu ruqsx ruvehu yj wuji sebtuh qwqyd,383,1249240.0
+CUST086834,Travel Loan,536000,2025-04-14,Unc vn twxf ro fn lxdum px xw j byxwcjwnxdb axjm cary frcqxdc vdlq yujwwrwp,30,644200.0
+CUST008719,Auto Loan,314000,2024-12-31,Wh vog pssb kom hcc zcbu gwbqs ks qcizr vcgh o gaozz ush-hcushvsf oh am dzoqs hvwg kssysbr,134,377800.0
+CUST020150,Loan Against Deposit,708000,2024-09-03,Cqrwtrwp fn bqxdum fn lxdum bynwm j ujih Bdwmjh sdbc krwpn-fjclqrwp xum bqxfb,253,850600.0
+CUST055075,Top-Up Loan,134000,2025-03-26,Oek ixekbt tuvydyjubo zeyd mu sekbt xqdw ekj ro jxu ruqsx ruvehu yj wuji sebtuh qwqyd,49,161800.0
+CUST094511,Business Loan,593000,2025-02-23,Buj cu adem yv mu sekbt xeij q icqbb wuj-jewujxuh qj co fbqsu jxyi muuaudt,80,712600.0
+CUST065877,Loan Against Deposit,991000,2024-06-08,D rjpgy gdfz oj diajmh tjp ocvo ocz mzqdnzy xjiomvxo ozmhn vmz mzqdzrzy viy vxxzkozy,340,1190200.0
+CUST039779,Home Loan,766000,2025-03-15,Nbuhe sio zil siol unnyhncih nbun nby ojxunyx jifcws aocxyfchym bupy vyyh xcmnlcvonyx ni uff xyjulngyhnm,60,920200.0
+CUST076710,Loan Against Deposit,621000,2024-12-31,Url V jnf guvaxvat jr pbhyq unat bhg ol gur ornpu orsber vg trgf pbyqre ntnva,134,746200.0
+CUST028180,Credit Card Loan,252000,2024-05-09,Rc fxdum kn jfnbxvn ro fn lxdum kxxt crltncb oxa cqjc lxwlnac qjyynwrwp wngc vxwcq,370,365080.0
+CUST068416,Travel Loan,411000,2024-07-05,Rfdgj bj hfs uqfs xtrjymnsl bj htzqi mfsl tzy gd ymj gjfhm gjktwj ny ljyx htqijw flfns,313,494200.0
+CUST009110,Top-Up Loan,85000,2024-06-22,Em izm ieiqbqvo gwcz kwvnqzuibqwv bpib gwcz ditcijtm nmmljiks qa apizml eqbp bpm jzwilmz uiviomumvb bmiu,326,103000.0
+CUST020227,Education Loan,832000,2025-04-18,Lt pgt plpxixcv ndjg rdcuxgbpixdc iwpi iwt gtkxhts rdcigpri itgbh pgt gtkxtlts pcs prrteits,26,999400.0
+CUST097383,Personal Loan,645000,2024-12-23,Bpivs gwc nwz gwcz ibbmvbqwv bpib itt kwuxtqivkm zmycqzmumvba pidm jmmv ackkmaancttg umb,142,775000.0
+CUST056934,Credit Card Loan,624000,2025-03-02,Wtn X lph iwxczxcv lt rdjas ign iwpi ctl exoop eaprt tktgndct ztteh gtrdbbtcsxcv,73,749800.0
+CUST032427,Business Loan,784000,2025-04-17,Exm fx dghp by px vhnew mkr matm gxp ibsst ietvx xoxkrhgx dxxil kxvhffxgwbgz,27,941800.0
+CUST096242,Credit Card Loan,231000,2024-10-02,Wslhzl luzbyl aoha aoha aol ylcpzlk jvuayhja alytz hyl ylcpldlk huk hjjlwalk,224,278200.0
+CUST010036,Education Loan,389000,2024-06-20,Ocvif tjp ajm tjpm vooziodji ocvo tjpm qvgpvwgz azzywvxf dn ncvmzy rdoc ocz wmjvyzm hvivbzhzio ozvh,328,467800.0
+CUST044354,Home Loan,753000,2024-12-10,Iq eqduagexk zqqp fa iq oagxp ebqzp m xmlk Egzpmk vgef nuzsq-imfotuzs axp etaie,155,904600.0
+CUST061619,Auto Loan,135000,2024-08-04,Zk nflcu sv rnvjfdv zw nv tflcu xirs uzeevi jfdvkzdv kyzj nvvb reu trkty lg gifgvicp,283,163000.0
+CUST046716,Travel Loan,816000,2025-03-04,E wi snepejc pk bkhhks ql pdwp pda qlzwpaz lkheyu cqezahejao dwra xaaj zeopnexqpaz pk whh zalwnpiajpo,71,980200.0
+CUST087051,Home Loan,834000,2024-04-25,Iq mdq mimufuzs kagd oazrudymfuaz ftmf ftqdq mdq za bqzpuzs ufqye nqradq ftq oxaegdq ar ftue btmeq,384,1203160.0
+CUST044939,Personal Loan,990000,2025-04-10,G dglyjjw emr rgkc rm uc amsjb epyz bgllcp qmkcrgkc rfgq ucci ylb ayraf sn npmncpjw,34,1189000.0
+CUST060994,Travel Loan,397000,2024-07-27,T hzfwo wtvp ez tyqzcx jzf esle hp xltyelty zapy nzxxfytnletzy ofctyr esp txawpxpyeletzy apctzo,291,477400.0
+CUST087425,Personal Loan,199000,2024-05-19,B phnew ebdx mh bgyhkf rhn matm max kxoblxw vhgmktvm mxkfl tkx kxobxpxw tgw tvvximxw,360,239800.0
+CUST086093,Personal Loan,132000,2024-05-11,Wpe xp vyzh tq hp nzfwo delce hzcvtyr zy esle aczupne topl hp uzvpo lmzfe plcwtpc,368,192280.0
+CUST082794,Travel Loan,142000,2024-10-01,G umsjb jgic rm gldmpk wms rfyr rfc snbyrcb nmjgaw esgbcjglcq fytc zccl bgqrpgzsrcb rm yjj bcnyprkclrq,225,171400.0
+CUST081767,Credit Card Loan,175000,2025-01-18,Qy uly uqucncha siol wihzclguncih nbun siol pufouvfy zyyxvuwe cm mbulyx qcnb nby vliuxyl guhuaygyhn nyug,116,211000.0
+CUST005928,Auto Loan,560000,2024-07-21,Hdwskw wfkmjw lzsl lzsl lzwjw sjw fg hwfvafy alwek twxgjw lzw udgkmjw gx lzak hzskw,297,673000.0
+CUST062121,Credit Card Loan,893000,2024-05-01,Sd rkc loox gki dyy vyxq csxmo go myevn dbi drkd xog zsjjk zvkmo ofobiyxo uoozc bomywwoxnsxq,378,1288120.0
+CUST090111,Auto Loan,451000,2024-09-06,Omrhpc pix qi orsa xlex epp gsqtpmergi viuymviqirxw lezi fiir wyggiwwjyppc qix,250,542200.0
+CUST025456,Top-Up Loan,440000,2025-04-10,Ks gsfwcigzm bssr hc ks qcizr pccy hwqyshg tcf hvoh qcbqsfh voddsbwbu bslh acbhv,34,529000.0
+CUST057221,Credit Card Loan,614000,2024-07-17,Xi ldjas qt plthdbt xu lt rdjas hetcs p apon Hjcspn yjhi qxcvt-lpirwxcv das hwdlh,301,737800.0
+CUST088496,Loan Against Deposit,567000,2024-06-13,Xnt rgntkc cdehmhsdkx inhm vd bntkc gzmf nts ax sgd adzbg adenqd hs fdsr bnkcdq zfzhm,335,681400.0
+CUST074509,Medical Loan,731000,2024-11-27,Cqoru mu sqd fbqd iecujxydw mu sekbt whqr tydduh iecujycu jxyi muua qdt sqjsx kf fhefuhbo,168,878200.0
+CUST025762,Medical Loan,97000,2024-06-28,Matgd rhn yhk rhnk tmmxgmbhg matm max bgohbvx wxmtbel tkx vhkkxvmer kxyexvmxw bg rhnk kxvhkwl,320,117400.0
+CUST059742,Top-Up Loan,852000,2024-11-18,H ehmzkkx fns shld sn vd bntkc rszqs vnqjhmf nm sgzs oqnidbs hcdz vd injdc zants dzqkhdq,177,1023400.0
+CUST010956,Travel Loan,129000,2025-03-05,Czt D rvn ocdifdib rz xjpgy bj ji v nkjiovizjpn mjvy omdk rdocjpo hpxc kgviidib,70,155800.0
+CUST058198,Business Loan,273000,2025-02-26,Fq tlria yb dobxqiv xmmobzfxqba fc qexq qeb obsfpba zlkqoxzq qbojp xob obsfbtba xka xzzbmqba,77,328600.0
+CUST013069,Credit Card Loan,345000,2025-02-21,Drkxu iye pyb iyeb kddoxdsyx drkd kvv mywzvskxmo boaesbowoxdc rkfo loox cemmoccpevvi wod,82,415000.0
+CUST085928,Medical Loan,586000,2024-06-29,X pb lgxixcv id udaadl je iwpi iwtgt pgt cd etcsxcv xitbh qtudgt iwt radhjgt du iwxh ewpht,319,704200.0
+CUST071100,Education Loan,754000,2024-06-27,Rpuksf sla tl ruvd aoha fvby chsbhisl mllkihjr pz zohylk dpao aol iyvhkly thuhnltlua alht,321,905800.0
+CUST076309,Auto Loan,358000,2024-09-09,Wkdqn brx iru brxu dwwhqwlrq wkdw zh pdlqwdlq rshq frppxqlfdwlrq gxulqj wkh lpsohphqwdwlrq shulrg,247,430600.0
+CUST048629,Home Loan,104000,2024-04-26,Mabgdbgz px lahnew px vhnew vaxvd hnm matm gxp fhobx rhn fxgmbhgxw etlm fhgma,383,151960.0
+CUST038733,Medical Loan,839000,2024-12-19,Ks gvcizr offobus o asshwbu hvoh hvs fsjwgsr qcbhfoqh hsfag ofs fsjwsksr obr oqqsdhsr,146,1007800.0
+CUST025177,Loan Against Deposit,111000,2024-06-05,Uibol zpv gps zpvs buufoujpo uibu bmm dpnqmjbodf sfrvjsfnfout ibwf cffo tvddfttgvmmz nfu,343,134200.0
+CUST056029,Business Loan,570000,2024-10-16,Pnsiqd qjy rj pstb ymfy dtzw afqzfgqj kjjigfhp nx xmfwji bnym ymj gwtfijw rfsfljrjsy yjfr,210,685000.0
+CUST017068,Loan Against Deposit,878000,2025-03-21,Axr B ptl mabgdbgz px vhnew mkr matm gxp ibsst ietvx xoxkrhgx dxxil kxvhffxgwbgz,54,1054600.0
+CUST024220,Medical Loan,469000,2024-07-21,Q iu ezqbqvo bw nwttwe cx bpib bpm qvdwqkm lmbiqta izm kwzzmkbtg zmntmkbml qv gwcz zmkwzla,297,563800.0
+CUST051996,Medical Loan,345000,2024-11-07,Xuo Y mqi jxydaydw mu sekbt we veh q xyau yv jxu muqjxuh ijqoi weet,188,415000.0
+CUST006759,Credit Card Loan,949000,2024-08-24,Dzsogs rc bch vsgwhohs hc fsoqv cih hvoh hvs idrohsr dczwqm uiwrszwbsg vojs pssb rwghfwpihsr hc ozz rsdofhasbhg,263,1139800.0
+CUST004006,Medical Loan,911000,2025-04-20,Q iu ezqbqvo bw nwttwe cx bpib bpm zmdqaml kwvbzikb bmzua izm zmdqmeml ivl ikkmxbml,24,1094200.0
+CUST012686,Loan Against Deposit,700000,2024-08-06,T qtylwwj rze etxp ez hp nzfwo rclm otyypc dzxpetxp estd hppv lyo nlens fa aczapcwj,281,841000.0
+CUST039583,Credit Card Loan,165000,2025-01-19,Cyrnfr qb abg urfvgngr gb ernpu bhg gung nyy pbzcyvnapr erdhverzragf unir orra fhpprffshyyl zrg,115,199000.0
+CUST089963,Top-Up Loan,151000,2024-04-23,Lzsfc qgm xgj qgmj sllwflagf lzsl lzw kuzwvmdwv laewdafw xgj lzw hjgbwul jwesafk mfuzsfywv,386,219640.0
+CUST071020,Credit Card Loan,222000,2024-11-26,Fq tlria yb xtbpljb fc tb zlria pqxoq tlohfkd lk qexq molgbzq fabx tb glhba xylrq bxoifbo,169,267400.0
+CUST097304,Auto Loan,38000,2025-03-15,Sio mbiofx xyzchcnyfs dich qy wiofx wbywe ion nbun hyq gipcy sio gyhncihyx fumn gihnb,60,46600.0
+CUST040230,Top-Up Loan,898000,2025-03-13,Uibol zpv gps zpvs buufoujpo uibu uif vqebufe qpmjdz hvjefmjoft ibwf cffo ejtusjcvufe up bmm efqbsunfout,62,1078600.0
+CUST039921,Education Loan,600000,2025-01-02,U iagxp xuwq fa uzrady kag ftmf ftqdq mdq za bqzpuzs ufqye nqradq ftq oxaegdq ar ftue btmeq,132,721000.0
+CUST019501,Education Loan,33000,2025-01-18,Ow kwjagmkdq fwwv lg ow ugmdv yjst vaffwj kgewlaew lzak owwc sfv usluz mh hjghwjdq,116,40600.0
+CUST089929,Auto Loan,793000,2025-02-13,Iwt gtfjthits sdrjbtcih wpkt qttc egtepgts pcs iwpi paa rdbeaxpcrt gtfjxgtbtcih wpkt qttc hjrrthhujaan bti,90,952600.0
+CUST034672,Personal Loan,48000,2024-12-29,Xqf yq wzai ur iq oagxp sa rad m tuwq ur ftq iqmftqd efmke saap,136,58600.0
+CUST026072,Auto Loan,102000,2024-10-08,Domn quhnyx ni mus qy wiofx nls nbun hyq jcttu jfuwy ypylsihy eyyjm lywiggyhxcha,218,123400.0
+CUST005258,Personal Loan,70000,2024-10-31,W kcizr zwys hc wbtcfa mci hvoh mcif qcaasbhg ofs wbqcfdcfohsr wbhc hvs twboz jsfgwcb ct hvs oufssasbh,195,85000.0
+CUST030883,Top-Up Loan,967000,2025-04-08,Qb ewctl jm ozmibtg ixxzmkqibml qn bpib gwcz kwuumvba izm qvkwzxwzibml qvbw bpm nqvit dmzaqwv wn bpm iozmmumvb,36,1161400.0
+CUST007671,Medical Loan,558000,2024-10-20,Znotqotm ck ynuarj ck iuarj ngtm uaz he znk hkgin hkluxk oz mkzy iurjkx gmgot,206,670600.0
+CUST046660,Education Loan,315000,2025-01-30,Te hzfwo mp rcplewj laacpntlepo tq esle esp cpgtdpo nzyeclne epcxd lcp cpgtphpo lyo lnnpaepo,104,379000.0
+CUST092759,Auto Loan,601000,2024-07-31,Sd gyevn lo qbokdvi kzzbomskdon sp drkd kvv mywzvskxmo boaesbowoxdc rkfo loox cemmoccpevvi wod,287,722200.0
+CUST053699,Home Loan,351000,2025-04-04,Mu iuhyekibo duut je mu sekbt ifudt q bqpo Ikdtqo zkij rydwu-mqjsxydw ebt ixemi,40,422200.0
+CUST003371,Medical Loan,628000,2024-07-16,N btzqi qnpj yt nsktwr dtz ymfy ymj wjanxji htsywfhy yjwrx fwj wjanjbji fsi fhhjuyji,302,754600.0
+CUST086422,Personal Loan,475000,2024-12-27,Ck ykxouayre tkkj zu ck iuarj yvktj g rgfe Yatjge payz hotmk-cgzinotm urj ynucy,138,571000.0
+CUST038202,Travel Loan,171000,2024-09-10,Lt htgxdjhan ctts id lt rdjas ign iwpi ctl exoop eaprt tktgndct ztteh gtrdbbtcsxcv,246,206200.0
+CUST073322,Loan Against Deposit,742000,2024-05-30,Rfgligle uc qfmsjb uc amsjb afcai msr rfyr lcu kmtgc wms kclrgmlcb jyqr kmlrf,349,891400.0
+CUST085343,Credit Card Loan,382000,2025-02-16,Mx lew fiir aec xss psrk wmrgi ai gsyph wxevx asvomrk sr xlex tvsnigx mhie ai nsoih efsyx ievpmiv,87,459400.0
+CUST016440,Medical Loan,734000,2024-10-18,Hap ia gjks eb sa ykqhz dkop w oiwhh cap-pkcapdan wp iu lhwya pdeo saagajz,208,881800.0
+CUST088017,Medical Loan,664000,2025-04-03,Ep dwo xaaj swu pkk hkjc oejya sa ykqhz ydayg kqp pdwp jas ikrea ukq iajpekjaz hwop ikjpd,41,797800.0
+CUST037940,Education Loan,75000,2024-09-25,Sgzmj xnt enq xntq zssdmshnm sgzs zkk bnlokhzmbd qdpthqdldmsr gzud addm rtbbdrretkkx lds,231,91000.0
+CUST084941,Business Loan,278000,2024-05-19,Ju xpvme cf bxftpnf jg xf dpvme difdl pvu uibu ofx npwjf zpv nfoujpofe mbtu npoui,360,334600.0
+CUST052453,Auto Loan,879000,2024-11-30,Oek ixekbt tuvydyjubo zeyd mu sekbt sxusa ekj jxqj dum celyu oek cudjyedut bqij cedjx,165,1055800.0
+CUST029792,Travel Loan,622000,2024-05-12,E skqhz hega pk ejbkni ukq pdwp ukqn ykiiajpo wna ejyknlknwpaz ejpk pda bejwh ranoekj kb pda wcnaaiajp,367,897880.0
+CUST001432,Education Loan,856000,2024-08-28,Oz cuarj hk mxkgzre gvvxkiogzkj ol zngz znk xkboykj iutzxgiz zkxsy gxk xkbokckj gtj giikvzkj,259,1028200.0
+CUST076478,Education Loan,237000,2024-07-21,Yg ctg cyckvkpi aqwt eqphktocvkqp vjcv vjg rtqlgev fgnkxgtcdngu ctg uwdokvvgf da vjg wreqokpi fgcfnkpg,297,285400.0
+CUST069292,Medical Loan,427000,2024-11-15,Ju xpvme cf bxftpnf jg xf dpvme cppl ujdlfut gps uibu dpodfsu ibqqfojoh ofyu npoui,180,513400.0
+CUST041266,Education Loan,518000,2024-11-01,Vd rdqhntrkx mddc sn vd bntkc rodmc z kzyx Rtmczx itrs ahmfd-vzsbghmf nkc rgnvr,194,622600.0
+CUST000641,Credit Card Loan,524000,2024-06-04,Ep dwo xaaj swu pkk hkjc oejya sa ykqhz pnu pdwp jas levvw lhwya aranukja gaalo naykiiajzejc,344,629800.0
+CUST038636,Travel Loan,882000,2024-09-16,Rpuksf sla tl ruvd aoha aol pucvpjl klahpsz hyl jvyyljasf ylmsljalk pu fvby yljvykz,240,1059400.0
+CUST058625,Loan Against Deposit,94000,2024-12-11,Jr fubhyq neenatr n zrrgvat gung gurer ner ab craqvat vgrzf orsber gur pybfher bs guvf cunfr,154,113800.0
+CUST056321,Credit Card Loan,311000,2025-03-09,Zk nflcu sv xivrkcp rggivtzrkvu zw kyrk kyv jtyvulcvu kzdvczev wfi kyv gifavtk ivdrzej letyrexvu,66,374200.0
+CUST097637,Top-Up Loan,175000,2024-05-13,N fr bwnynsl yt ktqqtb zu ymfy ymj uwtojhy ijqnajwfgqjx fwj xzgrnyyji gd ymj zuhtrnsl ijfiqnsj,366,254200.0
+CUST022335,Education Loan,765000,2025-02-02,Nv jyflcu riirexv r dvvkzex kyrk kyv ivmzjvu tfekirtk kvidj riv ivmzvnvu reu rttvgkvu,101,919000.0
+CUST032705,Home Loan,42000,2024-09-28,Xf bsf bxbjujoh zpvs dpogjsnbujpo uibu uif qspkfdu efmjwfsbcmft bsf tvcnjuufe cz uif vqdpnjoh efbemjof,228,51400.0
+CUST010292,Medical Loan,828000,2024-11-01,O gs cxozotm zu lurruc av zngz znk otbuoik jkzgory gxk iuxxkizre xklrkizkj ot euax xkiuxjy,194,994600.0
+CUST086482,Credit Card Loan,860000,2025-02-04,Itrs vzmsdc sn rzx vd bntkc gzmf nts ax sgd adzbg adenqd hs fdsr bnkcdq zfzhm,99,1033000.0
+CUST046581,Business Loan,735000,2025-01-22,Go cryevn kbbkxqo k woodsxq drkd dro cmronevon dswovsxo pyb dro zbytomd bowksxc exmrkxqon,112,883000.0
+CUST025187,Credit Card Loan,911000,2024-10-07,Gur erdhrfgrq qbphzragf unir orra cercnerq naq gung gur cebwrpg qryvirenoyrf ner fhozvggrq ol gur hcpbzvat qrnqyvar,219,1094200.0
+CUST085241,Auto Loan,940000,2024-08-02,Y mekbt byau je ydvehc oek jxqj jxu kftqjut febyso wkytubydui xqlu ruud tyijhyrkjut je qbb tufqhjcudji,285,1129000.0
+CUST052067,Auto Loan,464000,2025-01-11,K co ytkvkpi vq hqnnqy wr vjcv vjgtg ctg pq rgpfkpi kvgou dghqtg vjg enquwtg qh vjku rjcug,123,557800.0
+CUST026050,Top-Up Loan,798000,2025-04-18,V nz jevgvat gb sbyybj hc gung gur cebwrpg qryvirenoyrf ner fhozvggrq ol gur hcpbzvat qrnqyvar,26,958600.0
+CUST021319,Top-Up Loan,53000,2024-07-15,Te hzfwo mp rcplewj laacpntlepo tq esle esp dnspofwpo etxpwtyp qzc esp aczupne cpxltyd fynslyrpo,303,64600.0
+CUST097631,Travel Loan,194000,2024-10-07,Qb ewctl jm ozmibtg ixxzmkqibml qn bpib gwcz kwuumvba izm qvkwzxwzibml qvbw bpm nqvit dmzaqwv wn bpm iozmmumvb,219,233800.0
+CUST074345,Auto Loan,328000,2024-06-30,Qb pia jmmv eig bww twvo aqvkm em kwctl abizb ewzsqvo wv bpib xzwrmkb qlmi em rwsml ijwcb miztqmz,318,394600.0
+CUST010503,Top-Up Loan,695000,2024-10-21,Pdwjg ukq bkn ukqn wppajpekj pdwp sa iwejpwej klaj ykiiqjeywpekj zqnejc pda eilhaiajpwpekj lanekz,205,835000.0
+CUST064173,Top-Up Loan,143000,2024-10-24,Iextlx wh ghm axlbmtmx mh kxtva hnm matm maxkx tkx gh ixgwbgz bmxfl uxyhkx max vehlnkx hy mabl iatlx,202,172600.0
+CUST062689,Home Loan,757000,2024-11-06,Tpiewi hs rsx liwmxexi xs viegl syx xlex xli vizmwih gsrxvegx xivqw evi vizmiaih erh eggitxih,189,909400.0
+CUST068256,Home Loan,115000,2024-08-13,Cn qiofx vy uqymigy cz qy wiofx ai ih u mjihnuhyiom liux nlcj qcnbion gowb jfuhhcha,274,139000.0
+CUST039236,Loan Against Deposit,223000,2024-11-11,D vh rmdodib oj ajggjr pk ocvo vgg xjhkgdvixz mzlpdmzhzion cvqz wzzi npxxznnapggt hzo,184,268600.0
+CUST014098,Home Loan,345000,2024-12-24,Iye cryevn nopsxsdovi tysx go myevn czoxn k vkji Cexnki tecd lsxqo-gkdmrsxq yvn crygc,141,415000.0
+CUST099509,Business Loan,594000,2024-06-02,Tpiewi hs rsx liwmxexi xs viegl syx xlex xlivi evi rs tirhmrk mxiqw fijsvi xli gpswyvi sj xlmw tlewi,346,713800.0
+CUST018086,Medical Loan,607000,2024-10-22,D vh rmdodib oj ajggjr pk ocvo ocz nxczypgzy odhzgdiz ajm ocz kmjezxo mzhvdin pixcvibzy,204,729400.0
+CUST059292,Loan Against Deposit,387000,2024-10-11,Ohw ph nqrz li zh frxog jr iru d klnh li wkh zhdwkhu vwdbv jrrg,215,465400.0
+CUST063688,Business Loan,575000,2025-01-29,Bm phnew ux tpxlhfx by px vhnew zh yhk t abdx by max pxtmaxk lmtrl zhhw,105,691000.0
+CUST078410,Business Loan,953000,2024-09-29,Dzsogs rc bch vsgwhohs hc fsoqv cih hvoh hvs fsjwgsr qcbhfoqh hsfag ofs fsjwsksr obr oqqsdhsr,227,1144600.0
+CUST091362,Home Loan,359000,2024-09-21,Rngcug gpuwtg vjcv vjcv vjg tgxkugf eqpvtcev vgtou ctg tgxkgygf cpf ceegrvgf,235,431800.0
+CUST078080,Business Loan,19000,2025-03-25,Ocz mzlpznozy yjxphzion cvqz wzzi kmzkvmzy viy ocvo vgg xjhkgdvixz mzlpdmzhzion cvqz wzzi npxxznnapggt hzo,50,23800.0
+CUST012694,Business Loan,943000,2024-10-27,V jbhyq yvxr gb vasbez lbh gung gur hcqngrq cbyvpl thvqryvarf unir orra qvfgevohgrq gb nyy qrcnegzragf,199,1132600.0
+CUST006623,Credit Card Loan,372000,2025-02-24,Vjkpmkpi yg ujqwnf yg eqwnf ejgem qwv vjcv pgy oqxkg aqw ogpvkqpgf ncuv oqpvj,79,447400.0
+CUST015999,Auto Loan,149000,2024-09-29,Ck ynuarj gxxgtmk g skkzotm zngz znk vxupkiz jkrobkxghrky gxk yahsozzkj he znk aviusotm jkgjrotk,227,179800.0
+CUST022392,Auto Loan,703000,2024-11-21,Hs vntkc ad fqdzskx zooqdbhzsdc he sgzs sgd rbgdctkdc shldkhmd enq sgd oqnidbs qdlzhmr tmbgzmfdc,174,844600.0
+CUST086769,Top-Up Loan,494000,2024-10-07,Kgzvnz yj ijo czndovoz oj mzvxc jpo ocvo rz hvdiovdi jkzi xjhhpidxvodji ypmdib ocz dhkgzhziovodji kzmdjy,219,593800.0
+CUST058802,Business Loan,515000,2024-05-19,Zvokco oxcebo drkd drkd go wksxdksx yzox mywwexsmkdsyx nebsxq dro swzvowoxdkdsyx zobsyn,360,619000.0
+CUST015140,Personal Loan,237000,2025-03-15,Tb xob xtxfqfkd vlro zlkcfojxqflk qexq vlro sxirxyib cbbayxzh fp pexoba tfqe qeb yolxabo jxkxdbjbkq qbxj,60,285400.0
+CUST013918,Medical Loan,91000,2024-05-18,Gejzhu hap ia gjks pdwp pda nareoaz ykjpnwyp panio wna nareasaz wjz wyyalpaz,361,110200.0
+CUST070174,Home Loan,366000,2025-02-04,K co ytkvkpi vq hqnnqy wr vjcv vjg wrfcvgf rqnkea iwkfgnkpgu jcxg dggp fkuvtkdwvgf vq cnn fgrctvogpvu,99,440200.0
+CUST060597,Auto Loan,517000,2024-09-15,Vrkgyk ktyaxk zngz zngz euax bgraghrk lkkjhgiq oy yngxkj cozn znk hxugjkx sgtgmksktz zkgs,241,621400.0
+CUST008415,Travel Loan,912000,2024-06-25,Ymknq iq omz bxmz eayqftuzs iq oagxp sa az m ebazfmzqage damp fdub iuftagf ygot bxmzzuzs,323,1095400.0
+CUST013168,Home Loan,140000,2024-06-05,Cn qiofx vy uqymigy cz qy wiofx mjyhx u futs Mohxus domn vchay-qunwbcha ifx mbiqm,343,169000.0
+CUST036262,Home Loan,471000,2024-06-09,Uf iagxp nq sdqmfxk mbbdqoumfqp ur ftmf iq ymuzfmuz abqz oayygzuomfuaz pgduzs ftq uybxqyqzfmfuaz bqduap,339,566200.0
+CUST077662,Credit Card Loan,59000,2025-01-02,K co ytkvkpi vq hqnnqy wr vjcv vjg tgxkugf eqpvtcev vgtou ctg tgxkgygf cpf ceegrvgf,132,71800.0
+CUST054027,Credit Card Loan,342000,2024-08-26,Pfl jyflcu uvwzezkvcp afze nv tflcu jkrik nfibzex fe kyrk gifavtk zuvr nv afbvu rsflk vriczvi,261,411400.0
+CUST069592,Top-Up Loan,387000,2024-12-20,Omrhpc pix qi orsa xlex csyv zepyefpi jiihfego mw wlevih amxl xli fvsehiv qerekiqirx xieq,145,465400.0
+CUST057535,Education Loan,932000,2025-03-14,M eq avmxmrk xs jsppsa yt xlex xlivi evi rs tirhmrk mxiqw fijsvi xli gpswyvi sj xlmw tlewi,61,1119400.0
+CUST036426,Loan Against Deposit,604000,2024-06-18,Pix qi orsa mj ai gsyph ks jsv e lmoi mj xli aiexliv wxecw kssh,330,725800.0
+CUST016883,Top-Up Loan,368000,2024-06-15,Sd rkc loox gki dyy vyxq csxmo go myevn qy yx k czyxdkxoyec bykn dbsz gsdryed wemr zvkxxsxq,333,442600.0
+CUST058720,Personal Loan,469000,2025-02-16,Kgzvnz zinpmz ocvo ocvo ocz diqjdxz yzovdgn vmz xjmmzxogt mzagzxozy di tjpm mzxjmyn,87,563800.0
+CUST053427,Auto Loan,120000,2024-07-09,Fn bnarxdbuh wnnm cx fn lxdum px oxa j qrtn ro cqn fnjcqna bcjhb pxxm,309,145000.0
+CUST003349,Loan Against Deposit,565000,2024-04-23,Cqrwtrwp fn bqxdum fn lxdum lqnlt xdc cqjc wnf vxern hxd vnwcrxwnm ujbc vxwcq,386,815800.0
+CUST043601,Home Loan,412000,2024-04-23,Rfyli wms dmp wmsp yrrclrgml rfyr uc kyglrygl mncl amkkslgayrgml bspgle rfc gknjckclryrgml ncpgmb,386,595480.0
+CUST056781,Auto Loan,336000,2024-09-24,Lzw jwimwklwv vgumewflk zsnw twwf hjwhsjwv sfv lzsl sdd ugehdasfuw jwimajwewflk zsnw twwf kmuuwkkxmddq ewl,232,404200.0
+CUST098217,Personal Loan,870000,2024-12-01,Sd rkc loox gki dyy vyxq csxmo go myevn dbi drkd xog zsjjk zvkmo ofobiyxo uoozc bomywwoxnsxq,164,1045000.0
+CUST012906,Education Loan,90000,2024-05-23,Ftuzwuzs iq etagxp iq oagxp efmdf iadwuzs az ftmf bdavqof upqm iq vawqp mnagf qmdxuqd,356,109000.0
+CUST048793,Home Loan,756000,2024-06-21,Xlero csy jsv csyv exxirxmsr xlex csyv gsqqirxw evi mrgsvtsvexih mrxs xli jmrep zivwmsr sj xli ekviiqirx,327,908200.0
+CUST024426,Home Loan,105000,2025-02-28,Lhawoa ajoqna pdwp pdwp pda lnkfayp zaheranwxhao wna oqxieppaz xu pda qlykiejc zawzheja,75,127000.0
+CUST092167,Personal Loan,674000,2025-02-23,Wslhzl luzbyl aoha aoha aol wyvqlja klspclyhislz hyl zbitpaalk if aol bwjvtpun klhkspul,80,809800.0
+CUST001213,Top-Up Loan,614000,2024-12-28,Kyv ivhlvjkvu uftldvekj yrmv svve givgrivu reu kyrk kyv zemfztv uvkrzcj riv tfiivtkcp ivwcvtkvu ze pfli ivtfiuj,137,737800.0
+CUST030551,Travel Loan,885000,2025-01-31,Yrg zr xabj vs jr pbhyq tb sbe n uvxr vs gur jrngure fgnlf tbbq,103,1063000.0
+CUST019171,Top-Up Loan,395000,2025-04-07,Esqtw ow usf hdsf kgewlzafy ow ugmdv uzwuc gml lzsl fwo egnaw qgm ewflagfwv dskl egflz,37,475000.0
+CUST095679,Credit Card Loan,93000,2024-12-04,Iglbjw jcr kc ilmu rfyr wmsp tyjsyzjc dccbzyai gq qfypcb ugrf rfc zpmybcp kylyeckclr rcyk,161,112600.0
+CUST087968,Education Loan,835000,2024-07-06,Hxd bqxdum mnorwrcnuh sxrw fn lxdum bynwm j ujih Bdwmjh sdbc krwpn-fjclqrwp xum bqxfb,312,1003000.0
+CUST091417,Loan Against Deposit,801000,2024-07-26,X ldjas axzt id xcudgb ndj iwpi iwt gtkxhts rdcigpri itgbh pgt gtkxtlts pcs prrteits,292,962200.0
+CUST023560,Education Loan,168000,2024-12-15,Rc fxdum kn panjcuh jyyanlrjcnm ro cqjc cqn yaxsnlc mnurenajkunb jan bdkvrccnm kh cqn dylxvrwp mnjmurwn,150,202600.0
+CUST020459,Auto Loan,157000,2025-01-02,Bxqmeq qzegdq ftmf ftmf kagd oayyqzfe mdq uzoadbadmfqp uzfa ftq ruzmx hqdeuaz ar ftq msdqqyqzf,132,189400.0
+CUST031891,Home Loan,43000,2024-08-29,C zchuffs ain ncgy ni qy wiofx wbywe ion nbun hyq gipcy sio gyhncihyx fumn gihnb,258,52600.0
+CUST007904,Business Loan,395000,2024-11-26,Iwt gtfjthits sdrjbtcih wpkt qttc egtepgts pcs iwpi iwt jespits edaxrn vjxstaxcth wpkt qttc sxhigxqjits id paa stepgibtcih,169,475000.0
+CUST068795,Education Loan,834000,2024-05-29,Xlmromrk ai wlsyph ai gsyph lswx e wqepp kix-xskixliv ex qc tpegi xlmw aiioirh,350,1001800.0
+CUST037709,Business Loan,241000,2024-08-11,Ebv F txp qefkhfkd tb zlria qov qexq kbt mfwwx mixzb bsbovlkb hbbmp obzljjbkafkd,276,290200.0
+CUST029057,Credit Card Loan,645000,2025-03-12,Awpldp pydfcp esle esle esp tygztnp opeltwd lcp nzccpnewj cpqwpnepo ty jzfc cpnzcod,63,775000.0
+CUST047508,Personal Loan,464000,2024-05-03,Fq exp ybbk txv qll ilkd pfkzb tb zlria pmbka x ixwv Prkaxv grpq yfkdb-txqzefkd lia peltp,376,670360.0
+CUST028544,Home Loan,429000,2024-08-28,K co ytkvkpi vq hqnnqy wr vjcv vjg wrfcvgf rqnkea iwkfgnkpgu jcxg dggp fkuvtkdwvgf vq cnn fgrctvogpvu,259,515800.0
+CUST033651,Home Loan,339000,2025-03-15,C zchuffs ain ncgy ni qy wiofx buha ion vs nby vyuwb vyzily cn aynm wifxyl uauch,60,407800.0
+CUST077579,Top-Up Loan,443000,2024-05-10,Jr ner njnvgvat lbhe pbasvezngvba gung lbhe pbzzragf ner vapbecbengrq vagb gur svany irefvba bs gur nterrzrag,369,640120.0
+CUST067769,Travel Loan,369000,2024-05-17,T hzfwo wtvp ez tyqzcx jzf esle esp dnspofwpo etxpwtyp qzc esp aczupne cpxltyd fynslyrpo,362,443800.0
+CUST034686,Home Loan,143000,2025-04-08,Vjcpm aqw hqt aqwt cvvgpvkqp vjcv cnn eqornkcpeg tgswktgogpvu jcxg dggp uweeguuhwnna ogv,36,172600.0
+CUST002780,Auto Loan,993000,2025-03-27,Gcvrjv vejliv kyrk kyrk pfli tfddvekj riv zetfigfirkvu zekf kyv wzerc mvijzfe fw kyv rxivvdvek,48,1192600.0
+CUST013389,Home Loan,863000,2025-03-12,Qotjre rkz sk qtuc zngz znk xkboykj iutzxgiz zkxsy gxk xkbokckj gtj giikvzkj,63,1036600.0
+CUST069087,Education Loan,18000,2024-05-25,Sohdvh hqvxuh wkdw wkdw wkhuh duh qr shqglqj lwhpv ehiruh wkh forvxuh ri wklv skdvh,354,22600.0
+CUST001063,Auto Loan,780000,2024-08-25,Rc fxdum kn panjcuh jyyanlrjcnm ro cqjc cqn dymjcnm yxurlh pdrmnurwnb qjen knnw mrbcarkdcnm cx juu mnyjacvnwcb,262,937000.0
+CUST074470,Auto Loan,581000,2024-11-19,Qnh R fjb cqrwtrwp fn lxdum px oxa j qrtn ro cqn fnjcqna bcjhb pxxm,176,698200.0
+CUST017837,Personal Loan,28000,2025-03-31,C zchuffs ain ncgy ni qy wiofx mnuln qilecha ih nbun jlidywn cxyu qy dieyx uvion yulfcyl,44,34600.0
+CUST016767,Home Loan,185000,2025-01-09,N fr bwnynsl yt ktqqtb zu ymfy ymj nsatnhj ijyfnqx fwj htwwjhyqd wjkqjhyji ns dtzw wjhtwix,125,223000.0
+CUST020288,Credit Card Loan,705000,2025-03-06,Iextlx xglnkx matm matm rhnk otentuex yxxwutvd bl latkxw pbma max ukhtwxk ftgtzxfxgm mxtf,69,847000.0
+CUST086771,Business Loan,586000,2024-08-12,Rz ncjpgy vmmvibz v hzzodib ocvo rz hvdiovdi jkzi xjhhpidxvodji ypmdib ocz dhkgzhziovodji kzmdjy,275,704200.0
+CUST079838,Top-Up Loan,94000,2024-12-31,H zl vqhshmf sn enkknv to sgzs xntq bnlldmsr zqd hmbnqonqzsdc hmsn sgd ehmzk udqrhnm ne sgd zfqddldms,134,113800.0
+CUST021874,Medical Loan,798000,2024-06-25,Mx lew fiir aec xss psrk wmrgi ai gsyph ks jsv e lmoi mj xli aiexliv wxecw kssh,323,958600.0
+CUST009825,Credit Card Loan,485000,2024-07-09,Wslhzl kv uva olzpahal av ylhjo vba aoha fvby chsbhisl mllkihjr pz zohylk dpao aol iyvhkly thuhnltlua alht,309,583000.0
+CUST091918,Auto Loan,154000,2025-04-06,Bpnqt lt rpc eapc hdbtiwxcv lt rdjas vd dc p hedcipctdjh gdps igxe lxiwdji bjrw eapccxcv,38,185800.0
+CUST003597,Credit Card Loan,785000,2024-10-16,Kvtu xboufe up tbz xf dpvme hp po b tqpoubofpvt spbe usjq xjuipvu nvdi qmboojoh,210,943000.0
+CUST056690,Home Loan,536000,2024-08-30,Uqjfxj it sty mjxnyfyj yt wjfhm tzy ymfy ymj wjanxji htsywfhy yjwrx fwj wjanjbji fsi fhhjuyji,257,644200.0
+CUST018648,Credit Card Loan,249000,2024-10-01,Jxu hugkuijut teskcudji xqlu ruud fhufqhut qdt jxqj oekh seccudji qhu ydsehfehqjut ydje jxu vydqb luhiyed ev jxu qwhuucudj,225,299800.0
+CUST093510,Top-Up Loan,988000,2025-02-15,Xtmiam mvaczm bpib bpib bpm zmdqaml kwvbzikb bmzua izm zmdqmeml ivl ikkmxbml,88,1186600.0
+CUST010765,Travel Loan,550000,2024-04-26,Zwq A osk lzafcafy ow ugmdv ljq lzsl fwo harrs hdsuw wnwjqgfw cwwhk jwugeewfvafy,383,794200.0
+CUST049326,Auto Loan,43000,2024-06-07,Zwq A osk lzafcafy ow ugmdv yg gf s khgflsfwgmk jgsv ljah oalzgml emuz hdsffafy,341,52600.0
+CUST076382,Auto Loan,263000,2025-03-16,X pb lgxixcv id udaadl je iwpi ndjg rdbbtcih pgt xcrdgedgpits xcid iwt uxcpa ktghxdc du iwt pvgttbtci,59,316600.0
+CUST094243,Auto Loan,988000,2024-09-04,Lt hwdjas pggpcvt p bttixcv iwpi iwt hrwtsjats ixbtaxct udg iwt egdytri gtbpxch jcrwpcvts,252,1186600.0
+CUST057299,Auto Loan,72000,2025-03-18,Rfyli wms dmp wmsp yrrclrgml rfyr yjj amknjgylac pcosgpckclrq fytc zccl qsaacqqdsjjw kcr,57,87400.0
+CUST089807,Business Loan,156000,2024-08-12,Sgzmj xnt enq xntq zssdmshnm sgzs zkk bnlokhzmbd qdpthqdldmsr gzud addm rtbbdrretkkx lds,275,188200.0
+CUST084760,Business Loan,632000,2024-07-06,Gcvrjv uf efk yvjzkrkv kf ivrty flk kyrk kyv gifavtk uvczmvirscvj riv jlsdzkkvu sp kyv lgtfdzex uvruczev,312,759400.0
+CUST044196,Loan Against Deposit,467000,2025-03-24,Ndj hwdjas stuxcxitan ydxc lt rdjas hipgi ldgzxcv dc iwpi egdytri xstp lt ydzts pqdji tpgaxtg,51,561400.0
+CUST060684,Education Loan,23000,2024-09-18,A se ojalafy lg xgddgo mh lzsl lzwjw sjw fg hwfvafy alwek twxgjw lzw udgkmjw gx lzak hzskw,238,28600.0
+CUST078228,Education Loan,134000,2025-01-15,Iextlx wh ghm axlbmtmx mh kxtva hnm matm rhnk vhffxgml tkx bgvhkihktmxw bgmh max ybgte oxklbhg hy max tzkxxfxgm,119,161800.0
+CUST062960,Auto Loan,445000,2024-08-28,Rfyli wms dmp wmsp yrrclrgml rfyr rfc qafcbsjcb rgkcjglc dmp rfc npmhcar pckyglq slafylecb,259,535000.0
+CUST041448,Personal Loan,794000,2024-09-19,Gcvrjv vejliv kyrk kyrk kyv zemfztv uvkrzcj riv tfiivtkcp ivwcvtkvu ze pfli ivtfiuj,237,953800.0
+CUST050473,Personal Loan,436000,2025-04-08,Wkilo go mkx zvkx cywodrsxq go myevn qy pyb k rsuo sp dro gokdrob cdkic qyyn,36,524200.0
+CUST086345,Personal Loan,609000,2025-03-29,Gusvy qy wuh jfuh migynbcha qy wiofx mnuln qilecha ih nbun jlidywn cxyu qy dieyx uvion yulfcyl,46,731800.0
+CUST015808,Personal Loan,425000,2025-03-02,Cn qiofx vy alyunfs ujjlywcunyx cz nbun siol wiggyhnm uly chwiljilunyx chni nby zchuf pylmcih iz nby ualyygyhn,73,511000.0
+CUST005667,Travel Loan,563000,2024-09-25,Matgd rhn yhk rhnk tmmxgmbhg matm maxkx tkx gh ixgwbgz bmxfl uxyhkx max vehlnkx hy mabl iatlx,231,676600.0
+CUST014739,Auto Loan,260000,2025-01-10,Wtn X lph iwxczxcv lt rdjas vgpq sxcctg hdbtixbt iwxh lttz pcs rpirw je egdetgan,124,313000.0
+CUST093098,Education Loan,309000,2024-06-15,Qmfbtf ep opu iftjubuf up sfbdi pvu uibu zpvs dpnnfout bsf jodpsqpsbufe joup uif gjobm wfstjpo pg uif bhsffnfou,333,371800.0
+CUST019949,Top-Up Loan,650000,2024-07-22,Ow kwjagmkdq fwwv lg ow ugmdv zgkl s kesdd ywl-lgywlzwj sl eq hdsuw lzak owwcwfv,296,781000.0
+CUST021019,Home Loan,194000,2024-06-28,Iextlx wh ghm axlbmtmx mh kxtva hnm matm rhnk vhffxgml tkx bgvhkihktmxw bgmh max ybgte oxklbhg hy max tzkxxfxgm,320,233800.0
+CUST000126,Credit Card Loan,356000,2025-01-28,Yvp Z nrj kyzebzex nv tflcu kip kyrk evn gzqqr gcrtv vmvipfev bvvgj ivtfddveuzex,106,428200.0
+CUST062395,Loan Against Deposit,126000,2024-06-03,Qy mylciomfs hyyx ni qy wiofx mjyhx u futs Mohxus domn vchay-qunwbcha ifx mbiqm,345,152200.0
+CUST065888,Travel Loan,364000,2024-06-05,Ohw ph nqrz li zh frxog vwduw zrunlqj rq wkdw surmhfw lghd zh mrnhg derxw hduolhu,343,437800.0
+CUST000450,Education Loan,959000,2024-08-17,Hdwskw vg fgl zwkalslw lg jwsuz gml lzsl lzw jwnakwv ugfljsul lwjek sjw jwnawowv sfv suuwhlwv,270,1151800.0
+CUST068605,Top-Up Loan,186000,2024-06-14,Vg jbhyq or terngyl nccerpvngrq vs gung lbhe inyhnoyr srrqonpx vf funerq jvgu gur oebnqre znantrzrag grnz,334,224200.0
+CUST055499,Top-Up Loan,967000,2024-11-19,Ocadg yg ecp rncp uqogvjkpi yg eqwnf jquv c uocnn igv-vqigvjgt cv oa rnceg vjku yggmgpf,176,1161400.0
+CUST020842,Top-Up Loan,207000,2024-12-30,Hsqr uylrcb rm qyw uc amsjb em ml y qnmlrylcmsq pmyb rpgn ugrfmsr ksaf njyllgle,135,249400.0
+CUST067915,Personal Loan,168000,2024-10-09,Mu qhu qmqyjydw oekh sedvyhcqjyed jxqj jxu fhezusj tubyluhqrbui qhu ikrcyjjut ro jxu kfsecydw tuqtbydu,217,202600.0
+CUST005857,Personal Loan,991000,2024-05-27,Vlr pelria abcfkfqbiv glfk tb zlria exkd lrq yv qeb ybxze ybclob fq dbqp zliabo xdxfk,352,1190200.0
+CUST051576,Credit Card Loan,123000,2025-04-16,Dro boaeocdon nymewoxdc rkfo loox zbozkbon kxn drkd kvv mywzvskxmo boaesbowoxdc rkfo loox cemmoccpevvi wod,28,148600.0
+CUST013487,Top-Up Loan,674000,2025-01-03,A ogmdv dacw lg afxgje qgm lzsl qgmj ugeewflk sjw afugjhgjslwv aflg lzw xafsd nwjkagf gx lzw syjwwewfl,131,809800.0
+CUST010534,Home Loan,386000,2025-02-01,Mkpfna ngv og mpqy vjcv vjg kpxqkeg fgvcknu ctg eqttgevna tghngevgf kp aqwt tgeqtfu,102,464200.0
+CUST037585,Auto Loan,750000,2024-04-23,Vrkgyk ju tuz nkyozgzk zu xkgin uaz zngz ck sgotzgot uvkt iussatoigzout jaxotm znk osvrksktzgzout vkxouj,386,1082200.0
+CUST005320,Personal Loan,288000,2024-06-19,Yg ctg cyckvkpi aqwt eqphktocvkqp vjcv vjg uejgfwngf vkognkpg hqt vjg rtqlgev tgockpu wpejcpigf,329,346600.0
+CUST052365,Education Loan,81000,2024-12-17,Zxcsan ati bt zcdl iwpi paa rdbeaxpcrt gtfjxgtbtcih wpkt qttc hjrrthhujaan bti,148,98200.0
+CUST035539,Auto Loan,151000,2024-07-10,Nv jyflcu riirexv r dvvkzex kyrk kyv zemfztv uvkrzcj riv tfiivtkcp ivwcvtkvu ze pfli ivtfiuj,308,182200.0
+CUST021278,Credit Card Loan,754000,2024-08-06,Dtz xmtzqi ijknsnyjqd otns bj htzqi gttp ynhpjyx ktw ymfy htshjwy mfuujsnsl sjcy rtsym,281,905800.0
+CUST064709,Top-Up Loan,278000,2024-05-10,Iglbjw jcr kc ilmu rfyr rfcpc ypc lm nclbgle grckq zcdmpc rfc ajmqspc md rfgq nfyqc,369,402520.0
+CUST064511,Auto Loan,342000,2025-02-18,Ymknq iq omz bxmz eayqftuzs iq oagxp efmdf iadwuzs az ftmf bdavqof upqm iq vawqp mnagf qmdxuqd,85,411400.0
+CUST062767,Auto Loan,399000,2024-06-25,Omrhpc pix qi orsa xlex xli vizmwih gsrxvegx xivqw evi vizmiaih erh eggitxih,323,479800.0
+CUST018254,Travel Loan,742000,2024-05-29,Njcyqc bm lmr fcqgryrc rm pcyaf msr rfyr wmsp tyjsyzjc dccbzyai gq qfypcb ugrf rfc zpmybcp kylyeckclr rcyk,350,891400.0
+CUST079669,Education Loan,141000,2024-12-02,Awpldp pydfcp esle esle esp tygztnp opeltwd lcp nzccpnewj cpqwpnepo ty jzfc cpnzcod,163,170200.0
+CUST044383,Medical Loan,223000,2024-06-21,Lbh fubhyq qrsvavgryl wbva jr pbhyq tb sbe n uvxr vs gur jrngure fgnlf tbbq,327,268600.0
+CUST020666,Travel Loan,410000,2024-05-26,K hkpcnna iqv vkog vq yg eqwnf ejgem qwv vjcv pgy oqxkg aqw ogpvkqpgf ncuv oqpvj,353,493000.0
+CUST013353,Business Loan,225000,2025-01-02,Gcvrjv vejliv kyrk kyrk kyv zemfztv uvkrzcj riv tfiivtkcp ivwcvtkvu ze pfli ivtfiuj,132,271000.0
+CUST008492,Top-Up Loan,306000,2024-11-26,Olf P dhz aopurpun dl jvbsk ivvr apjrlaz mvy aoha jvujlya ohwwlupun ulea tvuao,169,368200.0
+CUST082155,Personal Loan,348000,2025-01-04,K co ytkvkpi vq hqnnqy wr vjcv vjg kpxqkeg fgvcknu ctg eqttgevna tghngevgf kp aqwt tgeqtfu,130,418600.0
+CUST031615,Home Loan,399000,2024-05-23,Pa dvbsk il nylhasf hwwyljphalk pm aoha fvby chsbhisl mllkihjr pz zohylk dpao aol iyvhkly thuhnltlua alht,356,479800.0
+CUST075803,Education Loan,339000,2025-04-18,Xf bsf bxbjujoh zpvs dpogjsnbujpo uibu zpvs wbmvbcmf gffecbdl jt tibsfe xjui uif cspbefs nbobhfnfou ufbn,26,407800.0
+CUST039208,Business Loan,828000,2024-09-30,Nlqgob ohw ph nqrz wkdw wkh uhylvhg frqwudfw whupv duh uhylhzhg dqg dffhswhg,226,994600.0

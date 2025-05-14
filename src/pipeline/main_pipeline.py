@@ -72,9 +72,8 @@ class MainPipeline:
         """
         return os.path.join(self.checkpoint_dirs[stage], date, hour)
         
-    def _mark_file_processing(self, file_path: str) -> str:
+    def _mark_file_processing(self, file_path: str, seq_num: int) -> str:
         """Rename file to mark it as processing."""
-        seq_num = next(self.sequence_generator)
         path_without_ext, ext = file_path.split(".")
         new_path = f"{path_without_ext}_processing__{seq_num}.{ext}"
         os.rename(file_path, new_path)
@@ -106,17 +105,19 @@ class MainPipeline:
                 if not files_to_process:
                     time.sleep(10)
                     continue
-                    
+                
+                # set batch number
+                seq_num = next(self.sequence_generator)
                 # Process each file
                 for filename in files_to_process:
                     file_path = os.path.join(current_hour_dir, filename)
-                    self._process_file(file_path)
+                    self._process_file(file_path, seq_num)
                     
             except Exception as e:
                 self.error_handler.handle_error(e, "Pipeline execution")
                 # add logic to check in checkpoint if file was processed
                 
-    def _process_file(self, file_path: str):
+    def _process_file(self, file_path: str, seq_num: int):
         """Process a single file through the pipeline stages."""
         try:
             file_parts = file_path.split(os.sep)
@@ -125,7 +126,7 @@ class MainPipeline:
             current_hour = file_parts[-2]
             
             # Mark file as processing
-            processing_path = self._mark_file_processing(file_path)
+            processing_path = self._mark_file_processing(file_path, seq_num)
             self.logger.info(f"Started processing {filename}")
             
             # Get filename handler
@@ -162,13 +163,17 @@ class MainPipeline:
             # Save to transformed checkpoint
             transformed_dir = self._get_checkpoint_path('transformed', current_date, current_hour)
             os.makedirs(transformed_dir, exist_ok=True)
-            transformed_path = os.path.join(transformed_dir, table_name)
             transformed_writer = CsvWriter(transformed_dir)
             transformed_writer.write(df, table_name)
             
             # Load to HDFS
-            hdfs_path = f"/data/{current_date}/{current_hour}/{table_name}.parquet"
-            transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+            loaded_dir = self._get_checkpoint_path('loaded', current_date, current_hour)
+            os.makedirs(loaded_dir, exist_ok=True)
+            loaded_path = os.path.join(loaded_dir, table_name)
+            loaded_writer = ParquetWriter(loaded_dir)
+            loaded_writer.write(df, table_name)
+            hdfs_path = f"/user/hive/warehouse/nexabank.db/{table_name}/"
+            loaded_writer.upload_to_hdfs(f"{loaded_path}_{seq_num}.parquet", hdfs_path)
             
             # Mark as processed
             self._mark_file_processed(processing_path)
