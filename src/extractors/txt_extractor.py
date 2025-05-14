@@ -13,8 +13,11 @@ class TXTExtractor(BaseExtractor):
     def extract(self) -> Tuple[Optional[pd.DataFrame], Dict[str, str]]:
         """Extract data from TXT file."""
         try:
+            dict_metadata = self.get_metadata()
+            self.logger.info(f"Started extracting {dict_metadata['table_name']} from TXT file at {self.file_path} ")
             df = pd.read_csv(self.file_path, sep='|')
-            return df, self.get_metadata()
+            self.logger.info(f"Completed extracting {dict_metadata['table_name']} Number of rows extracted = {df.shape[0]} , Extracted schema = {df.columns.tolist()} , Partition date = {dict_metadata['partition_date']} , Partition hour = {dict_metadata['partition_hour']} ")
+            return df, dict_metadata
         except Exception as e:
             self.logger.error(f"Error extracting data from {self.file_path}: {e}")
             return None, None

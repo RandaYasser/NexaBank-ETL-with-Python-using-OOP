@@ -1143,3 +1143,551 @@ subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed
 2025-05-14 01:34:32,671 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
 2025-05-14 01:34:32,736 - src.utils.error_handler - INFO - Disconnected from email server
 2025-05-14 01:35:00,594 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 12:05:20,416 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 12:05:20,421 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 12:05:20,422 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 12:09:40,669 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 12:09:42,295 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\12\credit_cards_billing.csv
+2025-05-14 12:09:46,421 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\12\credit_cards_billing.csv
+2025-05-14 12:09:46,421 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\12\credit_cards_billing.csv
+2025-05-14 12:09:46,531 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\credit_cards_billing /data/2025-05-14/12/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:46,531 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\credit_cards_billing /data/2025-05-14/12/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:46,540 - src.utils.error_handler - ERROR - Error in Processing file credit_cards_billing.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\credit_cards_billing /data/2025-05-14/12/credit_cards_billing.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\credit_cards_billing /data/2025-05-14/12/credit_cards_billing.parquet' returned non-zero exit status 1.
+
+2025-05-14 12:09:46,544 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 12:09:46,568 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 12:09:47,848 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:09:47,848 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:09:47,848 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:09:48,535 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:09:48,535 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:09:48,535 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:09:48,535 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:09:48,560 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:48,560 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:48,560 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:48,560 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:48,566 - src.utils.error_handler - ERROR - Error in Processing file customer_profiles.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+
+2025-05-14 12:09:48,570 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 12:09:48,586 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 12:09:48,630 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,630 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,630 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,630 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,630 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,725 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,725 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,725 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,725 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,725 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,725 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:09:48,758 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:48,758 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:48,758 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:48,758 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:48,758 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:48,758 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:48,763 - src.utils.error_handler - ERROR - Error in Processing file loans.txt: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+
+2025-05-14 12:09:48,768 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 12:09:48,776 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 12:09:49,088 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,088 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,088 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,088 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,088 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,088 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,088 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,298 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,298 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,298 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,298 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,298 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,298 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,298 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,298 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:09:49,368 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:49,368 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:49,368 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:49,368 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:49,368 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:49,368 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:49,368 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:49,368 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:49,388 - src.utils.error_handler - ERROR - Error in Processing file support_tickets.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+
+2025-05-14 12:09:49,396 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 12:09:49,410 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 12:09:50,944 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:09:50,944 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:09:50,944 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:09:50,944 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:09:50,944 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:09:50,944 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:09:50,944 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:09:50,944 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:09:50,944 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:09:51,884 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:09:51,884 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:09:51,884 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:09:51,884 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:09:51,884 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:09:51,884 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:09:51,884 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:09:51,884 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:09:51,884 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:09:51,884 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:09:52,099 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:52,099 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:52,099 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:52,099 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:52,099 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:52,099 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:52,099 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:52,099 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:52,099 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:52,099 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:09:52,172 - src.utils.error_handler - ERROR - Error in Processing file transactions.json: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+
+2025-05-14 12:09:52,191 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 12:13:07,028 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 12:53:12,940 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 12:53:12,946 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 12:53:12,946 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 12:53:12,948 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 12:53:12,949 - src.extractors.csv_extractor - INFO - Started extracting credit_cards_billing from CSV file at incoming_data\2025-05-14\12\credit_cards_billing_processing__1.csv 
+2025-05-14 12:53:13,474 - src.extractors.csv_extractor - INFO - Completed extracting credit_cards_billing Number of rows extracted = 200000 , Extracted schema = ['bill_id', 'customer_id', 'month', 'amount_due', 'amount_paid', 'payment_date'] , Partition date = 2025-05-14 , Partition hour = 12 
+2025-05-14 12:53:14,955 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\12\credit_cards_billing.csv
+2025-05-14 12:53:18,722 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\12\credit_cards_billing.csv
+2025-05-14 12:53:18,722 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\12\credit_cards_billing.csv
+2025-05-14 12:53:19,165 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\credit_cards_billing /data/2025-05-14/12/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:19,165 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\credit_cards_billing /data/2025-05-14/12/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:19,226 - src.utils.error_handler - ERROR - Error in Processing file credit_cards_billing.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\credit_cards_billing /data/2025-05-14/12/credit_cards_billing.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\credit_cards_billing /data/2025-05-14/12/credit_cards_billing.parquet' returned non-zero exit status 1.
+
+2025-05-14 12:53:19,234 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 12:53:19,286 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 12:53:19,288 - src.extractors.csv_extractor - INFO - Started extracting customer_profiles from CSV file at incoming_data\2025-05-14\12\customer_profiles_processing__2.csv 
+2025-05-14 12:53:19,288 - src.extractors.csv_extractor - INFO - Started extracting customer_profiles from CSV file at incoming_data\2025-05-14\12\customer_profiles_processing__2.csv 
+2025-05-14 12:53:19,709 - src.extractors.csv_extractor - INFO - Completed extracting customer_profiles Number of rows extracted = 100000 , Extracted schema = ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier'] , Partition date = 2025-05-14 , Partition hour = 12 
+2025-05-14 12:53:19,709 - src.extractors.csv_extractor - INFO - Completed extracting customer_profiles Number of rows extracted = 100000 , Extracted schema = ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier'] , Partition date = 2025-05-14 , Partition hour = 12 
+2025-05-14 12:53:20,243 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:53:20,243 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:53:20,243 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:53:21,257 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:53:21,257 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:53:21,257 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:53:21,257 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\customer_profiles.csv
+2025-05-14 12:53:21,289 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,289 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,289 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,289 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,296 - src.utils.error_handler - ERROR - Error in Processing file customer_profiles.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\customer_profiles /data/2025-05-14/12/customer_profiles.parquet' returned non-zero exit status 1.
+
+2025-05-14 12:53:21,301 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 12:53:21,320 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 12:53:21,323 - src.extractors.txt_extractor - INFO - Started extracting loans from TXT file at incoming_data\2025-05-14\12\loans_processing__3.txt 
+2025-05-14 12:53:21,342 - src.extractors.txt_extractor - INFO - Completed extracting loans Number of rows extracted = 1000 , Extracted schema = ['customer_id', 'loan_type', 'amount_utilized', 'utilization_date', 'loan_reason'] , Partition date = 2025-05-14 , Partition hour = 12 
+2025-05-14 12:53:21,375 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,375 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,375 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,375 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,375 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,504 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,504 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,504 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,504 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,504 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,504 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\12\loans.csv
+2025-05-14 12:53:21,550 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,550 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,550 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,550 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,550 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,550 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,566 - src.utils.error_handler - ERROR - Error in Processing file loans.txt: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\loans /data/2025-05-14/12/loans.parquet' returned non-zero exit status 1.
+
+2025-05-14 12:53:21,572 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 12:53:21,580 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 12:53:21,583 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\12\support_tickets_processing__4.csv 
+2025-05-14 12:53:21,583 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\12\support_tickets_processing__4.csv 
+2025-05-14 12:53:21,583 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\12\support_tickets_processing__4.csv 
+2025-05-14 12:53:21,660 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 12 
+2025-05-14 12:53:21,660 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 12 
+2025-05-14 12:53:21,660 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 12 
+2025-05-14 12:53:21,766 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,766 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,766 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,766 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,766 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,766 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,766 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,880 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,880 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,880 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,880 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,880 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,880 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,880 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,880 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\12\support_tickets.csv
+2025-05-14 12:53:21,919 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,919 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,919 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,919 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,919 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,919 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,919 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,919 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:21,935 - src.utils.error_handler - ERROR - Error in Processing file support_tickets.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\support_tickets /data/2025-05-14/12/support_tickets.parquet' returned non-zero exit status 1.
+
+2025-05-14 12:53:21,941 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 12:53:21,956 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 12:53:22,445 - src.extractors.json_extractor - INFO - Started extracting transactions from JSON file at incoming_data\2025-05-14\12\transactions_processing__5.json 
+2025-05-14 12:53:22,875 - src.extractors.json_extractor - INFO - Completed extracting transactions Number of rows extracted = 100000 , Extracted schema = ['sender', 'receiver', 'transaction_amount', 'transaction_date'] , Partition date = 2025-05-14 , Partition hour = 12 
+2025-05-14 12:53:23,383 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:53:23,383 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:53:23,383 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:53:23,383 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:53:23,383 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:53:23,383 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:53:23,383 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:53:23,383 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:53:23,383 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,605 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,605 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,605 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,605 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,605 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,605 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,605 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,605 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,605 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,605 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\12\transactions.csv
+2025-05-14 12:53:24,660 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:24,660 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:24,660 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:24,660 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:24,660 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:24,660 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:24,660 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:24,660 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:24,660 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:24,660 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 12:53:24,679 - src.utils.error_handler - ERROR - Error in Processing file transactions.json: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\12\transactions /data/2025-05-14/12/transactions.parquet' returned non-zero exit status 1.
+
+2025-05-14 12:53:24,686 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 15:36:19,571 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 15:36:19,576 - src.validators.schema_validator - INFO - Initializing SchemaValidator with schema file: d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\..\schema\tables_schema.json
+2025-05-14 15:36:19,577 - src.validators.schema_validator - INFO - Successfully loaded schema file with 5 table definitions
+2025-05-14 15:36:19,588 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 15:36:19,590 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 15:36:19,601 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 15:36:19,606 - src.extractors.csv_extractor - INFO - Started extracting credit_cards_billing from CSV file at incoming_data\2025-05-14\15\credit_cards_billing_processing__1.csv 
+2025-05-14 15:36:20,364 - src.extractors.csv_extractor - INFO - Completed extracting credit_cards_billing Number of rows extracted = 200000 , Extracted schema = ['bill_id', 'customer_id', 'month', 'amount_due', 'amount_paid', 'payment_date'] , Partition date = 2025-05-14 , Partition hour = 15 
+2025-05-14 15:36:20,413 - src.validators.schema_validator - INFO - Starting schema validation for table: credit_cards_billing
+2025-05-14 15:36:20,441 - src.validators.schema_validator - INFO - DataFrame shape: (200000, 6)
+2025-05-14 15:36:20,452 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 15:36:20,457 - src.validators.schema_validator - INFO - - Required columns: ['bill_id', 'customer_id', 'month', 'amount_due', 'amount_paid', 'payment_date']
+2025-05-14 15:36:20,462 - src.validators.schema_validator - INFO - - Total columns in schema: 6
+2025-05-14 15:36:20,498 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 6
+2025-05-14 15:36:20,506 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 15:36:20,525 - src.validators.schema_validator - INFO - Column bill_id type validation passed: object
+2025-05-14 15:36:20,570 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 15:36:20,634 - src.validators.schema_validator - INFO - Column month type validation passed: object
+2025-05-14 15:36:20,692 - src.validators.schema_validator - INFO - Column amount_due type validation passed: float64
+2025-05-14 15:36:20,721 - src.validators.schema_validator - INFO - Column amount_paid type validation passed: float64
+2025-05-14 15:36:20,772 - src.validators.schema_validator - INFO - Column payment_date type validation passed: object
+2025-05-14 15:36:20,792 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: credit_cards_billing
+2025-05-14 15:36:23,295 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\15\credit_cards_billing.csv
+2025-05-14 15:36:26,943 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\15\credit_cards_billing.csv
+2025-05-14 15:36:26,943 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\15\credit_cards_billing.csv
+2025-05-14 15:36:26,973 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\credit_cards_billing /data/2025-05-14/15/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:26,973 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\credit_cards_billing /data/2025-05-14/15/credit_cards_billing.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:26,982 - src.utils.error_handler - ERROR - Error in Processing file credit_cards_billing.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\credit_cards_billing /data/2025-05-14/15/credit_cards_billing.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\credit_cards_billing /data/2025-05-14/15/credit_cards_billing.parquet' returned non-zero exit status 1.
+
+2025-05-14 15:36:26,986 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 15:36:27,019 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 15:36:27,024 - src.extractors.csv_extractor - INFO - Started extracting customer_profiles from CSV file at incoming_data\2025-05-14\15\customer_profiles_processing__2.csv 
+2025-05-14 15:36:27,024 - src.extractors.csv_extractor - INFO - Started extracting customer_profiles from CSV file at incoming_data\2025-05-14\15\customer_profiles_processing__2.csv 
+2025-05-14 15:36:27,867 - src.extractors.csv_extractor - INFO - Completed extracting customer_profiles Number of rows extracted = 100000 , Extracted schema = ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier'] , Partition date = 2025-05-14 , Partition hour = 15 
+2025-05-14 15:36:27,867 - src.extractors.csv_extractor - INFO - Completed extracting customer_profiles Number of rows extracted = 100000 , Extracted schema = ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier'] , Partition date = 2025-05-14 , Partition hour = 15 
+2025-05-14 15:36:27,872 - src.validators.schema_validator - INFO - Starting schema validation for table: customer_profiles
+2025-05-14 15:36:27,873 - src.validators.schema_validator - INFO - DataFrame shape: (100000, 8)
+2025-05-14 15:36:27,875 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 15:36:27,876 - src.validators.schema_validator - INFO - - Required columns: ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier']
+2025-05-14 15:36:27,877 - src.validators.schema_validator - INFO - - Total columns in schema: 8
+2025-05-14 15:36:27,878 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 8
+2025-05-14 15:36:27,880 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 15:36:27,882 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 15:36:27,884 - src.validators.schema_validator - INFO - Column name type validation passed: object
+2025-05-14 15:36:27,884 - src.validators.schema_validator - INFO - Column gender type validation passed: object
+2025-05-14 15:36:27,885 - src.validators.schema_validator - INFO - Column age type validation passed: int64
+2025-05-14 15:36:27,892 - src.validators.schema_validator - INFO - Column city type validation passed: object
+2025-05-14 15:36:27,894 - src.validators.schema_validator - INFO - Column account_open_date type validation passed: object
+2025-05-14 15:36:27,896 - src.validators.schema_validator - INFO - Column product_type type validation passed: object
+2025-05-14 15:36:27,897 - src.validators.schema_validator - INFO - Column customer_tier type validation passed: object
+2025-05-14 15:36:27,899 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: customer_profiles
+2025-05-14 15:36:28,741 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\customer_profiles.csv
+2025-05-14 15:36:28,741 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\customer_profiles.csv
+2025-05-14 15:36:28,741 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\customer_profiles.csv
+2025-05-14 15:36:29,915 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\customer_profiles.csv
+2025-05-14 15:36:29,915 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\customer_profiles.csv
+2025-05-14 15:36:29,915 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\customer_profiles.csv
+2025-05-14 15:36:29,915 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\customer_profiles.csv
+2025-05-14 15:36:29,949 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\customer_profiles /data/2025-05-14/15/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:29,949 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\customer_profiles /data/2025-05-14/15/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:29,949 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\customer_profiles /data/2025-05-14/15/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:29,949 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\customer_profiles /data/2025-05-14/15/customer_profiles.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:29,956 - src.utils.error_handler - ERROR - Error in Processing file customer_profiles.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\customer_profiles /data/2025-05-14/15/customer_profiles.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\customer_profiles /data/2025-05-14/15/customer_profiles.parquet' returned non-zero exit status 1.
+
+2025-05-14 15:36:29,961 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 15:36:29,971 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 15:36:29,973 - src.extractors.txt_extractor - INFO - Started extracting loans from TXT file at incoming_data\2025-05-14\15\loans_processing__3.txt 
+2025-05-14 15:36:29,983 - src.extractors.txt_extractor - INFO - Completed extracting loans Number of rows extracted = 1000 , Extracted schema = ['customer_id', 'loan_type', 'amount_utilized', 'utilization_date', 'loan_reason'] , Partition date = 2025-05-14 , Partition hour = 15 
+2025-05-14 15:36:29,986 - src.validators.schema_validator - INFO - Starting schema validation for table: loans
+2025-05-14 15:36:29,987 - src.validators.schema_validator - INFO - DataFrame shape: (1000, 5)
+2025-05-14 15:36:29,988 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 15:36:29,989 - src.validators.schema_validator - INFO - - Required columns: ['customer_id', 'loan_type', 'amount_utilized', 'utilization_date', 'loan_reason']
+2025-05-14 15:36:29,989 - src.validators.schema_validator - INFO - - Total columns in schema: 5
+2025-05-14 15:36:29,990 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 5
+2025-05-14 15:36:29,991 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 15:36:29,992 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 15:36:29,994 - src.validators.schema_validator - INFO - Column loan_type type validation passed: object
+2025-05-14 15:36:29,995 - src.validators.schema_validator - INFO - Column amount_utilized type validation passed: int64
+2025-05-14 15:36:29,997 - src.validators.schema_validator - INFO - Column utilization_date type validation passed: object
+2025-05-14 15:36:29,998 - src.validators.schema_validator - INFO - Column loan_reason type validation passed: object
+2025-05-14 15:36:29,999 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: loans
+2025-05-14 15:36:30,019 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,019 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,019 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,019 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,019 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,124 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,124 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,124 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,124 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,124 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,124 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\15\loans.csv
+2025-05-14 15:36:30,161 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\loans /data/2025-05-14/15/loans.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,161 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\loans /data/2025-05-14/15/loans.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,161 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\loans /data/2025-05-14/15/loans.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,161 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\loans /data/2025-05-14/15/loans.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,161 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\loans /data/2025-05-14/15/loans.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,161 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\loans /data/2025-05-14/15/loans.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,170 - src.utils.error_handler - ERROR - Error in Processing file loans.txt: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\loans /data/2025-05-14/15/loans.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\loans /data/2025-05-14/15/loans.parquet' returned non-zero exit status 1.
+
+2025-05-14 15:36:30,175 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 15:36:30,178 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 15:36:30,180 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\15\support_tickets_processing__4.csv 
+2025-05-14 15:36:30,180 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\15\support_tickets_processing__4.csv 
+2025-05-14 15:36:30,180 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\15\support_tickets_processing__4.csv 
+2025-05-14 15:36:30,238 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 15 
+2025-05-14 15:36:30,238 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 15 
+2025-05-14 15:36:30,238 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 15 
+2025-05-14 15:36:30,244 - src.validators.schema_validator - INFO - Starting schema validation for table: support_tickets
+2025-05-14 15:36:30,246 - src.validators.schema_validator - INFO - DataFrame shape: (15000, 5)
+2025-05-14 15:36:30,252 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 15:36:30,254 - src.validators.schema_validator - INFO - - Required columns: ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity']
+2025-05-14 15:36:30,256 - src.validators.schema_validator - INFO - - Total columns in schema: 5
+2025-05-14 15:36:30,257 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 5
+2025-05-14 15:36:30,260 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 15:36:30,261 - src.validators.schema_validator - INFO - Column ticket_id type validation passed: object
+2025-05-14 15:36:30,262 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 15:36:30,264 - src.validators.schema_validator - INFO - Column complaint_category type validation passed: object
+2025-05-14 15:36:30,266 - src.validators.schema_validator - INFO - Column complaint_date type validation passed: object
+2025-05-14 15:36:30,267 - src.validators.schema_validator - INFO - Column severity type validation passed: int64
+2025-05-14 15:36:30,268 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: support_tickets
+2025-05-14 15:36:30,371 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,371 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,371 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,371 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,371 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,371 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,371 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,456 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,456 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,456 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,456 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,456 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,456 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,456 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,456 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\15\support_tickets.csv
+2025-05-14 15:36:30,491 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\support_tickets /data/2025-05-14/15/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,491 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\support_tickets /data/2025-05-14/15/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,491 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\support_tickets /data/2025-05-14/15/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,491 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\support_tickets /data/2025-05-14/15/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,491 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\support_tickets /data/2025-05-14/15/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,491 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\support_tickets /data/2025-05-14/15/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,491 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\support_tickets /data/2025-05-14/15/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,491 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\support_tickets /data/2025-05-14/15/support_tickets.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:30,500 - src.utils.error_handler - ERROR - Error in Processing file support_tickets.csv: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\support_tickets /data/2025-05-14/15/support_tickets.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\support_tickets /data/2025-05-14/15/support_tickets.parquet' returned non-zero exit status 1.
+
+2025-05-14 15:36:30,505 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 15:36:30,509 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 15:36:30,886 - src.extractors.json_extractor - INFO - Started extracting transactions from JSON file at incoming_data\2025-05-14\15\transactions_processing__5.json 
+2025-05-14 15:36:31,140 - src.extractors.json_extractor - INFO - Completed extracting transactions Number of rows extracted = 100000 , Extracted schema = ['sender', 'receiver', 'transaction_amount', 'transaction_date'] , Partition date = 2025-05-14 , Partition hour = 15 
+2025-05-14 15:36:31,158 - src.validators.schema_validator - INFO - Starting schema validation for table: transactions
+2025-05-14 15:36:31,162 - src.validators.schema_validator - INFO - DataFrame shape: (100000, 4)
+2025-05-14 15:36:31,163 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 15:36:31,172 - src.validators.schema_validator - INFO - - Required columns: ['sender', 'receiver', 'transaction_amount', 'transaction_date']
+2025-05-14 15:36:31,175 - src.validators.schema_validator - INFO - - Total columns in schema: 4
+2025-05-14 15:36:31,179 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 4
+2025-05-14 15:36:31,182 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 15:36:31,186 - src.validators.schema_validator - INFO - Column sender type validation passed: object
+2025-05-14 15:36:31,190 - src.validators.schema_validator - INFO - Column receiver type validation passed: object
+2025-05-14 15:36:31,192 - src.validators.schema_validator - INFO - Column transaction_amount type validation passed: int64
+2025-05-14 15:36:31,198 - src.validators.schema_validator - INFO - Column transaction_date type validation passed: object
+2025-05-14 15:36:31,212 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: transactions
+2025-05-14 15:36:31,658 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\transactions.csv
+2025-05-14 15:36:31,658 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\transactions.csv
+2025-05-14 15:36:31,658 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\transactions.csv
+2025-05-14 15:36:31,658 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\transactions.csv
+2025-05-14 15:36:31,658 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\transactions.csv
+2025-05-14 15:36:31,658 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\transactions.csv
+2025-05-14 15:36:31,658 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\transactions.csv
+2025-05-14 15:36:31,658 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\transactions.csv
+2025-05-14 15:36:31,658 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,559 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,559 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,559 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,559 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,559 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,559 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,559 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,559 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,559 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,559 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\15\transactions.csv
+2025-05-14 15:36:32,615 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:32,615 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:32,615 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:32,615 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:32,615 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:32,615 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:32,615 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:32,615 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:32,615 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:32,615 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+2025-05-14 15:36:32,630 - src.utils.error_handler - ERROR - Error in Processing file transactions.json: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\pipeline\main_pipeline.py", line 170, in _process_file
+    transformed_writer.upload_to_hdfs(transformed_path, hdfs_path)
+  File "d:\ITI\26 Python\NexaBank_Project\NexaBank-ETL-with-Python-using-OOP\src\writers\base_writer.py", line 23, in upload_to_hdfs
+    subprocess.run(command, shell=True, check=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'hadoop fs -put -f checkpoint/transformed\2025-05-14\15\transactions /data/2025-05-14/15/transactions.parquet' returned non-zero exit status 1.
+
+2025-05-14 15:36:32,635 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-05-14 15:37:50,249 - __main__ - INFO - Pipeline stopped by user

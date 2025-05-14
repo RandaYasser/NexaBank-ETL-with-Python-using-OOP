@@ -17,12 +17,26 @@ class CreditCardsBillingTransformer(BaseTransformer):
         - fine: late_days * 5.15
         - total_amount: amount_due + fine
         """
+        self.logger.info(f"Starting credit cards billing transformation for {len(df)} records")
+        
         # Set due date as first day of each month
-        df["due_date"] = pd.to_datetime(df["month"] + "-01") 
+        df["due_date"] = pd.to_datetime(df["month"] + "-01")
+        self.logger.info("Added due date")
+        
         df['payment_date'] = pd.to_datetime(df['payment_date'])
+        self.logger.info("Converted payment dates")
+        
         df['late_days'] = (df['payment_date'] - df['due_date']).dt.days
+        self.logger.info("Added late days")
+        
         df['fully_paid'] = df['amount_due'] >= df['amount_paid']
         df['debt'] = df['amount_due'] - df['amount_paid']
+        self.logger.info("Added payment status and debt")
+        
         df['fine'] = df['late_days'] * 5.15
         df['total_amount'] = df['amount_due'] + df['fine']
+        self.logger.info("Added fines and total amounts")
+
+        self.logger.info(f"Completed credit cards billing transformation for {len(df)} records at {datetime.now()}")
+        
         return df
