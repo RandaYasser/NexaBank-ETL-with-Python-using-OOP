@@ -13,6 +13,7 @@ from ..transformers.support_tickets_transformer import SupportTicketsTransformer
 from ..transformers.loans_transformer import LoansTransformer
 from ..transformers.transactions_transformer import TransactionsTransformer
 from ..writers.parquet_writer import ParquetWriter
+from ..writers.csv_writer import CsvWriter
 from ..utils.logger import Logger
 from ..utils.error_handler import ErrorHandler
 from ..validators.schema_validator import SchemaValidator
@@ -150,7 +151,7 @@ class MainPipeline:
             extracted_dir = self._get_checkpoint_path('extracted', current_date, current_hour)
             os.makedirs(extracted_dir, exist_ok=True)
             extracted_path = os.path.join(extracted_dir, table_name)
-            extracted_writer = ParquetWriter(extracted_dir)
+            extracted_writer = CsvWriter(extracted_dir)
             extracted_writer.write(df, table_name)
             
             # Transform
@@ -161,7 +162,7 @@ class MainPipeline:
             transformed_dir = self._get_checkpoint_path('transformed', current_date, current_hour)
             os.makedirs(transformed_dir, exist_ok=True)
             transformed_path = os.path.join(transformed_dir, table_name)
-            transformed_writer = ParquetWriter(transformed_dir)
+            transformed_writer = CsvWriter(transformed_dir)
             transformed_writer.write(df, table_name)
             
             # Load to HDFS
