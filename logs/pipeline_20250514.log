@@ -3137,3 +3137,899 @@ NoneType: None
 2025-05-14 20:31:29,603 - src.pipeline.main_pipeline - WARNING - Path: /user/hive/warehouse/nexabank.db/transactions/ does not exist
 2025-05-14 20:31:29,604 - src.pipeline.main_pipeline - INFO - Successfully processed transactions.json
 2025-05-14 21:21:48,713 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 21:27:30,742 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 21:27:30,744 - src.validators.schema_validator - INFO - Initializing SchemaValidator with schema file: d:\ITI\Python\Project\src\pipeline\..\schema\tables_schema.json
+2025-05-14 21:27:30,745 - src.validators.schema_validator - INFO - Successfully loaded schema file with 5 table definitions
+2025-05-14 21:27:30,746 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 21:27:30,746 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 21:27:30,747 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 21:27:30,748 - src.extractors.csv_extractor - INFO - Started extracting credit_cards_billing from CSV file at incoming_data\2025-05-14\21\credit_cards_billing_processing__1.csv 
+2025-05-14 21:27:31,064 - src.extractors.csv_extractor - INFO - Completed extracting credit_cards_billing Number of rows extracted = 200000 , Extracted schema = ['bill_id', 'customer_id', 'month', 'amount_due', 'amount_paid', 'payment_date'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:27:31,065 - src.validators.schema_validator - INFO - Starting schema validation for table: credit_cards_billing
+2025-05-14 21:27:31,066 - src.validators.schema_validator - INFO - DataFrame shape: (200000, 6)
+2025-05-14 21:27:31,066 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:27:31,067 - src.validators.schema_validator - INFO - - Required columns: ['bill_id', 'customer_id', 'month', 'amount_due', 'amount_paid', 'payment_date']
+2025-05-14 21:27:31,068 - src.validators.schema_validator - INFO - - Total columns in schema: 6
+2025-05-14 21:27:31,068 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 6
+2025-05-14 21:27:31,069 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:27:31,070 - src.validators.schema_validator - INFO - Column bill_id type validation passed: object
+2025-05-14 21:27:31,071 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:27:31,072 - src.validators.schema_validator - INFO - Column month type validation passed: object
+2025-05-14 21:27:31,073 - src.validators.schema_validator - INFO - Column amount_due type validation passed: float64
+2025-05-14 21:27:31,073 - src.validators.schema_validator - INFO - Column amount_paid type validation passed: float64
+2025-05-14 21:27:31,074 - src.validators.schema_validator - INFO - Column payment_date type validation passed: object
+2025-05-14 21:27:31,075 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: credit_cards_billing
+2025-05-14 21:27:31,884 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\21\credit_cards_billing.csv
+2025-05-14 21:27:34,400 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\21\credit_cards_billing.csv
+2025-05-14 21:27:34,400 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\21\credit_cards_billing.csv
+2025-05-14 21:27:34,684 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet
+2025-05-14 21:27:34,684 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet
+2025-05-14 21:27:34,684 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet
+2025-05-14 21:27:34,746 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+2025-05-14 21:27:34,746 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+2025-05-14 21:27:34,746 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+2025-05-14 21:27:34,749 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for credit_cards_billing.csv: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:27:34,749 - src.pipeline.main_pipeline - INFO - Successfully processed credit_cards_billing.csv
+2025-05-14 21:27:34,751 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2025-05-14 21:27:34,751 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 21:27:34,765 - src.extractors.csv_extractor - INFO - Started extracting customer_profiles from CSV file at incoming_data\2025-05-14\21\customer_profiles_processing__1.csv 
+2025-05-14 21:27:34,765 - src.extractors.csv_extractor - INFO - Started extracting customer_profiles from CSV file at incoming_data\2025-05-14\21\customer_profiles_processing__1.csv 
+2025-05-14 21:27:34,984 - src.extractors.csv_extractor - INFO - Completed extracting customer_profiles Number of rows extracted = 100000 , Extracted schema = ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:27:34,984 - src.extractors.csv_extractor - INFO - Completed extracting customer_profiles Number of rows extracted = 100000 , Extracted schema = ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:27:34,986 - src.validators.schema_validator - INFO - Starting schema validation for table: customer_profiles
+2025-05-14 21:27:34,986 - src.validators.schema_validator - INFO - DataFrame shape: (100000, 8)
+2025-05-14 21:27:34,987 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:27:34,987 - src.validators.schema_validator - INFO - - Required columns: ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier']
+2025-05-14 21:27:34,988 - src.validators.schema_validator - INFO - - Total columns in schema: 8
+2025-05-14 21:27:34,988 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 8
+2025-05-14 21:27:34,989 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:27:34,990 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:27:34,991 - src.validators.schema_validator - INFO - Column name type validation passed: object
+2025-05-14 21:27:34,991 - src.validators.schema_validator - INFO - Column gender type validation passed: object
+2025-05-14 21:27:34,992 - src.validators.schema_validator - INFO - Column age type validation passed: int64
+2025-05-14 21:27:34,993 - src.validators.schema_validator - INFO - Column city type validation passed: object
+2025-05-14 21:27:34,994 - src.validators.schema_validator - INFO - Column account_open_date type validation passed: object
+2025-05-14 21:27:34,995 - src.validators.schema_validator - INFO - Column product_type type validation passed: object
+2025-05-14 21:27:34,996 - src.validators.schema_validator - INFO - Column customer_tier type validation passed: object
+2025-05-14 21:27:34,997 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: customer_profiles
+2025-05-14 21:27:35,330 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:27:35,330 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:27:35,330 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:27:35,330 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:27:36,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:27:36,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:27:36,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:27:36,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:27:36,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:27:37,110 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:27:37,110 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:27:37,110 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:27:37,110 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:27:37,110 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:27:37,110 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:27:37,175 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:27:37,175 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:27:37,175 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:27:37,175 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:27:37,175 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:27:37,175 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:27:37,180 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for customer_profiles.csv: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:27:37,181 - src.pipeline.main_pipeline - INFO - Successfully processed customer_profiles.csv
+2025-05-14 21:27:37,182 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2025-05-14 21:27:37,182 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 21:27:37,191 - src.extractors.txt_extractor - INFO - Started extracting loans from TXT file at incoming_data\2025-05-14\21\loans_processing__1.txt 
+2025-05-14 21:27:37,200 - src.extractors.txt_extractor - INFO - Completed extracting loans Number of rows extracted = 1000 , Extracted schema = ['customer_id', 'loan_type', 'amount_utilized', 'utilization_date', 'loan_reason'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:27:37,201 - src.validators.schema_validator - INFO - Starting schema validation for table: loans
+2025-05-14 21:27:37,202 - src.validators.schema_validator - INFO - DataFrame shape: (1000, 5)
+2025-05-14 21:27:37,203 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:27:37,203 - src.validators.schema_validator - INFO - - Required columns: ['customer_id', 'loan_type', 'amount_utilized', 'utilization_date', 'loan_reason']
+2025-05-14 21:27:37,204 - src.validators.schema_validator - INFO - - Total columns in schema: 5
+2025-05-14 21:27:37,206 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 5
+2025-05-14 21:27:37,206 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:27:37,207 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:27:37,208 - src.validators.schema_validator - INFO - Column loan_type type validation passed: object
+2025-05-14 21:27:37,209 - src.validators.schema_validator - INFO - Column amount_utilized type validation passed: int64
+2025-05-14 21:27:37,210 - src.validators.schema_validator - INFO - Column utilization_date type validation passed: object
+2025-05-14 21:27:37,211 - src.validators.schema_validator - INFO - Column loan_reason type validation passed: object
+2025-05-14 21:27:37,212 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: loans
+2025-05-14 21:27:37,225 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,225 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,225 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,225 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,225 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,225 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,225 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,333 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,333 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,333 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,333 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,333 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,333 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,333 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,333 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:27:37,350 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:27:37,350 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:27:37,350 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:27:37,350 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:27:37,350 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:27:37,350 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:27:37,350 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:27:37,350 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:27:37,350 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:27:37,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:27:37,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:27:37,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:27:37,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:27:37,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:27:37,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:27:37,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:27:37,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:27:37,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:27:37,437 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for loans.txt: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:27:37,438 - src.pipeline.main_pipeline - INFO - Successfully processed loans.txt
+2025-05-14 21:27:37,439 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2025-05-14 21:27:37,440 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 21:27:37,442 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\21\support_tickets_processing__1.csv 
+2025-05-14 21:27:37,442 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\21\support_tickets_processing__1.csv 
+2025-05-14 21:27:37,442 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\21\support_tickets_processing__1.csv 
+2025-05-14 21:27:37,479 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:27:37,479 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:27:37,479 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:27:37,482 - src.validators.schema_validator - INFO - Starting schema validation for table: support_tickets
+2025-05-14 21:27:37,482 - src.validators.schema_validator - INFO - DataFrame shape: (15000, 5)
+2025-05-14 21:27:37,483 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:27:37,483 - src.validators.schema_validator - INFO - - Required columns: ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity']
+2025-05-14 21:27:37,484 - src.validators.schema_validator - INFO - - Total columns in schema: 5
+2025-05-14 21:27:37,484 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 5
+2025-05-14 21:27:37,485 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:27:37,486 - src.validators.schema_validator - INFO - Column ticket_id type validation passed: object
+2025-05-14 21:27:37,487 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:27:37,487 - src.validators.schema_validator - INFO - Column complaint_category type validation passed: object
+2025-05-14 21:27:37,488 - src.validators.schema_validator - INFO - Column complaint_date type validation passed: object
+2025-05-14 21:27:37,489 - src.validators.schema_validator - INFO - Column severity type validation passed: int64
+2025-05-14 21:27:37,490 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: support_tickets
+2025-05-14 21:27:37,535 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,535 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,535 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,535 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,535 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,535 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,535 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,535 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,535 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,535 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,648 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,687 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,780 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:27:37,791 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for support_tickets.csv: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:27:37,793 - src.pipeline.main_pipeline - INFO - Successfully processed support_tickets.csv
+2025-05-14 21:27:37,794 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2025-05-14 21:27:37,798 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 21:27:38,008 - src.extractors.json_extractor - INFO - Started extracting transactions from JSON file at incoming_data\2025-05-14\21\transactions_processing__1.json 
+2025-05-14 21:27:38,132 - src.extractors.json_extractor - INFO - Completed extracting transactions Number of rows extracted = 100000 , Extracted schema = ['sender', 'receiver', 'transaction_amount', 'transaction_date'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:27:38,142 - src.validators.schema_validator - INFO - Starting schema validation for table: transactions
+2025-05-14 21:27:38,142 - src.validators.schema_validator - INFO - DataFrame shape: (100000, 4)
+2025-05-14 21:27:38,143 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:27:38,143 - src.validators.schema_validator - INFO - - Required columns: ['sender', 'receiver', 'transaction_amount', 'transaction_date']
+2025-05-14 21:27:38,144 - src.validators.schema_validator - INFO - - Total columns in schema: 4
+2025-05-14 21:27:38,144 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 4
+2025-05-14 21:27:38,145 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:27:38,145 - src.validators.schema_validator - INFO - Column sender type validation passed: object
+2025-05-14 21:27:38,146 - src.validators.schema_validator - INFO - Column receiver type validation passed: object
+2025-05-14 21:27:38,146 - src.validators.schema_validator - INFO - Column transaction_amount type validation passed: int64
+2025-05-14 21:27:38,146 - src.validators.schema_validator - INFO - Column transaction_date type validation passed: object
+2025-05-14 21:27:38,147 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: transactions
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:38,368 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,127 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,440 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,512 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:27:39,522 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for transactions.json: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:27:39,523 - src.pipeline.main_pipeline - INFO - Successfully processed transactions.json
+2025-05-14 21:27:39,523 - src.utils.error_handler - ERROR - Failed to send error notification email: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2025-05-14 21:35:40,977 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 21:35:50,494 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 21:35:50,497 - src.validators.schema_validator - INFO - Initializing SchemaValidator with schema file: d:\ITI\Python\Project\src\pipeline\..\schema\tables_schema.json
+2025-05-14 21:35:50,498 - src.validators.schema_validator - INFO - Successfully loaded schema file with 5 table definitions
+2025-05-14 21:35:50,500 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 21:35:50,501 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 21:35:55,765 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 21:36:18,658 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 21:36:18,660 - src.validators.schema_validator - INFO - Initializing SchemaValidator with schema file: d:\ITI\Python\Project\src\pipeline\..\schema\tables_schema.json
+2025-05-14 21:36:18,661 - src.validators.schema_validator - INFO - Successfully loaded schema file with 5 table definitions
+2025-05-14 21:36:18,662 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 21:36:18,663 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 21:36:18,664 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 21:36:18,666 - src.extractors.csv_extractor - INFO - Started extracting credit_cards_billing from CSV file at incoming_data\2025-05-14\21\credit_cards_billing_processing__1.csv 
+2025-05-14 21:36:18,963 - src.extractors.csv_extractor - INFO - Completed extracting credit_cards_billing Number of rows extracted = 200000 , Extracted schema = ['bill_id', 'customer_id', 'month', 'amount_due', 'amount_paid', 'payment_date'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:36:18,965 - src.validators.schema_validator - INFO - Starting schema validation for table: credit_cards_billing
+2025-05-14 21:36:18,966 - src.validators.schema_validator - INFO - DataFrame shape: (200000, 6)
+2025-05-14 21:36:18,966 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:36:18,967 - src.validators.schema_validator - INFO - - Required columns: ['bill_id', 'customer_id', 'month', 'amount_due', 'amount_paid', 'payment_date']
+2025-05-14 21:36:18,968 - src.validators.schema_validator - INFO - - Total columns in schema: 6
+2025-05-14 21:36:18,969 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 6
+2025-05-14 21:36:18,969 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:36:18,970 - src.validators.schema_validator - INFO - Column bill_id type validation passed: object
+2025-05-14 21:36:18,971 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:36:18,972 - src.validators.schema_validator - INFO - Column month type validation passed: object
+2025-05-14 21:36:18,974 - src.validators.schema_validator - INFO - Column amount_due type validation passed: float64
+2025-05-14 21:36:18,975 - src.validators.schema_validator - INFO - Column amount_paid type validation passed: float64
+2025-05-14 21:36:18,976 - src.validators.schema_validator - INFO - Column payment_date type validation passed: object
+2025-05-14 21:36:18,977 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: credit_cards_billing
+2025-05-14 21:36:19,746 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\21\credit_cards_billing.csv
+2025-05-14 21:36:22,871 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\21\credit_cards_billing.csv
+2025-05-14 21:36:22,871 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\21\credit_cards_billing.csv
+2025-05-14 21:36:23,202 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet
+2025-05-14 21:36:23,202 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet
+2025-05-14 21:36:23,202 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet
+2025-05-14 21:36:23,259 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+2025-05-14 21:36:23,259 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+2025-05-14 21:36:23,259 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+2025-05-14 21:36:23,262 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for credit_cards_billing.csv: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:36:23,306 - src.pipeline.main_pipeline - INFO - Successfully processed credit_cards_billing.csv
+2025-05-14 21:36:23,307 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 21:36:23,309 - src.extractors.csv_extractor - INFO - Started extracting customer_profiles from CSV file at incoming_data\2025-05-14\21\customer_profiles_processing__1.csv 
+2025-05-14 21:36:23,309 - src.extractors.csv_extractor - INFO - Started extracting customer_profiles from CSV file at incoming_data\2025-05-14\21\customer_profiles_processing__1.csv 
+2025-05-14 21:36:23,653 - src.extractors.csv_extractor - INFO - Completed extracting customer_profiles Number of rows extracted = 100000 , Extracted schema = ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:36:23,653 - src.extractors.csv_extractor - INFO - Completed extracting customer_profiles Number of rows extracted = 100000 , Extracted schema = ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:36:23,655 - src.validators.schema_validator - INFO - Starting schema validation for table: customer_profiles
+2025-05-14 21:36:23,656 - src.validators.schema_validator - INFO - DataFrame shape: (100000, 8)
+2025-05-14 21:36:23,656 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:36:23,657 - src.validators.schema_validator - INFO - - Required columns: ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier']
+2025-05-14 21:36:23,657 - src.validators.schema_validator - INFO - - Total columns in schema: 8
+2025-05-14 21:36:23,658 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 8
+2025-05-14 21:36:23,658 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:36:23,659 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:36:23,660 - src.validators.schema_validator - INFO - Column name type validation passed: object
+2025-05-14 21:36:23,661 - src.validators.schema_validator - INFO - Column gender type validation passed: object
+2025-05-14 21:36:23,662 - src.validators.schema_validator - INFO - Column age type validation passed: int64
+2025-05-14 21:36:23,662 - src.validators.schema_validator - INFO - Column city type validation passed: object
+2025-05-14 21:36:23,663 - src.validators.schema_validator - INFO - Column account_open_date type validation passed: object
+2025-05-14 21:36:23,664 - src.validators.schema_validator - INFO - Column product_type type validation passed: object
+2025-05-14 21:36:23,664 - src.validators.schema_validator - INFO - Column customer_tier type validation passed: object
+2025-05-14 21:36:23,665 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: customer_profiles
+2025-05-14 21:36:24,097 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:36:24,097 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:36:24,097 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:36:24,097 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:36:24,212 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 21:36:25,009 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:36:25,009 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:36:25,009 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:36:25,009 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:36:25,009 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:36:25,241 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:36:25,241 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:36:25,241 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:36:25,241 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:36:25,241 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:36:25,241 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:36:25,303 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:36:25,303 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:36:25,303 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:36:25,303 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:36:25,303 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:36:25,303 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:36:25,309 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for customer_profiles.csv: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:36:25,309 - src.pipeline.main_pipeline - INFO - Successfully processed customer_profiles.csv
+2025-05-14 21:36:25,312 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 21:36:25,313 - src.extractors.txt_extractor - INFO - Started extracting loans from TXT file at incoming_data\2025-05-14\21\loans_processing__1.txt 
+2025-05-14 21:36:25,320 - src.extractors.txt_extractor - INFO - Completed extracting loans Number of rows extracted = 1000 , Extracted schema = ['customer_id', 'loan_type', 'amount_utilized', 'utilization_date', 'loan_reason'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:36:25,321 - src.validators.schema_validator - INFO - Starting schema validation for table: loans
+2025-05-14 21:36:25,322 - src.validators.schema_validator - INFO - DataFrame shape: (1000, 5)
+2025-05-14 21:36:25,323 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:36:25,323 - src.validators.schema_validator - INFO - - Required columns: ['customer_id', 'loan_type', 'amount_utilized', 'utilization_date', 'loan_reason']
+2025-05-14 21:36:25,324 - src.validators.schema_validator - INFO - - Total columns in schema: 5
+2025-05-14 21:36:25,325 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 5
+2025-05-14 21:36:25,325 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:36:25,326 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:36:25,327 - src.validators.schema_validator - INFO - Column loan_type type validation passed: object
+2025-05-14 21:36:25,328 - src.validators.schema_validator - INFO - Column amount_utilized type validation passed: int64
+2025-05-14 21:36:25,329 - src.validators.schema_validator - INFO - Column utilization_date type validation passed: object
+2025-05-14 21:36:25,331 - src.validators.schema_validator - INFO - Column loan_reason type validation passed: object
+2025-05-14 21:36:25,332 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: loans
+2025-05-14 21:36:25,339 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,339 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,339 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,339 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,339 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,339 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,339 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,400 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,400 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,400 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,400 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,400 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,400 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,400 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,400 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:36:25,414 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:36:25,414 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:36:25,414 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:36:25,414 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:36:25,414 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:36:25,414 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:36:25,414 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:36:25,414 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:36:25,414 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:36:25,478 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:36:25,478 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:36:25,478 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:36:25,478 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:36:25,478 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:36:25,478 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:36:25,478 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:36:25,478 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:36:25,478 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:36:25,487 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for loans.txt: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:36:25,488 - src.pipeline.main_pipeline - INFO - Successfully processed loans.txt
+2025-05-14 21:36:25,490 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 21:36:25,492 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\21\support_tickets_processing__1.csv 
+2025-05-14 21:36:25,492 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\21\support_tickets_processing__1.csv 
+2025-05-14 21:36:25,492 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\21\support_tickets_processing__1.csv 
+2025-05-14 21:36:25,521 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:36:25,521 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:36:25,521 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:36:25,525 - src.validators.schema_validator - INFO - Starting schema validation for table: support_tickets
+2025-05-14 21:36:25,526 - src.validators.schema_validator - INFO - DataFrame shape: (15000, 5)
+2025-05-14 21:36:25,527 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:36:25,528 - src.validators.schema_validator - INFO - - Required columns: ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity']
+2025-05-14 21:36:25,529 - src.validators.schema_validator - INFO - - Total columns in schema: 5
+2025-05-14 21:36:25,530 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 5
+2025-05-14 21:36:25,531 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:36:25,532 - src.validators.schema_validator - INFO - Column ticket_id type validation passed: object
+2025-05-14 21:36:25,533 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:36:25,534 - src.validators.schema_validator - INFO - Column complaint_category type validation passed: object
+2025-05-14 21:36:25,534 - src.validators.schema_validator - INFO - Column complaint_date type validation passed: object
+2025-05-14 21:36:25,536 - src.validators.schema_validator - INFO - Column severity type validation passed: int64
+2025-05-14 21:36:25,536 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: support_tickets
+2025-05-14 21:36:25,582 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,582 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,582 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,582 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,582 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,582 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,582 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,582 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,582 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,582 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,713 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,748 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,820 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:36:25,830 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for support_tickets.csv: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:36:25,831 - src.pipeline.main_pipeline - INFO - Successfully processed support_tickets.csv
+2025-05-14 21:36:25,833 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 21:36:26,032 - src.extractors.json_extractor - INFO - Started extracting transactions from JSON file at incoming_data\2025-05-14\21\transactions_processing__1.json 
+2025-05-14 21:36:26,151 - src.extractors.json_extractor - INFO - Completed extracting transactions Number of rows extracted = 100000 , Extracted schema = ['sender', 'receiver', 'transaction_amount', 'transaction_date'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:36:26,153 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 21:36:26,163 - src.validators.schema_validator - INFO - Starting schema validation for table: transactions
+2025-05-14 21:36:26,170 - src.validators.schema_validator - INFO - DataFrame shape: (100000, 4)
+2025-05-14 21:36:26,171 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:36:26,172 - src.validators.schema_validator - INFO - - Required columns: ['sender', 'receiver', 'transaction_amount', 'transaction_date']
+2025-05-14 21:36:26,172 - src.validators.schema_validator - INFO - - Total columns in schema: 4
+2025-05-14 21:36:26,173 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 4
+2025-05-14 21:36:26,174 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:36:26,175 - src.validators.schema_validator - INFO - Column sender type validation passed: object
+2025-05-14 21:36:26,175 - src.validators.schema_validator - INFO - Column receiver type validation passed: object
+2025-05-14 21:36:26,176 - src.validators.schema_validator - INFO - Column transaction_amount type validation passed: int64
+2025-05-14 21:36:26,178 - src.validators.schema_validator - INFO - Column transaction_date type validation passed: object
+2025-05-14 21:36:26,179 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: transactions
+2025-05-14 21:36:26,320 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,413 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:36:26,682 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,118 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,249 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,318 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:36:27,333 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for transactions.json: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:36:27,333 - src.pipeline.main_pipeline - INFO - Successfully processed transactions.json
+2025-05-14 21:36:28,180 - src.utils.error_handler - ERROR - Failed to send error notification email: please run connect() first
+2025-05-14 21:37:55,207 - __main__ - INFO - Pipeline stopped by user
+2025-05-14 21:39:08,627 - __main__ - INFO - Starting NexaBank Data Pipeline
+2025-05-14 21:39:08,631 - src.validators.schema_validator - INFO - Initializing SchemaValidator with schema file: d:\ITI\Python\Project\src\pipeline\..\schema\tables_schema.json
+2025-05-14 21:39:08,632 - src.validators.schema_validator - INFO - Successfully loaded schema file with 5 table definitions
+2025-05-14 21:39:08,632 - __main__ - INFO - Pipeline initialized successfully
+2025-05-14 21:39:08,633 - src.pipeline.main_pipeline - INFO - Starting pipeline execution
+2025-05-14 21:39:08,634 - src.pipeline.main_pipeline - INFO - Started processing credit_cards_billing.csv
+2025-05-14 21:39:08,635 - src.extractors.csv_extractor - INFO - Started extracting credit_cards_billing from CSV file at incoming_data\2025-05-14\21\credit_cards_billing_processing__1.csv 
+2025-05-14 21:39:08,943 - src.extractors.csv_extractor - INFO - Completed extracting credit_cards_billing Number of rows extracted = 200000 , Extracted schema = ['bill_id', 'customer_id', 'month', 'amount_due', 'amount_paid', 'payment_date'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:39:08,944 - src.validators.schema_validator - INFO - Starting schema validation for table: credit_cards_billing
+2025-05-14 21:39:08,945 - src.validators.schema_validator - INFO - DataFrame shape: (200000, 6)
+2025-05-14 21:39:08,945 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:39:08,946 - src.validators.schema_validator - INFO - - Required columns: ['bill_id', 'customer_id', 'month', 'amount_due', 'amount_paid', 'payment_date']
+2025-05-14 21:39:08,946 - src.validators.schema_validator - INFO - - Total columns in schema: 6
+2025-05-14 21:39:08,947 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 6
+2025-05-14 21:39:08,947 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:39:08,948 - src.validators.schema_validator - INFO - Column bill_id type validation passed: object
+2025-05-14 21:39:08,949 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:39:08,950 - src.validators.schema_validator - INFO - Column month type validation passed: object
+2025-05-14 21:39:08,951 - src.validators.schema_validator - INFO - Column amount_due type validation passed: float64
+2025-05-14 21:39:08,952 - src.validators.schema_validator - INFO - Column amount_paid type validation passed: float64
+2025-05-14 21:39:08,953 - src.validators.schema_validator - INFO - Column payment_date type validation passed: object
+2025-05-14 21:39:08,954 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: credit_cards_billing
+2025-05-14 21:39:09,657 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/extracted\2025-05-14\21\credit_cards_billing.csv
+2025-05-14 21:39:12,870 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\21\credit_cards_billing.csv
+2025-05-14 21:39:12,870 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/transformed\2025-05-14\21\credit_cards_billing.csv
+2025-05-14 21:39:13,185 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet
+2025-05-14 21:39:13,185 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet
+2025-05-14 21:39:13,185 - src.writers.base_writer - INFO - Successfully wrote 200000 rows to checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet
+2025-05-14 21:39:13,301 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+2025-05-14 21:39:13,301 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+2025-05-14 21:39:13,301 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+2025-05-14 21:39:13,309 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for credit_cards_billing.csv: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\credit_cards_billing_1.parquet /user/hive/warehouse/nexabank.db/credit_cards_billing/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:39:13,316 - src.utils.error_handler - ERROR - Error in Processing file credit_cards_billing.csv: [WinError 183] Cannot create a file when that file already exists: 'incoming_data\\2025-05-14\\21\\credit_cards_billing_processing__1.csv' -> 'incoming_data\\2025-05-14\\21\\credit_cards_billing_processed__1.csv'
+NoneType: None
+
+2025-05-14 21:39:13,319 - src.pipeline.main_pipeline - INFO - Started processing customer_profiles.csv
+2025-05-14 21:39:13,324 - src.extractors.csv_extractor - INFO - Started extracting customer_profiles from CSV file at incoming_data\2025-05-14\21\customer_profiles_processing__1.csv 
+2025-05-14 21:39:13,324 - src.extractors.csv_extractor - INFO - Started extracting customer_profiles from CSV file at incoming_data\2025-05-14\21\customer_profiles_processing__1.csv 
+2025-05-14 21:39:13,729 - src.extractors.csv_extractor - INFO - Completed extracting customer_profiles Number of rows extracted = 100000 , Extracted schema = ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:39:13,729 - src.extractors.csv_extractor - INFO - Completed extracting customer_profiles Number of rows extracted = 100000 , Extracted schema = ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:39:13,732 - src.validators.schema_validator - INFO - Starting schema validation for table: customer_profiles
+2025-05-14 21:39:13,732 - src.validators.schema_validator - INFO - DataFrame shape: (100000, 8)
+2025-05-14 21:39:13,733 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:39:13,734 - src.validators.schema_validator - INFO - - Required columns: ['customer_id', 'name', 'gender', 'age', 'city', 'account_open_date', 'product_type', 'customer_tier']
+2025-05-14 21:39:13,735 - src.validators.schema_validator - INFO - - Total columns in schema: 8
+2025-05-14 21:39:13,736 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 8
+2025-05-14 21:39:13,736 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:39:13,737 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:39:13,738 - src.validators.schema_validator - INFO - Column name type validation passed: object
+2025-05-14 21:39:13,739 - src.validators.schema_validator - INFO - Column gender type validation passed: object
+2025-05-14 21:39:13,740 - src.validators.schema_validator - INFO - Column age type validation passed: int64
+2025-05-14 21:39:13,741 - src.validators.schema_validator - INFO - Column city type validation passed: object
+2025-05-14 21:39:13,741 - src.validators.schema_validator - INFO - Column account_open_date type validation passed: object
+2025-05-14 21:39:13,742 - src.validators.schema_validator - INFO - Column product_type type validation passed: object
+2025-05-14 21:39:13,743 - src.validators.schema_validator - INFO - Column customer_tier type validation passed: object
+2025-05-14 21:39:13,744 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: customer_profiles
+2025-05-14 21:39:14,098 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:39:14,098 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:39:14,098 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:39:14,098 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:39:14,888 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 21:39:14,893 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 21:39:14,955 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:39:14,955 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:39:14,955 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:39:14,955 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:39:14,955 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\customer_profiles.csv
+2025-05-14 21:39:15,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:39:15,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:39:15,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:39:15,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:39:15,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:39:15,172 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet
+2025-05-14 21:39:15,241 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:39:15,241 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:39:15,241 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:39:15,241 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:39:15,241 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:39:15,241 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+2025-05-14 21:39:15,246 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for customer_profiles.csv: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\customer_profiles_1.parquet /user/hive/warehouse/nexabank.db/customer_profiles/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:39:15,249 - src.utils.error_handler - ERROR - Error in Processing file customer_profiles.csv: [WinError 183] Cannot create a file when that file already exists: 'incoming_data\\2025-05-14\\21\\customer_profiles_processing__1.csv' -> 'incoming_data\\2025-05-14\\21\\customer_profiles_processed__1.csv'
+NoneType: None
+
+2025-05-14 21:39:15,250 - src.pipeline.main_pipeline - INFO - Started processing loans.txt
+2025-05-14 21:39:15,252 - src.extractors.txt_extractor - INFO - Started extracting loans from TXT file at incoming_data\2025-05-14\21\loans_processing__1.txt 
+2025-05-14 21:39:15,261 - src.extractors.txt_extractor - INFO - Completed extracting loans Number of rows extracted = 1000 , Extracted schema = ['customer_id', 'loan_type', 'amount_utilized', 'utilization_date', 'loan_reason'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:39:15,262 - src.validators.schema_validator - INFO - Starting schema validation for table: loans
+2025-05-14 21:39:15,263 - src.validators.schema_validator - INFO - DataFrame shape: (1000, 5)
+2025-05-14 21:39:15,264 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:39:15,265 - src.validators.schema_validator - INFO - - Required columns: ['customer_id', 'loan_type', 'amount_utilized', 'utilization_date', 'loan_reason']
+2025-05-14 21:39:15,265 - src.validators.schema_validator - INFO - - Total columns in schema: 5
+2025-05-14 21:39:15,266 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 5
+2025-05-14 21:39:15,267 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:39:15,267 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:39:15,268 - src.validators.schema_validator - INFO - Column loan_type type validation passed: object
+2025-05-14 21:39:15,269 - src.validators.schema_validator - INFO - Column amount_utilized type validation passed: int64
+2025-05-14 21:39:15,270 - src.validators.schema_validator - INFO - Column utilization_date type validation passed: object
+2025-05-14 21:39:15,270 - src.validators.schema_validator - INFO - Column loan_reason type validation passed: object
+2025-05-14 21:39:15,271 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: loans
+2025-05-14 21:39:15,280 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,280 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,280 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,280 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,280 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,280 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,280 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/extracted\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,348 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,348 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,348 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,348 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,348 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,348 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,348 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,348 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/transformed\2025-05-14\21\loans.csv
+2025-05-14 21:39:15,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:39:15,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:39:15,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:39:15,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:39:15,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:39:15,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:39:15,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:39:15,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:39:15,364 - src.writers.base_writer - INFO - Successfully wrote 1000 rows to checkpoint/loaded\2025-05-14\21\loans_1.parquet
+2025-05-14 21:39:15,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:39:15,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:39:15,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:39:15,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:39:15,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:39:15,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:39:15,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:39:15,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:39:15,429 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+2025-05-14 21:39:15,437 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for loans.txt: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\loans_1.parquet /user/hive/warehouse/nexabank.db/loans/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:39:15,439 - src.utils.error_handler - ERROR - Error in Processing file loans.txt: [WinError 183] Cannot create a file when that file already exists: 'incoming_data\\2025-05-14\\21\\loans_processing__1.txt' -> 'incoming_data\\2025-05-14\\21\\loans_processed__1.txt'
+NoneType: None
+
+2025-05-14 21:39:15,440 - src.pipeline.main_pipeline - INFO - Started processing support_tickets.csv
+2025-05-14 21:39:15,442 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\21\support_tickets_processing__1.csv 
+2025-05-14 21:39:15,442 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\21\support_tickets_processing__1.csv 
+2025-05-14 21:39:15,442 - src.extractors.csv_extractor - INFO - Started extracting support_tickets from CSV file at incoming_data\2025-05-14\21\support_tickets_processing__1.csv 
+2025-05-14 21:39:15,476 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:39:15,476 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:39:15,476 - src.extractors.csv_extractor - INFO - Completed extracting support_tickets Number of rows extracted = 15000 , Extracted schema = ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:39:15,480 - src.validators.schema_validator - INFO - Starting schema validation for table: support_tickets
+2025-05-14 21:39:15,480 - src.validators.schema_validator - INFO - DataFrame shape: (15000, 5)
+2025-05-14 21:39:15,481 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:39:15,482 - src.validators.schema_validator - INFO - - Required columns: ['ticket_id', 'customer_id', 'complaint_category', 'complaint_date', 'severity']
+2025-05-14 21:39:15,482 - src.validators.schema_validator - INFO - - Total columns in schema: 5
+2025-05-14 21:39:15,483 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 5
+2025-05-14 21:39:15,484 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:39:15,484 - src.validators.schema_validator - INFO - Column ticket_id type validation passed: object
+2025-05-14 21:39:15,485 - src.validators.schema_validator - INFO - Column customer_id type validation passed: object
+2025-05-14 21:39:15,486 - src.validators.schema_validator - INFO - Column complaint_category type validation passed: object
+2025-05-14 21:39:15,487 - src.validators.schema_validator - INFO - Column complaint_date type validation passed: object
+2025-05-14 21:39:15,487 - src.validators.schema_validator - INFO - Column severity type validation passed: int64
+2025-05-14 21:39:15,488 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: support_tickets
+2025-05-14 21:39:15,537 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,537 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,537 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,537 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,537 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,537 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,537 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,537 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,537 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,537 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/extracted\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,642 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/transformed\2025-05-14\21\support_tickets.csv
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,677 - src.writers.base_writer - INFO - Successfully wrote 15000 rows to checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,741 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+2025-05-14 21:39:15,751 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for support_tickets.csv: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\support_tickets_1.parquet /user/hive/warehouse/nexabank.db/support_tickets/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:39:15,753 - src.utils.error_handler - ERROR - Error in Processing file support_tickets.csv: [WinError 183] Cannot create a file when that file already exists: 'incoming_data\\2025-05-14\\21\\support_tickets_processing__1.csv' -> 'incoming_data\\2025-05-14\\21\\support_tickets_processed__1.csv'
+NoneType: None
+
+2025-05-14 21:39:15,753 - src.pipeline.main_pipeline - INFO - Started processing transactions.json
+2025-05-14 21:39:16,024 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 21:39:16,090 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 21:39:16,518 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 21:39:16,521 - src.extractors.json_extractor - INFO - Started extracting transactions from JSON file at incoming_data\2025-05-14\21\transactions_processing__1.json 
+2025-05-14 21:39:16,617 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 21:39:16,655 - src.extractors.json_extractor - INFO - Completed extracting transactions Number of rows extracted = 100000 , Extracted schema = ['sender', 'receiver', 'transaction_amount', 'transaction_date'] , Partition date = 2025-05-14 , Partition hour = 21 
+2025-05-14 21:39:16,656 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 21:39:16,666 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 21:39:16,667 - src.validators.schema_validator - INFO - Starting schema validation for table: transactions
+2025-05-14 21:39:16,669 - src.validators.schema_validator - INFO - DataFrame shape: (100000, 4)
+2025-05-14 21:39:16,670 - src.validators.schema_validator - INFO - Schema validation details:
+2025-05-14 21:39:16,671 - src.validators.schema_validator - INFO - - Required columns: ['sender', 'receiver', 'transaction_amount', 'transaction_date']
+2025-05-14 21:39:16,672 - src.validators.schema_validator - INFO - - Total columns in schema: 4
+2025-05-14 21:39:16,672 - src.validators.schema_validator - INFO - - Total columns in DataFrame: 4
+2025-05-14 21:39:16,673 - src.validators.schema_validator - INFO - Starting column type validation
+2025-05-14 21:39:16,674 - src.validators.schema_validator - INFO - Column sender type validation passed: object
+2025-05-14 21:39:16,675 - src.validators.schema_validator - INFO - Column receiver type validation passed: object
+2025-05-14 21:39:16,676 - src.validators.schema_validator - INFO - Column transaction_amount type validation passed: int64
+2025-05-14 21:39:16,676 - src.validators.schema_validator - INFO - Column transaction_date type validation passed: object
+2025-05-14 21:39:16,677 - src.validators.schema_validator - INFO - Schema validation completed successfully for table: transactions
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,871 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/extracted\2025-05-14\21\transactions.csv
+2025-05-14 21:39:16,906 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 21:39:16,906 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 21:39:17,153 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 21:39:17,153 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,606 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/transformed\2025-05-14\21\transactions.csv
+2025-05-14 21:39:17,767 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,773 - src.writers.base_writer - INFO - Successfully wrote 100000 rows to checkpoint/loaded\2025-05-14\21\transactions_1.parquet
+2025-05-14 21:39:17,831 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,839 - src.writers.base_writer - ERROR - Failed to upload to HDFS: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+2025-05-14 21:39:17,849 - src.utils.error_handler - ERROR - Error in Uploading to HDFS for transactions.json: Command 'hdfs dfs -put -f checkpoint/loaded\2025-05-14\21\transactions_1.parquet /user/hive/warehouse/nexabank.db/transactions/' returned non-zero exit status 1.
+NoneType: None
+
+2025-05-14 21:39:17,850 - src.utils.error_handler - ERROR - Error in Processing file transactions.json: [WinError 183] Cannot create a file when that file already exists: 'incoming_data\\2025-05-14\\21\\transactions_processing__1.json' -> 'incoming_data\\2025-05-14\\21\\transactions_processed__1.json'
+NoneType: None
+
+2025-05-14 21:39:18,156 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 21:39:18,220 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 21:39:18,828 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 21:39:18,889 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 21:39:19,231 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 21:39:19,231 - src.utils.error_handler - INFO - Connected to email server
+2025-05-14 21:39:19,325 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 21:39:19,397 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 21:39:20,059 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 21:39:20,121 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 21:39:20,536 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 21:39:20,596 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 21:39:21,210 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 21:39:21,292 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 21:39:22,260 - src.utils.error_handler - INFO - Mail sent successfully to bassanti355@gmail.com
+2025-05-14 21:39:22,328 - src.utils.error_handler - INFO - Disconnected from email server
+2025-05-14 21:39:57,989 - __main__ - INFO - Pipeline stopped by user

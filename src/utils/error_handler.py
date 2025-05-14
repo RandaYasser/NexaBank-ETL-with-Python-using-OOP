@@ -6,12 +6,14 @@ from src.utils.logger import Logger
 import traceback
 from smtplib import SMTP_SSL
 import threading
+from dotenv import load_dotenv
 
 class ErrorHandler:
     """Handles errors and exceptions across the application."""
     
     def __init__(self):
         self.logger = Logger(__name__)
+        load_dotenv()
         self.email_config = self._load_email_config()
         
 
@@ -68,7 +70,7 @@ class ErrorHandler:
             
             server = SMTP_SSL(self.email_config.get('smtp_server'), int(self.email_config.get('smtp_port')))
             server.ehlo()
-            
+
             server.login(
                 self.email_config.get('sender_email'),
                 self.email_config.get('sender_password')

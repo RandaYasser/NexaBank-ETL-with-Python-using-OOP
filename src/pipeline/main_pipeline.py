@@ -157,6 +157,7 @@ class MainPipeline:
             # Transform
             transformer = transformer_class(current_date, current_hour)
             df = transformer.transform(df)
+            df = transformer.add_metadata_columns(df)
             
             # Save to transformed checkpoint
             transformed_dir = self._get_checkpoint_path('transformed', current_date, current_hour)
