@@ -20,5 +20,5 @@ class TXTExtractor(BaseExtractor):
             return df, dict_metadata
         except Exception as e:
             self.logger.error(f"Error extracting data from {self.file_path}: {e}")
-            return None, dict_metadata
+            return None, None
         
