@@ -1,7 +1,7 @@
 # Data Pipeline with Error Recovery System
 
 ## Overview
-This project implements a robust data pipeline system with integrated error handling, recovery mechanisms, and monitoring capabilities. It's designed to work within a Hadoop Hive cluster environment, providing reliable data processing with automatic error recovery and health monitoring.
+This project implements a robust data pipeline system with integrated error handling, recovery mechanisms, and monitoring capabilities. It's designed to work within a Hadoop Hive cluster environment, providing reliable data processing with automatic error notification.
 
 Key Features:
 - Automated error detection and recovery
