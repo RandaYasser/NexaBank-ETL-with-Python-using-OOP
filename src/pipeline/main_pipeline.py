@@ -35,7 +35,8 @@ class MainPipeline:
         # Setup checkpoint directories
         self.checkpoint_dirs = {
             'extracted': 'checkpoint/extracted',
-            'transformed': 'checkpoint/transformed'
+            'transformed': 'checkpoint/transformed',
+            'loaded': 'checkpoint/loaded'
         }
         self._setup_checkpoint_dirs()
         
