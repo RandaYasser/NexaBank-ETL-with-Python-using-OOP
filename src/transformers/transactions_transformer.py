@@ -1,6 +1,6 @@
 import pandas as pd
 from datetime import datetime
-from .base_transformer import BaseTransformer
+from src.transformers.base_transformer import BaseTransformer
 
 class TransactionsTransformer(BaseTransformer):
     """Transformer for money transfers and purchases data. Base columns: sender, receiver, transaction_amount, transaction_date. """

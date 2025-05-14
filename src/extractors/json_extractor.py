@@ -1,8 +1,8 @@
 import pandas as pd
 import json
 from typing import Dict, Optional, Tuple
-from .base_extractor import BaseExtractor
-from ..utils.logger import Logger
+from src.extractors.base_extractor import BaseExtractor
+from src.utils.logger import Logger
 
 class JSONExtractor(BaseExtractor):
     """Extractor for JSON files."""

@@ -1,6 +1,6 @@
 import pandas as pd
 from datetime import datetime
-from .base_transformer import BaseTransformer
+from src.transformers.base_transformer import BaseTransformer
 
 class CreditCardsBillingTransformer(BaseTransformer):
     """Transformer for credit cards billing data. Base columns: bill_id, customer_id, month, amount_due, amount_paid, payment_date. """

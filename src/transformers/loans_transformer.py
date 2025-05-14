@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime
-from .base_transformer import BaseTransformer
-from ..utils.encryptor import Encryptor
+from src.transformers.base_transformer import BaseTransformer
+from src.utils.encryptor import Encryptor
 import math
 
 class LoansTransformer(BaseTransformer):

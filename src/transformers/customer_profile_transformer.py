@@ -1,5 +1,5 @@
 import pandas as pd
-from .base_transformer import BaseTransformer
+from src.transformers.base_transformer import BaseTransformer
 from datetime import datetime
 class CustomerProfileTransformer(BaseTransformer):
     """Transformer for customer profile data. Base columns: customer_id, name, gender, age, city, account_open_date, product_type, 

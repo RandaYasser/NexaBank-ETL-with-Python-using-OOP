@@ -1,6 +1,6 @@
 import pandas as pd
 from datetime import datetime
-from .base_transformer import BaseTransformer
+from src.transformers.base_transformer import BaseTransformer
 
 class SupportTicketsTransformer(BaseTransformer):
     """Transformer for support tickets data. Base columns: ticket_id, customer_id, complaint_category, complaint_date, severity. """

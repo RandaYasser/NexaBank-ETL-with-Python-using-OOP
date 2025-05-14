@@ -1,3 +1,4 @@
 # Environment variables
 .env
 incoming_data
+checkpoint

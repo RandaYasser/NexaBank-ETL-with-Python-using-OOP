@@ -4,19 +4,19 @@ from datetime import datetime
 import pandas as pd
 from typing import Dict, Optional, Tuple
 from itertools import count
-from ..extractors.csv_extractor import CSVExtractor
-from ..extractors.json_extractor import JSONExtractor
-from ..extractors.txt_extractor import TXTExtractor
-from ..transformers.customer_profile_transformer import CustomerProfileTransformer
-from ..transformers.credit_cards_billing_transformer import CreditCardsBillingTransformer
-from ..transformers.support_tickets_transformer import SupportTicketsTransformer
-from ..transformers.loans_transformer import LoansTransformer
-from ..transformers.transactions_transformer import TransactionsTransformer
-from ..writers.parquet_writer import ParquetWriter
-from ..writers.csv_writer import CsvWriter
-from ..utils.logger import Logger
-from ..utils.error_handler import ErrorHandler
-from ..validators.schema_validator import SchemaValidator
+from src.extractors.csv_extractor import CSVExtractor
+from src.extractors.json_extractor import JSONExtractor
+from src.extractors.txt_extractor import TXTExtractor
+from src.transformers.customer_profile_transformer import CustomerProfileTransformer
+from src.transformers.credit_cards_billing_transformer import CreditCardsBillingTransformer
+from src.transformers.support_tickets_transformer import SupportTicketsTransformer
+from src.transformers.loans_transformer import LoansTransformer
+from src.transformers.transactions_transformer import TransactionsTransformer
+from src.writers.parquet_writer import ParquetWriter
+from src.writers.csv_writer import CsvWriter
+from src.utils.logger import Logger
+from src.utils.error_handler import ErrorHandler
+from src.validators.schema_validator import SchemaValidator
 
 class MainPipeline:
     """Main pipeline class that orchestrates the ETL process."""
@@ -64,7 +64,7 @@ class MainPipeline:
     def _get_checkpoint_path(self, stage: str, date: str, hour: str) -> str:
         """Get checkpoint directory path for a specific stage, date, and hour.
         Args:
-            stage (str): The stage of the pipeline (e.g., 'extracted', 'transformed')
+            stage (str): The stage of the pipeline (e.g., 'extracted', 'transformed', 'loaded')
             date (str): The date in YYYY-MM-DD format
             hour (str): The hour in HH format
         Returns:
@@ -81,7 +81,6 @@ class MainPipeline:
         
     def _mark_file_processed(self, file_path: str):
         """Rename file to mark it as processed."""
-        #seq_num = file_path.split('__')[-1]
         new_path = file_path.replace('_processing__', '_processed__')
         os.rename(file_path, new_path)
         
@@ -115,7 +114,7 @@ class MainPipeline:
                     
             except Exception as e:
                 self.error_handler.handle_error(e, "Pipeline execution")
-                # add logic to check in checkpoint if file was processed
+                
                 
     def _process_file(self, file_path: str, seq_num: int):
         """Process a single file through the pipeline stages."""
@@ -143,7 +142,6 @@ class MainPipeline:
             
             # Validate schema
             if not self.schema_validator.validate_schema(df, metadata['table_name']):
-                print("this is the table name", table_name)
                 error_msg = f"Schema validation failed for {filename}"
                 self.logger.error(error_msg)
                 self.error_handler.handle_error(Exception(error_msg), f"Schema validation for {filename}")
@@ -171,9 +169,13 @@ class MainPipeline:
             os.makedirs(loaded_dir, exist_ok=True)
             loaded_path = os.path.join(loaded_dir, table_name)
             loaded_writer = ParquetWriter(loaded_dir)
-            loaded_writer.write(df, table_name)
+            loaded_writer.write(df, f'{table_name}_{seq_num}')
             hdfs_path = f"/user/hive/warehouse/nexabank.db/{table_name}/"
-            loaded_writer.upload_to_hdfs(f"{loaded_path}_{seq_num}.parquet", hdfs_path)
+            try:
+                loaded_writer.upload_to_hdfs(f"{loaded_path}_{seq_num}.parquet", hdfs_path)
+            except Exception as e:
+                self.error_handler.handle_error(e, f"Uploading to HDFS for {filename}")
+           
             
             # Mark as processed
             self._mark_file_processed(processing_path)

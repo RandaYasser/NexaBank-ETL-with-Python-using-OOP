@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-from .base_writer import BaseWriter
+from src.writers.base_writer import BaseWriter
 
 class CsvWriter(BaseWriter):
     """Writer for CSV files."""

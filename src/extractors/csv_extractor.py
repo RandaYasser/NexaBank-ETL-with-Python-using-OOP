@@ -1,7 +1,7 @@
 import pandas as pd
 from typing import Dict, Optional, Tuple
-from .base_extractor import BaseExtractor
-from ..utils.logger import Logger
+from src.extractors.base_extractor import BaseExtractor
+from src.utils.logger import Logger
 
 class CSVExtractor(BaseExtractor):
     """Extractor for CSV files."""

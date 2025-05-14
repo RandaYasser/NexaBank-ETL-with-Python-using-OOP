@@ -2,18 +2,16 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import os
 from typing import Optional
-from .logger import Logger
+from src.utils.logger import Logger
 import traceback
-from dotenv import load_dotenv
 from smtplib import SMTP_SSL
-
+import threading
 
 class ErrorHandler:
     """Handles errors and exceptions across the application."""
     
     def __init__(self):
         self.logger = Logger(__name__)
-        load_dotenv()
         self.email_config = self._load_email_config()
         
 
@@ -40,19 +38,21 @@ class ErrorHandler:
             context: Description of where/when the error occurred
             retry_function: Optional function to retry after error
         """
-        error_message = f"Error in {context}: {str(error)}\n{traceback.format_exc()}"
-        self.logger.error(error_message)
-        
-        # Send email notification
-        self._send_error_notification(error_message)
-        
-        # Retry if function provided
-        if retry_function:
-            try:
-                self.logger.info(f"Retrying {context}...")
-                retry_function()
-            except Exception as retry_error:
-                self.logger.error(f"Retry failed: {str(retry_error)}")
+        def error_task():
+            error_message = f"Error in {context}: {str(error)}\n{traceback.format_exc()}"
+            self.logger.error(error_message)
+            
+            # Send email notification
+            self._send_error_notification(error_message)
+            
+            # Retry if function provided
+            if retry_function:
+                try:
+                    self.logger.info(f"Retrying {context}...")
+                    retry_function()
+                except Exception as retry_error:
+                    self.logger.error(f"Retry failed: {str(retry_error)}")
+        threading.Thread(target=error_task, daemon=True).start()
                 
     def _send_error_notification(self, error_message: str):
         """Send email notification about the error."""
